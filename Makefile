@@ -511,7 +511,7 @@ $(EXECUTABLE): $(GO_SOURCES) $(TAGS_PREREQ)
 ifneq ($(and $(STATIC),$(findstring pam,$(TAGS))),)
   $(error pam support set via TAGS does not support static builds)
 endif
-	CGO_ENABLED="$(CGO_ENABLED)" CGO_CFLAGS="$(CGO_CFLAGS)" $(GO) build $(GOFLAGS) $(EXTRA_GOFLAGS) -tags '$(TAGS)' -ldflags '-s -w $(EXTLDFLAGS) $(LDFLAGS)' -o $@
+	CGO_ENABLED="$(CGO_ENABLED)" CGO_CFLAGS="$(CGO_CFLAGS)" $(GO) build $(GOFLAGS) $(EXTRA_GOFLAGS) -buildvcs=false -tags '$(TAGS)' -ldflags '-s -w $(EXTLDFLAGS) $(LDFLAGS)' -o $@
 
 .PHONY: release
 release: frontend generate release-windows release-linux release-darwin release-freebsd release-copy release-compress vendor release-sources release-check
