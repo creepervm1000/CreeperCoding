@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package stats
@@ -6,14 +6,14 @@ package stats
 import (
 	"fmt"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/languagestats"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/process"
-	"gitea.dev/modules/setting"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/languagestats"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/process"
+	"creepercoding.dev/modules/setting"
 )
 
 // DBIndexer implements Indexer interface to use database's like search

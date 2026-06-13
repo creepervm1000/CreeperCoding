@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package private
@@ -8,19 +8,19 @@ import (
 	"net/http"
 	"strings"
 
-	asymkey_model "gitea.dev/models/asymkey"
-	"gitea.dev/models/perm"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/private"
-	"gitea.dev/modules/setting"
-	"gitea.dev/services/context"
-	repo_service "gitea.dev/services/repository"
-	wiki_service "gitea.dev/services/wiki"
+	asymkey_model "creepercoding.dev/models/asymkey"
+	"creepercoding.dev/models/perm"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/private"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/services/context"
+	repo_service "creepercoding.dev/services/repository"
+	wiki_service "creepercoding.dev/services/wiki"
 )
 
 // ServNoCommand returns information about the provided keyid

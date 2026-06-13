@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markdown
@@ -6,7 +6,7 @@ package markdown
 import (
 	"strings"
 
-	"gitea.dev/modules/svg"
+	"creepercoding.dev/modules/svg"
 
 	"github.com/yuin/goldmark/ast"
 	"github.com/yuin/goldmark/text"

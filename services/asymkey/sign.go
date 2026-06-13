@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package asymkey
@@ -9,18 +9,18 @@ import (
 	"os"
 	"strings"
 
-	asymkey_model "gitea.dev/models/asymkey"
-	"gitea.dev/models/auth"
-	"gitea.dev/models/db"
-	git_model "gitea.dev/models/git"
-	issues_model "gitea.dev/models/issues"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/process"
-	"gitea.dev/modules/setting"
+	asymkey_model "creepercoding.dev/models/asymkey"
+	"creepercoding.dev/models/auth"
+	"creepercoding.dev/models/db"
+	git_model "creepercoding.dev/models/git"
+	issues_model "creepercoding.dev/models/issues"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/process"
+	"creepercoding.dev/modules/setting"
 )
 
 type signingMode string

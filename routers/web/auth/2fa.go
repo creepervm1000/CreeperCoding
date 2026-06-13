@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package auth
@@ -7,14 +7,14 @@ import (
 	"errors"
 	"net/http"
 
-	"gitea.dev/models/auth"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/session"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/web"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
+	"creepercoding.dev/models/auth"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/session"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
 )
 
 var (

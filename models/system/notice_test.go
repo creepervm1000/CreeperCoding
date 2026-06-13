@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package system_test
@@ -6,9 +6,9 @@ package system_test
 import (
 	"testing"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/system"
-	"gitea.dev/models/unittest"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/system"
+	"creepercoding.dev/models/unittest"
 
 	"github.com/stretchr/testify/assert"
 )

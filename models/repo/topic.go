@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -9,10 +9,10 @@ import (
 	"regexp"
 	"strings"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/util"
 
 	"xorm.io/builder"
 )

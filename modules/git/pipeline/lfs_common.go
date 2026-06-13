@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package pipeline
@@ -6,7 +6,7 @@ package pipeline
 import (
 	"time"
 
-	"gitea.dev/modules/git"
+	"creepercoding.dev/modules/git"
 )
 
 // LFSResult represents commits found using a provided pointer file hash

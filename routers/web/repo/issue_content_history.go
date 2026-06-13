@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -10,12 +10,12 @@ import (
 	"net/http"
 	"strings"
 
-	"gitea.dev/models/avatars"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/templates"
-	"gitea.dev/services/context"
+	"creepercoding.dev/models/avatars"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/services/context"
 
 	"github.com/sergi/go-diff/diffmatchpatch"
 )

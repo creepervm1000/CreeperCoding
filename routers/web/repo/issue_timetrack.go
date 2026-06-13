@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -8,13 +8,13 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
-	issue_service "gitea.dev/services/issue"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
+	issue_service "creepercoding.dev/services/issue"
 )
 
 // AddTimeManually tracks time manually

@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package events
@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"time"
 
-	"gitea.dev/modules/eventsource"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/log"
-	"gitea.dev/routers/web/auth"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/eventsource"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/routers/web/auth"
+	"creepercoding.dev/services/context"
 )
 
 // Events listens for events

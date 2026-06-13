@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package git
@@ -8,10 +8,10 @@ import (
 	"errors"
 	"fmt"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/util"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/util"
 )
 
 // CompareInfo represents needed information for comparing references.

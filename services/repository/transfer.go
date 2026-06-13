@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repository
@@ -8,20 +8,20 @@ import (
 	"fmt"
 	"strings"
 
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/organization"
-	"gitea.dev/models/perm"
-	access_model "gitea.dev/models/perm/access"
-	project_model "gitea.dev/models/project"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/globallock"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/util"
-	notify_service "gitea.dev/services/notify"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/organization"
+	"creepercoding.dev/models/perm"
+	access_model "creepercoding.dev/models/perm/access"
+	project_model "creepercoding.dev/models/project"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/globallock"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/util"
+	notify_service "creepercoding.dev/services/notify"
 )
 
 type LimitReachedError struct{ Limit int }

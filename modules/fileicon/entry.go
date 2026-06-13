@@ -1,9 +1,9 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package fileicon
 
-import "gitea.dev/modules/git"
+import "creepercoding.dev/modules/git"
 
 type EntryInfo struct {
 	BaseName      string

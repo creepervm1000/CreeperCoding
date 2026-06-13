@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repository
@@ -7,17 +7,17 @@ import (
 	"sync"
 	"testing"
 
-	activities_model "gitea.dev/models/activities"
-	"gitea.dev/models/organization"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/test"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/feed"
-	notify_service "gitea.dev/services/notify"
+	activities_model "creepercoding.dev/models/activities"
+	"creepercoding.dev/models/organization"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/test"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/feed"
+	notify_service "creepercoding.dev/services/notify"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

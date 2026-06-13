@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package private
@@ -7,7 +7,7 @@ import (
 	"context"
 	"fmt"
 
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/setting"
 )
 
 // RestoreParams structure holds a data for restore repository

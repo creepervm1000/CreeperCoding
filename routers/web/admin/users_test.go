@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package admin
@@ -6,13 +6,13 @@ package admin
 import (
 	"testing"
 
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/web"
-	"gitea.dev/services/contexttest"
-	"gitea.dev/services/forms"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/contexttest"
+	"creepercoding.dev/services/forms"
 
 	"github.com/stretchr/testify/assert"
 )

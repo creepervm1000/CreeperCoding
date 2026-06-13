@@ -6,7 +6,7 @@ import {localUserSettings} from '../modules/user-settings.ts';
 import {isPlainClick} from '../utils/dom.ts';
 import {trN} from '../modules/i18n.ts';
 import {debounce} from 'throttle-debounce';
-import type {ActionsJob} from '../modules/gitea-actions.ts';
+import type {ActionsJob} from '../modules/creepercoding-actions.ts';
 import type {ActionRunViewStore} from './ActionRunView.ts';
 import {
   boxBottom,

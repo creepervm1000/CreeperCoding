@@ -1,12 +1,12 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package utils
 
 import (
-	"gitea.dev/models/db"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
 )
 
 // GetListOptions returns list options using the page and limit parameters

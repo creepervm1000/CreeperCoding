@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"gitea.dev/modules/lfs"
-	"gitea.dev/tests"
+	"creepercoding.dev/modules/lfs"
+	"creepercoding.dev/tests"
 
 	"github.com/stretchr/testify/assert"
 )

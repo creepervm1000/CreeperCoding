@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // Copyright 2018 Jonas Franz. All rights reserved.
 // SPDX-License-Identifier: MIT
 
@@ -14,11 +14,11 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/log"
-	base "gitea.dev/modules/migration"
-	"gitea.dev/modules/proxy"
-	"gitea.dev/modules/structs"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/log"
+	base "creepercoding.dev/modules/migration"
+	"creepercoding.dev/modules/proxy"
+	"creepercoding.dev/modules/structs"
 
 	"github.com/google/go-github/v88/github"
 	"golang.org/x/oauth2"

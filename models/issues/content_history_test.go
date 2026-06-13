@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package issues_test
@@ -6,10 +6,10 @@ package issues_test
 import (
 	"testing"
 
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/unittest"
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/unittest"
+	"creepercoding.dev/modules/timeutil"
 
 	"github.com/stretchr/testify/assert"
 )

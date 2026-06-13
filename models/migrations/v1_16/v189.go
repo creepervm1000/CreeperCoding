@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_16
@@ -7,9 +7,9 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/migrations/base"
-	"gitea.dev/modules/json"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/migrations/base"
+	"creepercoding.dev/modules/json"
 )
 
 func UnwrapLDAPSourceCfg(x db.EngineMigration) error {

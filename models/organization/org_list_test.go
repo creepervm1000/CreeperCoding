@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package organization_test
@@ -6,11 +6,11 @@ package organization_test
 import (
 	"testing"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/organization"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/structs"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/organization"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/structs"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -1,4 +1,5 @@
-// Copyright 2016 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors
+// Copyright 2016 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -6,9 +7,9 @@ package repo
 import (
 	"context"
 
-	"gitea.dev/models/db"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/models/db"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/timeutil"
 )
 
 // Star represents a starred repo by a user.

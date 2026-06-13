@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package updatechecker
@@ -8,10 +8,10 @@ import (
 	"io"
 	"net/http"
 
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/proxy"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/system"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/proxy"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/system"
 
 	"github.com/hashicorp/go-version"
 )

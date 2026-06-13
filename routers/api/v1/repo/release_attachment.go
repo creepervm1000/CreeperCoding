@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -8,16 +8,16 @@ import (
 	"net/http"
 	"strings"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	attachment_service "gitea.dev/services/attachment"
-	"gitea.dev/services/context"
-	"gitea.dev/services/context/upload"
-	"gitea.dev/services/convert"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	attachment_service "creepercoding.dev/services/attachment"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/context/upload"
+	"creepercoding.dev/services/convert"
 )
 
 func checkReleaseMatchRepo(ctx *context.APIContext, releaseID int64) bool {

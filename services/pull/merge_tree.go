@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package pull
@@ -8,11 +8,11 @@ import (
 	"errors"
 	"fmt"
 
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/log"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/log"
 )
 
 // checkConflictsMergeTree uses git merge-tree to check for conflicts and if none are found checks if the patch is empty

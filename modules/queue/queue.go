@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 // Package queue implements a specialized concurrent queue system for Gitea.
@@ -61,7 +61,7 @@
 //	 func handler(items ...*mypkg.QueueItem) []*mypkg.QueueItem { ... }
 package queue
 
-import "gitea.dev/modules/util"
+import "creepercoding.dev/modules/util"
 
 type HandlerFuncT[T any] func(...T) (unhandled []T)
 

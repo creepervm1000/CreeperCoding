@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markup
@@ -7,8 +7,8 @@ import (
 	"strings"
 	"unicode"
 
-	"gitea.dev/modules/emoji"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/emoji"
+	"creepercoding.dev/modules/setting"
 
 	"golang.org/x/net/html"
 	"golang.org/x/net/html/atom"

@@ -1,11 +1,11 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package admin
 
 import (
-	"gitea.dev/routers/api/v1/shared"
-	"gitea.dev/services/context"
+	"creepercoding.dev/routers/api/v1/shared"
+	"creepercoding.dev/services/context"
 )
 
 // ListWorkflowJobs Lists all jobs

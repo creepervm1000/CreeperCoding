@@ -1,5 +1,5 @@
 // Copyright 2016 The Gogs Authors. All rights reserved.
-// Copyright 2020 The Gitea Authors.
+// Copyright 2020 The CreeperCoding Authors.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -8,15 +8,15 @@ import (
 	"net/http"
 	"strconv"
 
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/api/v1/utils"
-	"gitea.dev/routers/common"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/api/v1/utils"
+	"creepercoding.dev/routers/common"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
 )
 
 // ListMilestones list milestones for a repository

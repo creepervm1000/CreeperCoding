@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package misc
@@ -6,10 +6,10 @@ package misc
 import (
 	"net/http"
 
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
 )
 
 // Shows a list of all Label templates

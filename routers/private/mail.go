@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package private
@@ -9,15 +9,15 @@ import (
 	"net/http"
 	"strconv"
 
-	"gitea.dev/models/db"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/private"
-	"gitea.dev/modules/setting"
-	"gitea.dev/services/context"
-	"gitea.dev/services/mailer"
-	sender_service "gitea.dev/services/mailer/sender"
+	"creepercoding.dev/models/db"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/private"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/mailer"
+	sender_service "creepercoding.dev/services/mailer/sender"
 )
 
 // SendEmail pushes messages to mail queue

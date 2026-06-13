@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package issue
@@ -8,10 +8,10 @@ import (
 	"errors"
 	"fmt"
 
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	user_model "gitea.dev/models/user"
-	notify_service "gitea.dev/services/notify"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	user_model "creepercoding.dev/models/user"
+	notify_service "creepercoding.dev/services/notify"
 )
 
 func changeMilestoneAssign(ctx context.Context, doer *user_model.User, issue *issues_model.Issue, oldMilestoneID int64) error {

@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package db
@@ -6,8 +6,8 @@ package db
 import (
 	"context"
 
-	"gitea.dev/models/auth"
-	user_model "gitea.dev/models/user"
+	"creepercoding.dev/models/auth"
+	user_model "creepercoding.dev/models/user"
 )
 
 // Source is a password authentication service

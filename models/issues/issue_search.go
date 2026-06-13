@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package issues
@@ -9,14 +9,14 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/organization"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/organization"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/util"
 
 	"xorm.io/builder"
 )

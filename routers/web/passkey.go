@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package web
@@ -6,8 +6,8 @@ package web
 import (
 	"net/http"
 
-	"gitea.dev/modules/setting"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/services/context"
 )
 
 type passkeyEndpointsType struct {

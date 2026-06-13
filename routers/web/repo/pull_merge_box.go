@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -6,10 +6,10 @@ package repo
 import (
 	"html/template"
 
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/svg"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/svg"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
 )
 
 type pullMergeBoxInfoItem struct {

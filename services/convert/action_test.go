@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package convert
@@ -8,14 +8,14 @@ import (
 	"strings"
 	"testing"
 
-	actions_model "gitea.dev/models/actions"
-	db "gitea.dev/models/db"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	"gitea.dev/models/unittest"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/util"
+	actions_model "creepercoding.dev/models/actions"
+	db "creepercoding.dev/models/db"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	"creepercoding.dev/models/unittest"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/util"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

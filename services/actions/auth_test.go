@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"testing"
 
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/setting"
 
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/stretchr/testify/assert"

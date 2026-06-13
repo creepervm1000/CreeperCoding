@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package nuget
@@ -6,8 +6,8 @@ package nuget
 import (
 	"net/http"
 
-	user_model "gitea.dev/models/user"
-	"gitea.dev/services/auth"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/services/auth"
 )
 
 var _ auth.Method = &Auth{}

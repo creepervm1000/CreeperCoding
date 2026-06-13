@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cmd
@@ -7,8 +7,8 @@ import (
 	"context"
 	"testing"
 
-	"gitea.dev/modules/log"
-	"gitea.dev/services/doctor"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/services/doctor"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/urfave/cli/v3"

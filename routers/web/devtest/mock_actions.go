@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package devtest
@@ -12,15 +12,15 @@ import (
 	"strings"
 	"time"
 
-	actions_model "gitea.dev/models/actions"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/web/repo/actions"
-	"gitea.dev/services/context"
+	actions_model "creepercoding.dev/models/actions"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/web/repo/actions"
+	"creepercoding.dev/services/context"
 )
 
 type generateMockStepsLogOptions struct {

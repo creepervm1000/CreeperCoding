@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package badge
@@ -8,7 +8,7 @@ import (
 	"sync"
 	"unicode"
 
-	actions_model "gitea.dev/models/actions"
+	actions_model "creepercoding.dev/models/actions"
 )
 
 // The Badge layout: |offset|label|message|

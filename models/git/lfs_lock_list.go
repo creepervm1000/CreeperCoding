@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package git
@@ -7,9 +7,9 @@ import (
 	"context"
 	"fmt"
 
-	"gitea.dev/models/db"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/container"
+	"creepercoding.dev/models/db"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/container"
 )
 
 // LFSLockList is a list of LFSLock

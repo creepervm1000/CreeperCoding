@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package asymkey
@@ -7,9 +7,9 @@ import (
 	"context"
 	"fmt"
 
-	asymkey_model "gitea.dev/models/asymkey"
-	"gitea.dev/models/db"
-	"gitea.dev/models/perm"
+	asymkey_model "creepercoding.dev/models/asymkey"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/perm"
 )
 
 // AddPrincipalKey adds new principal to database and authorized_principals file.

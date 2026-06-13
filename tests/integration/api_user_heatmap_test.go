@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	activities_model "gitea.dev/models/activities"
-	auth_model "gitea.dev/models/auth"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/tests"
+	activities_model "creepercoding.dev/models/activities"
+	auth_model "creepercoding.dev/models/auth"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/tests"
 
 	"github.com/stretchr/testify/assert"
 )

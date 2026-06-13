@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -6,7 +6,7 @@ package setting
 import (
 	"time"
 
-	"gitea.dev/modules/setting/config"
+	"creepercoding.dev/modules/setting/config"
 )
 
 // WebBannerType fields are directly used in templates,

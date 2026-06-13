@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package security
@@ -7,14 +7,14 @@ import (
 	"errors"
 	"net/http"
 
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/auth/openid"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/auth/openid"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
 )
 
 // OpenIDPost response for change user's openid

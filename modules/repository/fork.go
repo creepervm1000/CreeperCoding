@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repository
@@ -6,10 +6,10 @@ package repository
 import (
 	"context"
 
-	"gitea.dev/models/organization"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/organization"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/setting"
 )
 
 // CanUserForkBetweenOwners returns true if user can fork between owners.

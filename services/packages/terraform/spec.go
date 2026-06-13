@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package terraform
@@ -6,12 +6,12 @@ package terraform
 import (
 	"context"
 
-	packages_model "gitea.dev/models/packages"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/optional"
-	terraform_module "gitea.dev/modules/packages/terraform"
-	"gitea.dev/modules/util"
-	packages_service "gitea.dev/services/packages"
+	packages_model "creepercoding.dev/models/packages"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/optional"
+	terraform_module "creepercoding.dev/modules/packages/terraform"
+	"creepercoding.dev/modules/util"
+	packages_service "creepercoding.dev/services/packages"
 )
 
 type Specialization struct{}

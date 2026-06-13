@@ -1,13 +1,13 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package indexer
 
 import (
-	code_indexer "gitea.dev/modules/indexer/code"
-	issue_indexer "gitea.dev/modules/indexer/issues"
-	stats_indexer "gitea.dev/modules/indexer/stats"
-	notify_service "gitea.dev/services/notify"
+	code_indexer "creepercoding.dev/modules/indexer/code"
+	issue_indexer "creepercoding.dev/modules/indexer/issues"
+	stats_indexer "creepercoding.dev/modules/indexer/stats"
+	notify_service "creepercoding.dev/services/notify"
 )
 
 // Init initialize the repo indexer

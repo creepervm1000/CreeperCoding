@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package pull
@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"strings"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/log"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/log"
 )
 
 // getRebaseAmendMessage composes the message to amend commits in rebase merge of a pull request.

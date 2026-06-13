@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -6,8 +6,8 @@ package repo
 import (
 	"context"
 
-	"gitea.dev/models/unit"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/unit"
+	"creepercoding.dev/modules/util"
 )
 
 func (repo *Repository) GetPullRequestTargetBranch(ctx context.Context) string {

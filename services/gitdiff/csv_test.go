@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package gitdiff
@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	csv_module "gitea.dev/modules/csv"
-	"gitea.dev/modules/setting"
+	csv_module "creepercoding.dev/modules/csv"
+	"creepercoding.dev/modules/setting"
 
 	"github.com/stretchr/testify/assert"
 )

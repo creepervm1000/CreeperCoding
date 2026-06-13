@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -12,13 +12,13 @@ import (
 	"net/http"
 	"testing"
 
-	"gitea.dev/models/packages"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	arch_module "gitea.dev/modules/packages/arch"
-	"gitea.dev/modules/test"
-	arch_service "gitea.dev/services/packages/arch"
-	"gitea.dev/tests"
+	"creepercoding.dev/models/packages"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	arch_module "creepercoding.dev/modules/packages/arch"
+	"creepercoding.dev/modules/test"
+	arch_service "creepercoding.dev/services/packages/arch"
+	"creepercoding.dev/tests"
 
 	"github.com/klauspost/compress/zstd"
 	"github.com/stretchr/testify/assert"

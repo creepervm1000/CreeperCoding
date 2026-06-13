@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package template
@@ -8,11 +8,11 @@ import (
 	"path"
 	"strconv"
 
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/markup/markdown"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/markup/markdown"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
 
 	"go.yaml.in/yaml/v4"
 )

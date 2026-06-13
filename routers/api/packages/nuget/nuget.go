@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package nuget
@@ -14,17 +14,17 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/models/db"
-	packages_model "gitea.dev/models/packages"
-	nuget_model "gitea.dev/models/packages/nuget"
-	"gitea.dev/modules/optional"
-	packages_module "gitea.dev/modules/packages"
-	nuget_module "gitea.dev/modules/packages/nuget"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
-	"gitea.dev/routers/api/packages/helper"
-	"gitea.dev/services/context"
-	packages_service "gitea.dev/services/packages"
+	"creepercoding.dev/models/db"
+	packages_model "creepercoding.dev/models/packages"
+	nuget_model "creepercoding.dev/models/packages/nuget"
+	"creepercoding.dev/modules/optional"
+	packages_module "creepercoding.dev/modules/packages"
+	nuget_module "creepercoding.dev/modules/packages/nuget"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/routers/api/packages/helper"
+	"creepercoding.dev/services/context"
+	packages_service "creepercoding.dev/services/packages"
 )
 
 func apiError(ctx *context.Context, status int, obj any) {

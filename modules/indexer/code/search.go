@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package code
@@ -9,9 +9,9 @@ import (
 	"html/template"
 	"strings"
 
-	"gitea.dev/modules/highlight"
-	"gitea.dev/modules/indexer/code/internal"
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/modules/highlight"
+	"creepercoding.dev/modules/indexer/code/internal"
+	"creepercoding.dev/modules/timeutil"
 )
 
 // Result a search result to display

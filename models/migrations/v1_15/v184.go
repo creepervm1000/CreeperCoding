@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_15
@@ -7,9 +7,9 @@ import (
 	"context"
 	"fmt"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/migrations/base"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/migrations/base"
+	"creepercoding.dev/modules/setting"
 )
 
 func RenameTaskErrorsToMessage(x db.EngineMigration) error {

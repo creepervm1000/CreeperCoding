@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package chef
@@ -24,10 +24,10 @@ import (
 	"strings"
 	"time"
 
-	user_model "gitea.dev/models/user"
-	chef_module "gitea.dev/modules/packages/chef"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/auth"
+	user_model "creepercoding.dev/models/user"
+	chef_module "creepercoding.dev/modules/packages/chef"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/auth"
 )
 
 const (

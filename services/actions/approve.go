@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -8,12 +8,12 @@ import (
 	"errors"
 	"fmt"
 
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/models/db"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/log"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/models/db"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/log"
 )
 
 func ApproveRuns(ctx context.Context, repo *repo_model.Repository, doer *user_model.User, runIDs []int64) error {

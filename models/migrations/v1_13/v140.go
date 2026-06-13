@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_13
@@ -6,9 +6,9 @@ package v1_13
 import (
 	"fmt"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/migrations/base"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/migrations/base"
+	"creepercoding.dev/modules/setting"
 )
 
 func FixLanguageStatsToSaveSize(x db.EngineMigration) error {

@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cache
@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"gitea.dev/modules/test"
+	"creepercoding.dev/modules/test"
 
 	"github.com/stretchr/testify/assert"
 )

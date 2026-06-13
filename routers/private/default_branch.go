@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package private
@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"net/http"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/private"
-	gitea_context "gitea.dev/services/context"
-	repo_service "gitea.dev/services/repository"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/private"
+	gitea_context "creepercoding.dev/services/context"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 // SetDefaultBranch updates the default branch

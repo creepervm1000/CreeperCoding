@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -10,26 +10,26 @@ import (
 	"net/http"
 	"strings"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/organization"
-	"gitea.dev/models/perm"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/lfs"
-	"gitea.dev/modules/log"
-	base "gitea.dev/modules/migration"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	"gitea.dev/services/migrations"
-	notify_service "gitea.dev/services/notify"
-	repo_service "gitea.dev/services/repository"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/organization"
+	"creepercoding.dev/models/perm"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/lfs"
+	"creepercoding.dev/modules/log"
+	base "creepercoding.dev/modules/migration"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	"creepercoding.dev/services/migrations"
+	notify_service "creepercoding.dev/services/notify"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 // Migrate migrate remote git repository to gitea

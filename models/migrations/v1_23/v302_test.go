@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_23
@@ -6,8 +6,8 @@ package v1_23
 import (
 	"testing"
 
-	"gitea.dev/models/migrations/migrationtest"
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/models/migrations/migrationtest"
+	"creepercoding.dev/modules/timeutil"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -10,13 +10,13 @@ import (
 	"strings"
 	"testing"
 
-	issues_model "gitea.dev/models/issues"
-	project_model "gitea.dev/models/project"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/tests"
+	issues_model "creepercoding.dev/models/issues"
+	project_model "creepercoding.dev/models/project"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/tests"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/stretchr/testify/assert"

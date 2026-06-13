@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package ldap
@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/log"
 
 	"github.com/go-ldap/ldap/v3"
 )

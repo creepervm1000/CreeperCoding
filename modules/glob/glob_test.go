@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // Copyright (c) 2016 Sergey Kamardin
 // SPDX-License-Identifier: MIT
 //

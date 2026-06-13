@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package container
@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"gitea.dev/modules/packages/container/helm"
+	"creepercoding.dev/modules/packages/container/helm"
 
 	oci "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/stretchr/testify/assert"

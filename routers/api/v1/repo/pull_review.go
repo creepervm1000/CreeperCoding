@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -9,18 +9,18 @@ import (
 	"net/http"
 	"strings"
 
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/organization"
-	access_model "gitea.dev/models/perm/access"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/gitrepo"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/api/v1/utils"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	issue_service "gitea.dev/services/issue"
-	pull_service "gitea.dev/services/pull"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/organization"
+	access_model "creepercoding.dev/models/perm/access"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/gitrepo"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/api/v1/utils"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	issue_service "creepercoding.dev/services/issue"
+	pull_service "creepercoding.dev/services/pull"
 )
 
 // ListPullReviews lists all reviews of a pull request

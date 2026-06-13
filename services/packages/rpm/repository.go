@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package rpm
@@ -17,14 +17,14 @@ import (
 	"strings"
 	"time"
 
-	packages_model "gitea.dev/models/packages"
-	rpm_model "gitea.dev/models/packages/rpm"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/json"
-	packages_module "gitea.dev/modules/packages"
-	rpm_module "gitea.dev/modules/packages/rpm"
-	"gitea.dev/modules/util"
-	packages_service "gitea.dev/services/packages"
+	packages_model "creepercoding.dev/models/packages"
+	rpm_model "creepercoding.dev/models/packages/rpm"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/json"
+	packages_module "creepercoding.dev/modules/packages"
+	rpm_module "creepercoding.dev/modules/packages/rpm"
+	"creepercoding.dev/modules/util"
+	packages_service "creepercoding.dev/services/packages"
 
 	"github.com/ProtonMail/go-crypto/openpgp"
 	"github.com/ProtonMail/go-crypto/openpgp/armor"

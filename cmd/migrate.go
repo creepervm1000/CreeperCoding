@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cmd
@@ -6,10 +6,10 @@ package cmd
 import (
 	"context"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/services/versioned_migration"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/services/versioned_migration"
 
 	"github.com/urfave/cli/v3"
 )

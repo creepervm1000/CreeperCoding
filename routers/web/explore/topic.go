@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package explore
@@ -6,11 +6,11 @@ package explore
 import (
 	"net/http"
 
-	"gitea.dev/models/db"
-	repo_model "gitea.dev/models/repo"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
+	"creepercoding.dev/models/db"
+	repo_model "creepercoding.dev/models/repo"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
 )
 
 // TopicSearch search for creating topic

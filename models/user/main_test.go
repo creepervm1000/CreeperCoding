@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package user_test
@@ -6,12 +6,12 @@ package user_test
 import (
 	"testing"
 
-	"gitea.dev/models/unittest"
+	"creepercoding.dev/models/unittest"
 
-	_ "gitea.dev/models"
-	_ "gitea.dev/models/actions"
-	_ "gitea.dev/models/activities"
-	_ "gitea.dev/models/user"
+	_ "creepercoding.dev/models"
+	_ "creepercoding.dev/models/actions"
+	_ "creepercoding.dev/models/activities"
+	_ "creepercoding.dev/models/user"
 )
 
 func TestMain(m *testing.M) {

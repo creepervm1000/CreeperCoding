@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package commitstatus
@@ -9,18 +9,18 @@ import (
 	"fmt"
 	"slices"
 
-	"gitea.dev/models/db"
-	git_model "gitea.dev/models/git"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/cache"
-	"gitea.dev/modules/commitstatus"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/services/notify"
+	"creepercoding.dev/models/db"
+	git_model "creepercoding.dev/models/git"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/cache"
+	"creepercoding.dev/modules/commitstatus"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/services/notify"
 )
 
 func getCacheKey(repoID int64, brancheName string) string {

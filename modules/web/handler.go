@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package web
@@ -11,9 +11,9 @@ import (
 	"reflect"
 	"slices"
 
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/web/routing"
-	"gitea.dev/modules/web/types"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/web/routing"
+	"creepercoding.dev/modules/web/types"
 )
 
 var responseStatusProviders = map[reflect.Type]func(req *http.Request) types.ResponseStatusProvider{}

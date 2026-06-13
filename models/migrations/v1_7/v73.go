@@ -1,9 +1,9 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_7
 
-import "gitea.dev/models/db"
+import "creepercoding.dev/models/db"
 
 func AddMustChangePassword(x db.EngineMigration) error {
 	// User see models/user.go

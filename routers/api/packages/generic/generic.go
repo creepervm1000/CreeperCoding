@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package generic
@@ -10,11 +10,11 @@ import (
 	"strings"
 	"unicode"
 
-	packages_model "gitea.dev/models/packages"
-	packages_module "gitea.dev/modules/packages"
-	"gitea.dev/routers/api/packages/helper"
-	"gitea.dev/services/context"
-	packages_service "gitea.dev/services/packages"
+	packages_model "creepercoding.dev/models/packages"
+	packages_module "creepercoding.dev/modules/packages"
+	"creepercoding.dev/routers/api/packages/helper"
+	"creepercoding.dev/services/context"
+	packages_service "creepercoding.dev/services/packages"
 )
 
 var (

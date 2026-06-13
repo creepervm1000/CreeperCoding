@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package templates
@@ -14,10 +14,10 @@ import (
 	"sync"
 	texttemplate "text/template"
 
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
 )
 
 type pageRenderer struct {

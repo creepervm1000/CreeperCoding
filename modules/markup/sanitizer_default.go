@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markup
@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"regexp"
 
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/setting"
 
 	"github.com/microcosm-cc/bluemonday"
 )

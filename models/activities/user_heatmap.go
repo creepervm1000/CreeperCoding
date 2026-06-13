@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package activities
@@ -6,11 +6,11 @@ package activities
 import (
 	"context"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/organization"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/organization"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/timeutil"
 )
 
 // UserHeatmapData represents the data needed to create a heatmap

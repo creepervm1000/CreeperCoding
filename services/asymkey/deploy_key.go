@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package asymkey
@@ -7,9 +7,9 @@ import (
 	"context"
 	"fmt"
 
-	asymkey_model "gitea.dev/models/asymkey"
-	"gitea.dev/models/db"
-	repo_model "gitea.dev/models/repo"
+	asymkey_model "creepercoding.dev/models/asymkey"
+	"creepercoding.dev/models/db"
+	repo_model "creepercoding.dev/models/repo"
 )
 
 // DeleteRepoDeployKeys deletes all deploy keys of a repository. permissions check should be done outside

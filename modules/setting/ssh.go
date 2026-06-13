@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -9,9 +9,9 @@ import (
 	"text/template"
 	"time"
 
-	"gitea.dev/modules/consts"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/consts"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/util"
 
 	gossh "golang.org/x/crypto/ssh"
 )

@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package helper
@@ -9,10 +9,10 @@ import (
 	"net/http"
 	"net/url"
 
-	packages_model "gitea.dev/models/packages"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/services/context"
+	packages_model "creepercoding.dev/models/packages"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/services/context"
 )
 
 // ProcessErrorForUser logs the error and returns a user-error message for the end user.

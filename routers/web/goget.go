@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package web
@@ -11,10 +11,10 @@ import (
 	"path"
 	"strings"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
 )
 
 func goGet(ctx *context.Context) {

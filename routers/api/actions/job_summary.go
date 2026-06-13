@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -11,9 +11,9 @@ import (
 	"slices"
 	"strconv"
 
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/util"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/util"
 )
 
 const jobSummaryRouteBase = "/_apis/pipelines/workflows/{run_id}/jobs/{job_id}/steps/{step_index}/summary"

@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package session
@@ -9,8 +9,8 @@ import (
 	"log"
 	"sync"
 
-	"gitea.dev/models/auth"
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/models/auth"
+	"creepercoding.dev/modules/timeutil"
 
 	"gitea.com/go-chi/session"
 )

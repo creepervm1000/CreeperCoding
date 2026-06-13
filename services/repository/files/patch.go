@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package files
@@ -8,16 +8,16 @@ import (
 	"fmt"
 	"strings"
 
-	git_model "gitea.dev/models/git"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	asymkey_service "gitea.dev/services/asymkey"
+	git_model "creepercoding.dev/models/git"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	asymkey_service "creepercoding.dev/services/asymkey"
 )
 
 // ErrUserCannotCommit represents "UserCannotCommit" kind of error.

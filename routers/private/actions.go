@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package private
@@ -9,14 +9,14 @@ import (
 	"net/http"
 	"strings"
 
-	actions_model "gitea.dev/models/actions"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/private"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
+	actions_model "creepercoding.dev/models/actions"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/private"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
 )
 
 // GenerateActionsRunnerToken generates a new runner token for a given scope

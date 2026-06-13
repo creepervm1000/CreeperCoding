@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package renderhelper
@@ -7,9 +7,9 @@ import (
 	"context"
 	"io"
 
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/log"
 )
 
 type commitChecker struct {

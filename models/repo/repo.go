@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -17,21 +17,21 @@ import (
 	"strings"
 	"sync"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/base"
-	"gitea.dev/modules/git"
-	giturl "gitea.dev/modules/git/url"
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/base"
+	"creepercoding.dev/modules/git"
+	giturl "creepercoding.dev/modules/git/url"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/util"
 
 	"xorm.io/builder"
 )
@@ -209,6 +209,7 @@ type Repository struct {
 	StatsIndexerStatus              *RepoIndexerStatus `xorm:"-"`
 	IsFsckEnabled                   bool               `xorm:"NOT NULL DEFAULT true"`
 	CloseIssuesViaCommitInAnyBranch bool               `xorm:"NOT NULL DEFAULT false"`
+	CcopilotDisabled                bool               `xorm:"NOT NULL DEFAULT false"`
 	Topics                          []string           `xorm:"TEXT JSON"`
 	ObjectFormatName                string             `xorm:"VARCHAR(6) NOT NULL DEFAULT 'sha1'"`
 

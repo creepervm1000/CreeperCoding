@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package asymkey
@@ -7,8 +7,8 @@ import (
 	"context"
 	"strings"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/log"
 
 	"github.com/ProtonMail/go-crypto/openpgp"
 )

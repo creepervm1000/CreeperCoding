@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package paginator
@@ -6,8 +6,8 @@ package paginator
 import (
 	"testing"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/setting"
 
 	"github.com/stretchr/testify/assert"
 )

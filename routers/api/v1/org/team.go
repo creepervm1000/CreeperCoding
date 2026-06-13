@@ -1,5 +1,5 @@
 // Copyright 2016 The Gogs Authors. All rights reserved.
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package org
@@ -8,23 +8,23 @@ import (
 	"errors"
 	"net/http"
 
-	activities_model "gitea.dev/models/activities"
-	"gitea.dev/models/organization"
-	"gitea.dev/models/perm"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	unit_model "gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/log"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/api/v1/user"
-	"gitea.dev/routers/api/v1/utils"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	feed_service "gitea.dev/services/feed"
-	org_service "gitea.dev/services/org"
-	repo_service "gitea.dev/services/repository"
+	activities_model "creepercoding.dev/models/activities"
+	"creepercoding.dev/models/organization"
+	"creepercoding.dev/models/perm"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	unit_model "creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/log"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/api/v1/user"
+	"creepercoding.dev/routers/api/v1/utils"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	feed_service "creepercoding.dev/services/feed"
+	org_service "creepercoding.dev/services/org"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 // ListTeams list all the teams of an organization

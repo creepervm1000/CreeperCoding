@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package db
@@ -6,7 +6,7 @@ package db
 import (
 	"fmt"
 
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/util"
 )
 
 // ErrCancelled represents an error due to context cancellation

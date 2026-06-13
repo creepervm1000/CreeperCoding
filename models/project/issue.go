@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package project
@@ -7,8 +7,8 @@ import (
 	"context"
 	"errors"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/util"
 )
 
 // ProjectIssue saves relation from issue to a project

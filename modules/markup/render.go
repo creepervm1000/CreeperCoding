@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markup
@@ -15,12 +15,12 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/markup/internal"
-	"gitea.dev/modules/public"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/typesniffer"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/markup/internal"
+	"creepercoding.dev/modules/public"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/typesniffer"
+	"creepercoding.dev/modules/util"
 
 	"golang.org/x/sync/errgroup"
 )

@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/util"
 )
 
 // SessionConfig defines Session settings

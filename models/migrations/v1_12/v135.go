@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_12
@@ -6,7 +6,7 @@ package v1_12
 import (
 	"fmt"
 
-	"gitea.dev/models/db"
+	"creepercoding.dev/models/db"
 )
 
 func AddOrgIDLabelColumn(x db.EngineMigration) error {

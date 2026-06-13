@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package issue
@@ -6,15 +6,15 @@ package issue
 import (
 	"context"
 
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/organization"
-	"gitea.dev/models/perm"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/log"
-	notify_service "gitea.dev/services/notify"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/organization"
+	"creepercoding.dev/models/perm"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/log"
+	notify_service "creepercoding.dev/services/notify"
 )
 
 // ReviewRequest add or remove a review request from a user for this PR, and make comment for it.

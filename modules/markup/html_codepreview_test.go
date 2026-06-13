@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markup_test
@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/markup/markdown"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/markup/markdown"
 
 	"github.com/stretchr/testify/assert"
 )

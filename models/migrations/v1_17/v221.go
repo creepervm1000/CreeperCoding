@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_17
@@ -7,8 +7,8 @@ import (
 	"encoding/base32"
 	"fmt"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/timeutil"
 )
 
 func StoreWebauthnCredentialIDAsBytes(x db.EngineMigration) error {

@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -6,14 +6,14 @@ package repo
 import (
 	"strconv"
 
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
-	"gitea.dev/services/gitdiff"
-	user_service "gitea.dev/services/user"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/gitdiff"
+	user_service "creepercoding.dev/services/user"
 )
 
 // SetEditorconfigIfExists set editor config as render variable

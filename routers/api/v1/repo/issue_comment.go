@@ -1,5 +1,5 @@
 // Copyright 2015 The Gogs Authors. All rights reserved.
-// Copyright 2020 The Gitea Authors.
+// Copyright 2020 The CreeperCoding Authors.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -9,18 +9,18 @@ import (
 	"errors"
 	"net/http"
 
-	issues_model "gitea.dev/models/issues"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/optional"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/api/v1/utils"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	issue_service "gitea.dev/services/issue"
+	issues_model "creepercoding.dev/models/issues"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/optional"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/api/v1/utils"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	issue_service "creepercoding.dev/services/issue"
 )
 
 // ListIssueComments list all the comments of an issue

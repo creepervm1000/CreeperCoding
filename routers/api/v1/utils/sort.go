@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package utils
@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"gitea.dev/models/db"
-	"gitea.dev/services/context"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/services/context"
 )
 
 // ResolveSortOrder reads "sort" and "order" query params and returns the matching

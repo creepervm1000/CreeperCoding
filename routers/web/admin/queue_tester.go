@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package admin
@@ -8,11 +8,11 @@ import (
 	"sync"
 	"time"
 
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/process"
-	"gitea.dev/modules/queue"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/process"
+	"creepercoding.dev/modules/queue"
+	"creepercoding.dev/modules/setting"
 )
 
 var testQueueOnce sync.Once

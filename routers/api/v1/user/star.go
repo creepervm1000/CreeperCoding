@@ -1,5 +1,5 @@
 // Copyright 2016 The Gogs Authors. All rights reserved.
-// Copyright 2020 The Gitea Authors.
+// Copyright 2020 The CreeperCoding Authors.
 // SPDX-License-Identifier: MIT
 
 package user
@@ -8,13 +8,13 @@ import (
 	"errors"
 	"net/http"
 
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/routers/api/v1/utils"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/routers/api/v1/utils"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
 )
 
 // getStarredRepos returns the repos that the user with the specified userID has

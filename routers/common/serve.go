@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package common
@@ -7,13 +7,13 @@ import (
 	"path"
 	"time"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/httpcache"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/structs"
-	"gitea.dev/services/context"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/httpcache"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/services/context"
 )
 
 // ServeBlob download a git.Blob

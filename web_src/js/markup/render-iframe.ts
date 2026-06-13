@@ -44,25 +44,25 @@ function getRealBackgroundColor(el: HTMLElement) {
 
 export async function initExternalRenderIframe(iframe: HTMLIFrameElement) {
   const iframeSrcUrl = iframe.getAttribute('data-src')!;
-  if (!iframe.id) iframe.id = generateElemId('gitea-iframe-');
+  if (!iframe.id) iframe.id = generateElemId('creepercoding-iframe-');
 
   window.addEventListener('message', (e) => {
     if (e.source !== iframe.contentWindow) return;
-    if (!e.data?.giteaIframeCmd || e.data?.giteaIframeId !== iframe.id) return;
-    const cmd = e.data.giteaIframeCmd;
+    if (!e.data?.creepercodingIframeCmd || e.data?.creepercodingIframeId !== iframe.id) return;
+    const cmd = e.data.creepercodingIframeCmd;
     if (cmd === 'resize') {
       iframe.style.height = `${e.data.iframeHeight}px`;
     } else if (cmd === 'open-link') {
       navigateToIframeLink(e.data.openLink, e.data.anchorTarget);
     } else {
-      throw new Error(`Unknown gitea iframe cmd: ${cmd}`);
+      throw new Error(`Unknown creepercoding iframe cmd: ${cmd}`);
     }
   });
 
   const u = new URL(iframeSrcUrl, window.location.origin);
-  u.searchParams.set('gitea-is-dark-theme', String(isDarkTheme()));
-  u.searchParams.set('gitea-iframe-id', iframe.id);
-  u.searchParams.set('gitea-iframe-bgcolor', getRealBackgroundColor(iframe));
+  u.searchParams.set('creepercoding-is-dark-theme', String(isDarkTheme()));
+  u.searchParams.set('creepercoding-iframe-id', iframe.id);
+  u.searchParams.set('creepercoding-iframe-bgcolor', getRealBackgroundColor(iframe));
 
   // There are 3 kinds of external render modes:
   // * external frontend render:

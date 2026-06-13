@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -8,18 +8,18 @@ import (
 	"net/http"
 	"testing"
 
-	auth_model "gitea.dev/models/auth"
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/perm"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	api "gitea.dev/modules/structs"
-	repo_service "gitea.dev/services/repository"
-	"gitea.dev/tests"
+	auth_model "creepercoding.dev/models/auth"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/perm"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	api "creepercoding.dev/modules/structs"
+	repo_service "creepercoding.dev/services/repository"
+	"creepercoding.dev/tests"
 
 	"github.com/stretchr/testify/assert"
 )

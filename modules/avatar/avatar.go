@@ -11,8 +11,8 @@ import (
 	"image/color"
 	"image/png"
 
-	"gitea.dev/modules/avatar/identicon"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/avatar/identicon"
+	"creepercoding.dev/modules/setting"
 
 	_ "golang.org/x/image/webp" // for processing webp images
 	_ "image/gif"               // for processing gif images

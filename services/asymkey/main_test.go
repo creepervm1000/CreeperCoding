@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package asymkey
@@ -6,11 +6,11 @@ package asymkey
 import (
 	"testing"
 
-	"gitea.dev/models/unittest"
+	"creepercoding.dev/models/unittest"
 
-	_ "gitea.dev/models"
-	_ "gitea.dev/models/actions"
-	_ "gitea.dev/models/activities"
+	_ "creepercoding.dev/models"
+	_ "creepercoding.dev/models/actions"
+	_ "creepercoding.dev/models/activities"
 )
 
 func TestMain(m *testing.M) {

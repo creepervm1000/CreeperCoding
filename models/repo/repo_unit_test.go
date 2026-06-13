@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"gitea.dev/models/perm"
-	"gitea.dev/models/unit"
+	"creepercoding.dev/models/perm"
+	"creepercoding.dev/models/unit"
 
 	"github.com/stretchr/testify/assert"
 )

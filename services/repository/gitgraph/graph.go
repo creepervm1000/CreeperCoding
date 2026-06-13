@@ -1,4 +1,5 @@
-// Copyright 2016 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors
+// Copyright 2016 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package gitgraph
@@ -7,9 +8,9 @@ import (
 	"bufio"
 	"bytes"
 
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/setting"
 )
 
 // GetCommitGraph return a list of commit (GraphItems) from all branches

@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -7,7 +7,7 @@ import (
 	"slices"
 
 	runnerv1 "gitea.dev/actions-proto-go/runner/v1"
-	"gitea.dev/modules/translation"
+	"creepercoding.dev/modules/translation"
 )
 
 // Status represents the status of ActionRun, ActionRunJob, ActionTask, or ActionTaskStep

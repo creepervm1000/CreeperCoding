@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package nuget
@@ -9,7 +9,7 @@ import (
 	"encoding/base64"
 	"testing"
 
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/setting"
 
 	"github.com/stretchr/testify/assert"
 )

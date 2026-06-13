@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repository
@@ -8,14 +8,14 @@ import (
 	"fmt"
 	"strings"
 
-	"gitea.dev/models/db"
-	git_model "gitea.dev/models/git"
-	issues_model "gitea.dev/models/issues"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/log"
-	notify_service "gitea.dev/services/notify"
+	"creepercoding.dev/models/db"
+	git_model "creepercoding.dev/models/git"
+	issues_model "creepercoding.dev/models/issues"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/log"
+	notify_service "creepercoding.dev/services/notify"
 )
 
 // GenerateIssueLabels generates issue labels from a template repository

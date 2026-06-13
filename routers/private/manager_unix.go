@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 //go:build !windows
@@ -8,8 +8,8 @@ package private
 import (
 	"net/http"
 
-	"gitea.dev/modules/graceful"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/services/context"
 )
 
 // Restart causes the server to perform a graceful restart

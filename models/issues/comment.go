@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors.
+// Copyright 2018 The CreeperCoding Authors.
 // Copyright 2016 The Gogs Authors.
 // All rights reserved.
 // SPDX-License-Identifier: MIT
@@ -14,23 +14,23 @@ import (
 	"strconv"
 	"unicode/utf8"
 
-	"gitea.dev/models/db"
-	git_model "gitea.dev/models/git"
-	"gitea.dev/models/organization"
-	project_model "gitea.dev/models/project"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/references"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/translation"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/db"
+	git_model "creepercoding.dev/models/git"
+	"creepercoding.dev/models/organization"
+	project_model "creepercoding.dev/models/project"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/references"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/translation"
+	"creepercoding.dev/modules/util"
 
 	"xorm.io/builder"
 )

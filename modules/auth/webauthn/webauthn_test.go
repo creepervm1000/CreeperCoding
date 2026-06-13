@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package webauthn
@@ -6,7 +6,7 @@ package webauthn
 import (
 	"testing"
 
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/setting"
 
 	"github.com/stretchr/testify/assert"
 )

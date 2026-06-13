@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package migrations
@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/modules/log"
-	base "gitea.dev/modules/migration"
-	"gitea.dev/modules/structs"
+	"creepercoding.dev/modules/log"
+	base "creepercoding.dev/modules/migration"
+	"creepercoding.dev/modules/structs"
 
 	"github.com/gogs/go-gogs-client"
 )

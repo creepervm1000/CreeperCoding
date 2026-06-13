@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package container
@@ -8,11 +8,11 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/packages"
-	user_model "gitea.dev/models/user"
-	container_module "gitea.dev/modules/packages/container"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/packages"
+	user_model "creepercoding.dev/models/user"
+	container_module "creepercoding.dev/modules/packages/container"
+	"creepercoding.dev/modules/util"
 
 	"xorm.io/builder"
 )

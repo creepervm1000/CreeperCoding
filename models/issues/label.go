@@ -1,5 +1,5 @@
 // Copyright 2016 The Gogs Authors. All rights reserved.
-// Copyright 2020 The Gitea Authors.
+// Copyright 2020 The CreeperCoding Authors.
 // SPDX-License-Identifier: MIT
 
 package issues
@@ -11,12 +11,12 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/label"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/label"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/util"
 
 	"xorm.io/builder"
 )

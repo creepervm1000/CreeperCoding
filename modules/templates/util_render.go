@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package templates
@@ -13,24 +13,24 @@ import (
 	"slices"
 	"strings"
 
-	user_model "gitea.dev/models/gituser"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/renderhelper"
-	"gitea.dev/models/repo"
-	"gitea.dev/modules/charset"
-	"gitea.dev/modules/emoji"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/markup/markdown"
-	"gitea.dev/modules/repository"
-	"gitea.dev/modules/reqctx"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/svg"
-	"gitea.dev/modules/translation"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/webtheme"
+	user_model "creepercoding.dev/models/gituser"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/renderhelper"
+	"creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/charset"
+	"creepercoding.dev/modules/emoji"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/markup/markdown"
+	"creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/reqctx"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/svg"
+	"creepercoding.dev/modules/translation"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/webtheme"
 )
 
 type RenderUtils struct {

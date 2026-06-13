@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markup
@@ -10,7 +10,7 @@ import (
 	"net/url"
 	"strings"
 
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/setting"
 )
 
 // CamoEncode encodes a lnk to fit with the go-camo and camo proxy links. The purposes of camo-proxy are:

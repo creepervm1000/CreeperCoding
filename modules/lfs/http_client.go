@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package lfs
@@ -13,10 +13,10 @@ import (
 	"net/url"
 	"strings"
 
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/proxy"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/proxy"
+	"creepercoding.dev/modules/setting"
 
 	"golang.org/x/sync/errgroup"
 )

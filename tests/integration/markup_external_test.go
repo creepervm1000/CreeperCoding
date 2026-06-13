@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -9,16 +9,16 @@ import (
 	"strings"
 	"testing"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/charset"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/markup/external"
-	"gitea.dev/modules/public"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/test"
-	"gitea.dev/tests"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/charset"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/markup/external"
+	"creepercoding.dev/modules/public"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/test"
+	"creepercoding.dev/tests"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -110,7 +110,7 @@ func TestExternalMarkupRenderer(t *testing.T) {
 				// FIXME: actually here is a bug (legacy design problem), the "PostProcess" will escape "<script>" tag, but it indeed is the sanitizer's job
 				assert.Equal(t,
 					`<script nonce crossorigin src="`+public.AssetURI("web_src/js/external-render-helper.ts")+`" id="gitea-external-render-helper" data-render-query-string=""></script>`+
-						`<link rel="stylesheet" href="`+public.AssetURI("web_src/css/themes/theme-gitea-auto.css")+`">`+
+						`<link rel="stylesheet" href="`+public.AssetURI("web_src/css/themes/theme-creepercoding-auto.css")+`">`+
 						`<div><any attr="val">&lt;script&gt;&lt;/script&gt;</any></div>`,
 					respSub.Body.String(),
 				)
@@ -135,7 +135,7 @@ func TestExternalMarkupRenderer(t *testing.T) {
 				respSub := MakeRequest(t, req, http.StatusOK)
 				assert.Equal(t,
 					`<script nonce crossorigin src="`+public.AssetURI("web_src/js/external-render-helper.ts")+`" id="gitea-external-render-helper" data-render-query-string="a=1%2f2"></script>`+
-						`<link rel="stylesheet" href="`+public.AssetURI("web_src/css/themes/theme-gitea-auto.css")+`">`+
+						`<link rel="stylesheet" href="`+public.AssetURI("web_src/css/themes/theme-creepercoding-auto.css")+`">`+
 						`<script>foo("raw")</script>`,
 					respSub.Body.String(),
 				)

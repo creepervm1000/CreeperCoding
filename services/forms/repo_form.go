@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package forms
@@ -8,14 +8,14 @@ import (
 	"net/http"
 	"strings"
 
-	issues_model "gitea.dev/models/issues"
-	project_model "gitea.dev/models/project"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web/middleware"
-	"gitea.dev/services/context"
-	"gitea.dev/services/webhook"
+	issues_model "creepercoding.dev/models/issues"
+	project_model "creepercoding.dev/models/project"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web/middleware"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/webhook"
 
 	"gitea.com/go-chi/binding"
 )
@@ -158,6 +158,9 @@ type RepoSettingForm struct {
 	// Admin settings
 	EnableHealthCheck  bool
 	RequestReindexType string
+
+	// Ccopilot
+	DisableCcopilot bool
 }
 
 // Validate validates the fields

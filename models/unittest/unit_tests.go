@@ -1,4 +1,5 @@
-// Copyright 2016 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors
+// Copyright 2016 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package unittest
@@ -10,7 +11,7 @@ import (
 	"os"
 	"strings"
 
-	"gitea.dev/models/db"
+	"creepercoding.dev/models/db"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

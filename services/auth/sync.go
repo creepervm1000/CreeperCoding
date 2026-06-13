@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package auth
@@ -6,9 +6,9 @@ package auth
 import (
 	"context"
 
-	"gitea.dev/models/auth"
-	"gitea.dev/models/db"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/models/auth"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/log"
 )
 
 // SyncExternalUsers is used to synchronize users with external authorization source

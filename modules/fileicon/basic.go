@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package fileicon
@@ -6,8 +6,8 @@ package fileicon
 import (
 	"html/template"
 
-	"gitea.dev/modules/svg"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/svg"
+	"creepercoding.dev/modules/util"
 )
 
 func BasicEntryIconName(entry *EntryInfo) string {

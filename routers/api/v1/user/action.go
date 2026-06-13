@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package user
@@ -7,16 +7,16 @@ import (
 	"errors"
 	"net/http"
 
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/models/db"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/api/v1/shared"
-	"gitea.dev/routers/api/v1/utils"
-	actions_service "gitea.dev/services/actions"
-	"gitea.dev/services/context"
-	secret_service "gitea.dev/services/secrets"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/models/db"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/api/v1/shared"
+	"creepercoding.dev/routers/api/v1/utils"
+	actions_service "creepercoding.dev/services/actions"
+	"creepercoding.dev/services/context"
+	secret_service "creepercoding.dev/services/secrets"
 )
 
 // create or update one secret of the user scope

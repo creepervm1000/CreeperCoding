@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package middleware
@@ -7,9 +7,9 @@ import (
 	"context"
 	"time"
 
-	"gitea.dev/modules/public"
-	"gitea.dev/modules/reqctx"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/public"
+	"creepercoding.dev/modules/reqctx"
+	"creepercoding.dev/modules/setting"
 )
 
 const ContextDataKeySignedUser = "SignedUser"

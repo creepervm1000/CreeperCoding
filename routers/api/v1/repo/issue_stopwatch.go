@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -6,10 +6,10 @@ package repo
 import (
 	"net/http"
 
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/routers/api/v1/utils"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/routers/api/v1/utils"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
 )
 
 // StartIssueStopwatch creates a stopwatch for the given issue.

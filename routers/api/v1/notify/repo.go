@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package notify
@@ -8,11 +8,11 @@ import (
 	"strings"
 	"time"
 
-	activities_model "gitea.dev/models/activities"
-	"gitea.dev/models/db"
-	"gitea.dev/modules/structs"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
+	activities_model "creepercoding.dev/models/activities"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
 )
 
 func statusStringToNotificationStatus(status string) activities_model.NotificationStatus {

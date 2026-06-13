@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cron
@@ -6,7 +6,7 @@ package cron
 import (
 	"time"
 
-	"gitea.dev/modules/translation"
+	"creepercoding.dev/modules/translation"
 )
 
 // Config represents a basic configuration interface that cron task

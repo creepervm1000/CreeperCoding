@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package translation
@@ -6,7 +6,7 @@ package translation
 import (
 	"testing"
 
-	"gitea.dev/modules/translation/i18n"
+	"creepercoding.dev/modules/translation/i18n"
 
 	"github.com/stretchr/testify/assert"
 )

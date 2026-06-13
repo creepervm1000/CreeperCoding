@@ -8,16 +8,16 @@ import (
 	"net/url"
 	"strings"
 
-	"gitea.dev/models/db"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/routers/web/explore"
-	"gitea.dev/services/context"
-	repo_service "gitea.dev/services/repository"
+	"creepercoding.dev/models/db"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/routers/web/explore"
+	"creepercoding.dev/services/context"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 const (

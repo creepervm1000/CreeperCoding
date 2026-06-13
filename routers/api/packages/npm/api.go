@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package npm
@@ -10,9 +10,9 @@ import (
 	"net/url"
 	"sort"
 
-	packages_model "gitea.dev/models/packages"
-	npm_module "gitea.dev/modules/packages/npm"
-	"gitea.dev/modules/setting"
+	packages_model "creepercoding.dev/models/packages"
+	npm_module "creepercoding.dev/modules/packages/npm"
+	"creepercoding.dev/modules/setting"
 )
 
 func createPackageMetadataResponse(registryURL string, pds []*packages_model.PackageDescriptor) *npm_module.PackageMetadata {

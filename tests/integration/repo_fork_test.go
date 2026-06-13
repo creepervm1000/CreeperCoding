@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -10,13 +10,13 @@ import (
 	"strconv"
 	"testing"
 
-	org_model "gitea.dev/models/organization"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/test"
-	org_service "gitea.dev/services/org"
-	"gitea.dev/tests"
+	org_model "creepercoding.dev/models/organization"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/test"
+	org_service "creepercoding.dev/services/org"
+	"creepercoding.dev/tests"
 
 	"github.com/stretchr/testify/assert"
 )

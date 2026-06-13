@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package bleve
@@ -6,7 +6,7 @@ package bleve
 import (
 	"testing"
 
-	"gitea.dev/modules/indexer/issues/internal/tests"
+	"creepercoding.dev/modules/indexer/issues/internal/tests"
 )
 
 func TestBleveIndexer(t *testing.T) {

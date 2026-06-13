@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package internal
@@ -7,8 +7,8 @@ import (
 	"context"
 	"errors"
 
-	"gitea.dev/modules/indexer"
-	"gitea.dev/modules/indexer/internal"
+	"creepercoding.dev/modules/indexer"
+	"creepercoding.dev/modules/indexer/internal"
 )
 
 // Indexer defines an interface to indexer issues contents

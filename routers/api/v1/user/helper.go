@@ -1,11 +1,11 @@
-// Copyright 2021 The Gitea Authors.
+// Copyright 2021 The CreeperCoding Authors.
 // SPDX-License-Identifier: MIT
 
 package user
 
 import (
-	user_model "gitea.dev/models/user"
-	"gitea.dev/services/context"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/services/context"
 )
 
 // GetUserByPathParam get user by the path param name

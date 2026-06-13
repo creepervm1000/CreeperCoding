@@ -1,4 +1,5 @@
-// Copyright 2016 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors
+// Copyright 2016 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package git
@@ -8,16 +9,16 @@ import (
 	"fmt"
 	"time"
 
-	"gitea.dev/models/db"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/db"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/util"
 
 	"xorm.io/builder"
 )

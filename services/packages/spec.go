@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package packages
@@ -7,8 +7,8 @@ import (
 	"context"
 	"sync"
 
-	packages_model "gitea.dev/models/packages"
-	user_model "gitea.dev/models/user"
+	packages_model "creepercoding.dev/models/packages"
+	user_model "creepercoding.dev/models/user"
 )
 
 type nop struct{}

@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package db_test
@@ -6,9 +6,9 @@ package db_test
 import (
 	"testing"
 
-	"gitea.dev/models/db"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unittest"
+	"creepercoding.dev/models/db"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unittest"
 
 	"github.com/stretchr/testify/assert"
 	"xorm.io/builder"

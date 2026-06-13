@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cargo
@@ -10,20 +10,20 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/models/db"
-	packages_model "gitea.dev/models/packages"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	packages_module "gitea.dev/modules/packages"
-	cargo_module "gitea.dev/modules/packages/cargo"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/routers/api/packages/helper"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	packages_service "gitea.dev/services/packages"
-	cargo_service "gitea.dev/services/packages/cargo"
+	"creepercoding.dev/models/db"
+	packages_model "creepercoding.dev/models/packages"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	packages_module "creepercoding.dev/modules/packages"
+	cargo_module "creepercoding.dev/modules/packages/cargo"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/routers/api/packages/helper"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	packages_service "creepercoding.dev/services/packages"
+	cargo_service "creepercoding.dev/services/packages/cargo"
 )
 
 // https://doc.rust-lang.org/cargo/reference/registries.html#web-api

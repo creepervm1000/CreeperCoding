@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package container
@@ -15,25 +15,25 @@ import (
 	"strings"
 	"sync"
 
-	auth_model "gitea.dev/models/auth"
-	packages_model "gitea.dev/models/packages"
-	container_model "gitea.dev/models/packages/container"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	packages_module "gitea.dev/modules/packages"
-	container_module "gitea.dev/modules/packages/container"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/storage"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/routers/api/packages/helper"
-	auth_service "gitea.dev/services/auth"
-	"gitea.dev/services/context"
-	packages_service "gitea.dev/services/packages"
-	container_service "gitea.dev/services/packages/container"
+	auth_model "creepercoding.dev/models/auth"
+	packages_model "creepercoding.dev/models/packages"
+	container_model "creepercoding.dev/models/packages/container"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	packages_module "creepercoding.dev/modules/packages"
+	container_module "creepercoding.dev/modules/packages/container"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/storage"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/routers/api/packages/helper"
+	auth_service "creepercoding.dev/services/auth"
+	"creepercoding.dev/services/context"
+	packages_service "creepercoding.dev/services/packages"
+	container_service "creepercoding.dev/services/packages/container"
 
 	"github.com/opencontainers/go-digest"
 )

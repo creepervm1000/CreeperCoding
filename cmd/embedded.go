@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cmd
@@ -11,14 +11,14 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gitea.dev/modules/assetfs"
-	"gitea.dev/modules/glob"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/options"
-	"gitea.dev/modules/public"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/assetfs"
+	"creepercoding.dev/modules/glob"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/options"
+	"creepercoding.dev/modules/public"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
 
 	"github.com/urfave/cli/v3"
 )

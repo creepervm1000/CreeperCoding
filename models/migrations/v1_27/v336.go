@@ -1,11 +1,11 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_27
 
 import (
-	"gitea.dev/models/db"
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/timeutil"
 )
 
 func AddActionRunJobSummaryTable(x db.EngineMigration) error {

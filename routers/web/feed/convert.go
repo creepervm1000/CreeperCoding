@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package feed
@@ -12,15 +12,15 @@ import (
 	"strconv"
 	"strings"
 
-	activities_model "gitea.dev/models/activities"
-	"gitea.dev/models/renderhelper"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/markup/markdown"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
+	activities_model "creepercoding.dev/models/activities"
+	"creepercoding.dev/models/renderhelper"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/markup/markdown"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
 
 	"github.com/gorilla/feeds"
 )

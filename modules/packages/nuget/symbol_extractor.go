@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package nuget
@@ -13,8 +13,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gitea.dev/modules/packages"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/packages"
+	"creepercoding.dev/modules/util"
 )
 
 var (

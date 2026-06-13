@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package admin
@@ -7,15 +7,15 @@ import (
 	"errors"
 	"net/http"
 
-	"gitea.dev/models/webhook"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/api/v1/utils"
-	"gitea.dev/services/context"
-	webhook_service "gitea.dev/services/webhook"
+	"creepercoding.dev/models/webhook"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/api/v1/utils"
+	"creepercoding.dev/services/context"
+	webhook_service "creepercoding.dev/services/webhook"
 )
 
 // ListHooks list system's webhooks

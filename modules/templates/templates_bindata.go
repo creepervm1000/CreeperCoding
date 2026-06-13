@@ -1,4 +1,5 @@
-// Copyright 2016 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors
+// Copyright 2016 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 //go:build bindata
@@ -10,7 +11,7 @@ package templates
 import (
 	"sync"
 
-	"gitea.dev/modules/assetfs"
+	"creepercoding.dev/modules/assetfs"
 
 	_ "embed"
 )

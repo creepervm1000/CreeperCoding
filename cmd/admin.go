@@ -1,5 +1,6 @@
 // Copyright 2016 The Gogs Authors. All rights reserved.
-// Copyright 2016 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors
+// Copyright 2016 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cmd
@@ -8,12 +9,12 @@ import (
 	"context"
 	"fmt"
 
-	"gitea.dev/models/db"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/log"
-	repo_module "gitea.dev/modules/repository"
+	"creepercoding.dev/models/db"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/log"
+	repo_module "creepercoding.dev/modules/repository"
 
 	"github.com/urfave/cli/v3"
 )

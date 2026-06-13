@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package eventsource
@@ -9,7 +9,7 @@ import (
 	"io"
 	"time"
 
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/json"
 )
 
 func wrapNewlines(w io.Writer, prefix, value []byte) (sum int64, err error) {

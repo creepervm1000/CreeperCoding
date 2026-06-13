@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package org
@@ -9,21 +9,21 @@ import (
 	"net/http"
 	"strings"
 
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	project_model "gitea.dev/models/project"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/web/shared/issue"
-	shared_user "gitea.dev/routers/web/shared/user"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
-	project_service "gitea.dev/services/projects"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	project_model "creepercoding.dev/models/project"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/web/shared/issue"
+	shared_user "creepercoding.dev/routers/web/shared/user"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
+	project_service "creepercoding.dev/services/projects"
 
 	"xorm.io/builder"
 )

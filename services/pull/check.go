@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package pull
@@ -11,27 +11,27 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/models/db"
-	git_model "gitea.dev/models/git"
-	issues_model "gitea.dev/models/issues"
-	access_model "gitea.dev/models/perm/access"
-	"gitea.dev/models/pull"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/globallock"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/process"
-	"gitea.dev/modules/queue"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/timeutil"
-	asymkey_service "gitea.dev/services/asymkey"
-	"gitea.dev/services/automergequeue"
-	notify_service "gitea.dev/services/notify"
+	"creepercoding.dev/models/db"
+	git_model "creepercoding.dev/models/git"
+	issues_model "creepercoding.dev/models/issues"
+	access_model "creepercoding.dev/models/perm/access"
+	"creepercoding.dev/models/pull"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/globallock"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/process"
+	"creepercoding.dev/modules/queue"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/timeutil"
+	asymkey_service "creepercoding.dev/services/asymkey"
+	"creepercoding.dev/services/automergequeue"
+	notify_service "creepercoding.dev/services/notify"
 )
 
 // prPatchCheckerQueue represents a queue to handle update pull request tests

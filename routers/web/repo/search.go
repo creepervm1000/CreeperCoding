@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -6,14 +6,14 @@ package repo
 import (
 	"net/http"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/git"
-	code_indexer "gitea.dev/modules/indexer/code"
-	"gitea.dev/modules/indexer/code/gitgrep"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/routers/common"
-	"gitea.dev/services/context"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/git"
+	code_indexer "creepercoding.dev/modules/indexer/code"
+	"creepercoding.dev/modules/indexer/code/gitgrep"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/routers/common"
+	"creepercoding.dev/services/context"
 )
 
 const tplSearch templates.TplName = "repo/search"

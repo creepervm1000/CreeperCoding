@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package eventsource
@@ -68,7 +68,14 @@ func (m *Manager) UnregisterAll() {
 	m.messengers = map[int64]*Messenger{}
 }
 
-// SendMessage sends a message to a particular user
+// BroadcastMessage sends a message to all connected users
+func (m *Manager) BroadcastMessage(message *Event) {
+	m.mutex.Lock()
+	defer m.mutex.Unlock()
+	for _, messenger := range m.messengers {
+		messenger.SendMessage(message)
+	}
+}
 func (m *Manager) SendMessage(uid int64, message *Event) {
 	m.mutex.Lock()
 	messenger, ok := m.messengers[uid]

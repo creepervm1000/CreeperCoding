@@ -1,5 +1,5 @@
 // Copyright 2015 The Gogs Authors. All rights reserved.
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -12,23 +12,23 @@ import (
 	"path"
 	"strings"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/perm"
-	access_model "gitea.dev/models/perm/access"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/models/webhook"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	webhook_module "gitea.dev/modules/webhook"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	"gitea.dev/services/forms"
-	webhook_service "gitea.dev/services/webhook"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/perm"
+	access_model "creepercoding.dev/models/perm/access"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/models/webhook"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	webhook_module "creepercoding.dev/modules/webhook"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	"creepercoding.dev/services/forms"
+	webhook_service "creepercoding.dev/services/webhook"
 )
 
 const (

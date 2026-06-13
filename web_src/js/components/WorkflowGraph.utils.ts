@@ -1,4 +1,4 @@
-import type {ActionsJob, ActionsStatus} from '../modules/gitea-actions.ts';
+import type {ActionsJob, ActionsStatus} from '../modules/creepercoding-actions.ts';
 
 export type GraphNodeType = 'job' | 'matrix' | 'group';
 

@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package pypi
@@ -13,14 +13,14 @@ import (
 	"strings"
 	"unicode"
 
-	packages_model "gitea.dev/models/packages"
-	packages_module "gitea.dev/modules/packages"
-	pypi_module "gitea.dev/modules/packages/pypi"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/validation"
-	"gitea.dev/routers/api/packages/helper"
-	"gitea.dev/services/context"
-	packages_service "gitea.dev/services/packages"
+	packages_model "creepercoding.dev/models/packages"
+	packages_module "creepercoding.dev/modules/packages"
+	pypi_module "creepercoding.dev/modules/packages/pypi"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/validation"
+	"creepercoding.dev/routers/api/packages/helper"
+	"creepercoding.dev/services/context"
+	packages_service "creepercoding.dev/services/packages"
 )
 
 // https://peps.python.org/pep-0426/#name

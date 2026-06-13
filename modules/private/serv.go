@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package private
@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"net/url"
 
-	asymkey_model "gitea.dev/models/asymkey"
-	"gitea.dev/models/perm"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/setting"
+	asymkey_model "creepercoding.dev/models/asymkey"
+	"creepercoding.dev/models/perm"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/setting"
 )
 
 // KeyAndOwner is the response from ServNoCommand

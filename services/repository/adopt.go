@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repository
@@ -11,19 +11,19 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gitea.dev/models/db"
-	git_model "gitea.dev/models/git"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/glob"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/setting"
-	notify_service "gitea.dev/services/notify"
+	"creepercoding.dev/models/db"
+	git_model "creepercoding.dev/models/git"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/glob"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/setting"
+	notify_service "creepercoding.dev/services/notify"
 )
 
 func deleteFailedAdoptRepository(repoID int64) error {

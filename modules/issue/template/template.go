@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package template
@@ -12,8 +12,8 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/modules/container"
-	api "gitea.dev/modules/structs"
+	"creepercoding.dev/modules/container"
+	api "creepercoding.dev/modules/structs"
 
 	"gitea.com/go-chi/binding"
 )

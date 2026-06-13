@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package gitrepo
@@ -7,11 +7,11 @@ import (
 	"context"
 	"errors"
 
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
-	giturl "gitea.dev/modules/git/url"
-	"gitea.dev/modules/globallock"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
+	giturl "creepercoding.dev/modules/git/url"
+	"creepercoding.dev/modules/globallock"
+	"creepercoding.dev/modules/util"
 )
 
 type RemoteOption string

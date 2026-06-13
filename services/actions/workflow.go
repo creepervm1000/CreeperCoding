@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -6,20 +6,20 @@ package actions
 import (
 	"fmt"
 
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/models/perm"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/actions"
-	"gitea.dev/modules/actions/jobparser"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/reqctx"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/models/perm"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/actions"
+	"creepercoding.dev/modules/actions/jobparser"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/reqctx"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
 
 	"gitea.com/gitea/runner/act/model"
 	"go.yaml.in/yaml/v4"

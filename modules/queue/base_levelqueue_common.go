@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package queue
@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"gitea.dev/modules/nosql"
+	"creepercoding.dev/modules/nosql"
 
 	"gitea.com/lunny/levelqueue"
 	"github.com/syndtr/goleveldb/leveldb"

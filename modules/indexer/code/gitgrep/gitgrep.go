@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package gitgrep
@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"strings"
 
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/indexer"
-	code_indexer "gitea.dev/modules/indexer/code"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/indexer"
+	code_indexer "creepercoding.dev/modules/indexer/code"
+	"creepercoding.dev/modules/setting"
 )
 
 func indexSettingToGitGrepPathspecList() (list []string) {

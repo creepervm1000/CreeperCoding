@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -6,9 +6,9 @@ package actions
 import (
 	"context"
 
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/modules/log"
-	notify_service "gitea.dev/services/notify"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/modules/log"
+	notify_service "creepercoding.dev/services/notify"
 )
 
 // NotifyWorkflowJobsAndRunsStatusUpdate notifies status changes for a batch of jobs and the runs they affect.

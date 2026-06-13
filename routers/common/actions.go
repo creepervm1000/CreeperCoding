@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package common
@@ -9,12 +9,12 @@ import (
 	"io/fs"
 	"strings"
 
-	actions_model "gitea.dev/models/actions"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/actions"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
+	actions_model "creepercoding.dev/models/actions"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/actions"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
 )
 
 func DownloadActionsRunJobLogsWithID(ctx *context.Base, ctxRepo *repo_model.Repository, runID, jobID int64) error {

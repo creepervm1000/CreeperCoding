@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package user
@@ -6,8 +6,8 @@ package user
 import (
 	"testing"
 
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
 
 	"github.com/stretchr/testify/assert"
 )

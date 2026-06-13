@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 //go:build !gogit
@@ -11,8 +11,8 @@ import (
 	"io"
 	"sort"
 
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
 )
 
 // FindLFSFile finds commits that contain a provided pointer file hash

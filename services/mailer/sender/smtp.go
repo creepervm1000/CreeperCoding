@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package sender
@@ -14,8 +14,8 @@ import (
 	"os"
 	"strings"
 
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
 )
 
 // SMTPSender Sender SMTP mail sender

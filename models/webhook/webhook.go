@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package webhook
@@ -9,15 +9,15 @@ import (
 	"fmt"
 	"strings"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/secret"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/util"
-	webhook_module "gitea.dev/modules/webhook"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/secret"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/util"
+	webhook_module "creepercoding.dev/modules/webhook"
 
 	"xorm.io/builder"
 )

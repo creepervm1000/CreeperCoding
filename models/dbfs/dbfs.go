@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package dbfs
@@ -10,7 +10,7 @@ import (
 	"path"
 	"time"
 
-	"gitea.dev/models/db"
+	"creepercoding.dev/models/db"
 )
 
 /*

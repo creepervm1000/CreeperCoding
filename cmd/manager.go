@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cmd
@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	"gitea.dev/modules/private"
+	"creepercoding.dev/modules/private"
 
 	"github.com/urfave/cli/v3"
 )

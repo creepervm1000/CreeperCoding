@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package conan
@@ -9,10 +9,10 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/packages"
-	"gitea.dev/modules/container"
-	conan_module "gitea.dev/modules/packages/conan"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/packages"
+	"creepercoding.dev/modules/container"
+	conan_module "creepercoding.dev/modules/packages/conan"
 
 	"xorm.io/builder"
 )

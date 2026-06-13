@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_6
@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/setting"
 )
 
 func AddIssueDependencies(x db.EngineMigration) (err error) {

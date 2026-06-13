@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -14,22 +14,22 @@ import (
 	"strings"
 	"time"
 
-	git_model "gitea.dev/models/git"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/httpcache"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/lfs"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/storage"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/api/v1/utils"
-	"gitea.dev/routers/common"
-	"gitea.dev/services/context"
-	pull_service "gitea.dev/services/pull"
-	files_service "gitea.dev/services/repository/files"
+	git_model "creepercoding.dev/models/git"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/httpcache"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/lfs"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/storage"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/api/v1/utils"
+	"creepercoding.dev/routers/common"
+	"creepercoding.dev/services/context"
+	pull_service "creepercoding.dev/services/pull"
+	files_service "creepercoding.dev/services/repository/files"
 )
 
 const giteaObjectTypeHeader = "X-Gitea-Object-Type"

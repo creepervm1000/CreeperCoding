@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package console
@@ -8,10 +8,10 @@ import (
 	"io"
 	"unicode/utf8"
 
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/typesniffer"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/typesniffer"
+	"creepercoding.dev/modules/util"
 
 	trend "github.com/buildkite/terminal-to-html/v3"
 )

@@ -1,0 +1,3 @@
+@import "./theme-creepercoding-dark.css" (prefers-color-scheme: dark);
+@import "./theme-creepercoding-light.css" (prefers-color-scheme: light);
+creepercoding-theme-meta-info{--theme-color-scheme:auto;--theme-display-name:CreeperCoding Auto}

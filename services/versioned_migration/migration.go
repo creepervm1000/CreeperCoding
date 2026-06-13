@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package versioned_migration
@@ -6,9 +6,9 @@ package versioned_migration
 import (
 	"context"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/migrations"
-	"gitea.dev/modules/globallock"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/migrations"
+	"creepercoding.dev/modules/globallock"
 )
 
 func Migrate(ctx context.Context, x db.EngineMigration) error {

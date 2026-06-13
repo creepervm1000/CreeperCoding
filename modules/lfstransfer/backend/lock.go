@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package backend
@@ -13,8 +13,8 @@ import (
 	"strconv"
 	"time"
 
-	"gitea.dev/modules/json"
-	lfslock "gitea.dev/modules/structs"
+	"creepercoding.dev/modules/json"
+	lfslock "creepercoding.dev/modules/structs"
 
 	"github.com/charmbracelet/git-lfs-transfer/transfer"
 )

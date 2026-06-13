@@ -1,15 +1,15 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
 
 import (
-	git_model "gitea.dev/models/git"
-	access_model "gitea.dev/models/perm/access"
-	unit_model "gitea.dev/models/unit"
-	"gitea.dev/modules/log"
-	"gitea.dev/services/context"
-	repo_service "gitea.dev/services/repository"
+	git_model "creepercoding.dev/models/git"
+	access_model "creepercoding.dev/models/perm/access"
+	unit_model "creepercoding.dev/models/unit"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/services/context"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 type RecentBranchesPromptDataStruct struct {

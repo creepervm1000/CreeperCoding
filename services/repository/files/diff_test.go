@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package files
@@ -6,11 +6,11 @@ package files
 import (
 	"testing"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unittest"
-	"gitea.dev/modules/json"
-	"gitea.dev/services/contexttest"
-	"gitea.dev/services/gitdiff"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unittest"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/services/contexttest"
+	"creepercoding.dev/services/gitdiff"
 
 	"github.com/stretchr/testify/assert"
 )

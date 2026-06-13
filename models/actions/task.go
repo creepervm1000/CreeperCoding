@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -12,14 +12,14 @@ import (
 	"time"
 
 	runnerv1 "gitea.dev/actions-proto-go/runner/v1"
-	auth_model "gitea.dev/models/auth"
-	"gitea.dev/models/db"
-	"gitea.dev/models/unit"
-	"gitea.dev/modules/actions/jobparser"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/util"
+	auth_model "creepercoding.dev/models/auth"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/unit"
+	"creepercoding.dev/modules/actions/jobparser"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/util"
 
 	lru "github.com/hashicorp/golang-lru/v2"
 	"google.golang.org/protobuf/types/known/timestamppb"

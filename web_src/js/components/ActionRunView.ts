@@ -1,7 +1,7 @@
 import {createElementFromAttrs} from '../utils/dom.ts';
 import {renderAnsi} from '../render/ansi.ts';
 import {reactive} from 'vue';
-import type {ActionsArtifact, ActionsJob, ActionsRun, ActionsStatus} from '../modules/gitea-actions.ts';
+import type {ActionsArtifact, ActionsJob, ActionsRun, ActionsStatus} from '../modules/creepercoding-actions.ts';
 import type {IntervalId} from '../types.ts';
 import {POST} from '../modules/fetch.ts';
 
@@ -9,7 +9,7 @@ import {POST} from '../modules/fetch.ts';
 // * Workflow command outputs log commands like "::group::the-title", "::add-matcher::...."
 // * Workflow runner parses and processes the commands to "##[group]", apply "matchers", hide secrets, etc.
 // * The reported logs are the processed logs.
-// HOWEVER: Gitea runner does not completely process those commands. Many works are done by the frontend at the moment.
+// HOWEVER: CreeperCoding runner does not completely process those commands. Many works are done by the frontend at the moment.
 const LogLinePrefixCommandMap: Record<string, LogLineCommandName> = {
   '::group::': 'group',
   '##[group]': 'group',

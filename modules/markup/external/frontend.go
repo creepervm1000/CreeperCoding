@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package external
@@ -9,11 +9,11 @@ import (
 	"io"
 	"unicode/utf8"
 
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/public"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/public"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
 )
 
 type frontendRenderer struct {

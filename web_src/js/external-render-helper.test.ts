@@ -1,7 +1,7 @@
 import './external-render-helper.ts';
 
 test('isValidCssColor', async () => {
-  const isValidCssColor = window.giteaExternalRenderHelper!.isValidCssColor;
+  const isValidCssColor = window.creepercodingExternalRenderHelper!.isValidCssColor;
   expect(isValidCssColor(null)).toBe(false);
   expect(isValidCssColor('')).toBe(false);
 

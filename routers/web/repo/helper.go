@@ -1,11 +1,11 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
 
 import (
-	"gitea.dev/modules/git"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/services/context"
 )
 
 func HandleGitError(ctx *context.Context, msg string, err error) {

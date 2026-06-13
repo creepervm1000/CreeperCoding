@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package routing
@@ -17,7 +17,7 @@ func Test_shortenFilename(t *testing.T) {
 		expected string
 	}{
 		{
-			"gitea.dev/routers/common/logger_context.go",
+			"creepercoding.dev/routers/common/logger_context.go",
 			"NO_FALLBACK",
 			"common/logger_context.go",
 		},

@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package security
@@ -8,14 +8,14 @@ import (
 	"net/http"
 	"sort"
 
-	auth_model "gitea.dev/models/auth"
-	"gitea.dev/models/db"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/services/auth/source/oauth2"
-	"gitea.dev/services/context"
+	auth_model "creepercoding.dev/models/auth"
+	"creepercoding.dev/models/db"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/services/auth/source/oauth2"
+	"creepercoding.dev/services/context"
 )
 
 const (

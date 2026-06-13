@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package convert
@@ -7,15 +7,15 @@ import (
 	"context"
 	"time"
 
-	"gitea.dev/models/db"
-	git_model "gitea.dev/models/git"
-	"gitea.dev/models/perm"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	unit_model "gitea.dev/models/unit"
-	"gitea.dev/modules/log"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/db"
+	git_model "creepercoding.dev/models/git"
+	"creepercoding.dev/models/perm"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	unit_model "creepercoding.dev/models/unit"
+	"creepercoding.dev/modules/log"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
 )
 
 // ToRepo converts a Repository to api.Repository

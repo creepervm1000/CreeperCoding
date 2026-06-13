@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package issues
@@ -11,21 +11,21 @@ import (
 	"sync/atomic"
 	"time"
 
-	db_model "gitea.dev/models/db"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/indexer"
-	"gitea.dev/modules/indexer/issues/bleve"
-	"gitea.dev/modules/indexer/issues/db"
-	"gitea.dev/modules/indexer/issues/elasticsearch"
-	"gitea.dev/modules/indexer/issues/internal"
-	"gitea.dev/modules/indexer/issues/meilisearch"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/process"
-	"gitea.dev/modules/queue"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
+	db_model "creepercoding.dev/models/db"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/indexer"
+	"creepercoding.dev/modules/indexer/issues/bleve"
+	"creepercoding.dev/modules/indexer/issues/db"
+	"creepercoding.dev/modules/indexer/issues/elasticsearch"
+	"creepercoding.dev/modules/indexer/issues/internal"
+	"creepercoding.dev/modules/indexer/issues/meilisearch"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/process"
+	"creepercoding.dev/modules/queue"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
 )
 
 // IndexerMetadata is used to send data to the queue, so it contains only the ids.

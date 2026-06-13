@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_10
@@ -7,7 +7,7 @@ import (
 	"crypto/sha1"
 	"fmt"
 
-	"gitea.dev/models/db"
+	"creepercoding.dev/models/db"
 )
 
 func hashContext(context string) string {

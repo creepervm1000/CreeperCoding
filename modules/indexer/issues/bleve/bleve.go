@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package bleve
@@ -7,12 +7,12 @@ import (
 	"context"
 	"strconv"
 
-	"gitea.dev/modules/indexer"
-	indexer_internal "gitea.dev/modules/indexer/internal"
-	inner_bleve "gitea.dev/modules/indexer/internal/bleve"
-	"gitea.dev/modules/indexer/issues/internal"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/indexer"
+	indexer_internal "creepercoding.dev/modules/indexer/internal"
+	inner_bleve "creepercoding.dev/modules/indexer/internal/bleve"
+	"creepercoding.dev/modules/indexer/issues/internal"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/util"
 
 	"github.com/blevesearch/bleve/v2"
 	"github.com/blevesearch/bleve/v2/analysis/analyzer/custom"

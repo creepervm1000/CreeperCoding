@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // Copyright 2018 Jonas Franz. All rights reserved.
 // SPDX-License-Identifier: MIT
 
@@ -13,16 +13,16 @@ import (
 	"path/filepath"
 	"strings"
 
-	repo_model "gitea.dev/models/repo"
-	system_model "gitea.dev/models/system"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/hostmatcher"
-	"gitea.dev/modules/log"
-	base "gitea.dev/modules/migration"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
+	repo_model "creepercoding.dev/models/repo"
+	system_model "creepercoding.dev/models/system"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/hostmatcher"
+	"creepercoding.dev/modules/log"
+	base "creepercoding.dev/modules/migration"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
 )
 
 // MigrateOptions is equal to base.MigrateOptions

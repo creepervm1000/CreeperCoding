@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package convert
@@ -6,8 +6,8 @@ package convert
 import (
 	"time"
 
-	"gitea.dev/modules/git"
-	api "gitea.dev/modules/structs"
+	"creepercoding.dev/modules/git"
+	api "creepercoding.dev/modules/structs"
 )
 
 // ToWikiCommit convert a git commit into a WikiCommit

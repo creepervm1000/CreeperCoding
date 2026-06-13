@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 //go:build ignore
@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"os"
 
-	"gitea.dev/modules/assetfs"
+	"creepercoding.dev/modules/assetfs"
 )
 
 func main() {

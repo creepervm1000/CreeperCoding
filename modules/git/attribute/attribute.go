@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package attribute
@@ -6,7 +6,7 @@ package attribute
 import (
 	"strings"
 
-	"gitea.dev/modules/optional"
+	"creepercoding.dev/modules/optional"
 )
 
 type Attribute string

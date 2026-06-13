@@ -1,11 +1,11 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_22
 
 import (
-	"gitea.dev/models/db"
-	"gitea.dev/models/perm"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/perm"
 )
 
 func AddRepoUnitEveryoneAccessMode(x db.EngineMigration) error {

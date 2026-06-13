@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -11,32 +11,32 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/organization"
-	repo_model "gitea.dev/models/repo"
-	unit_model "gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/indexer/code"
-	issue_indexer "gitea.dev/modules/indexer/issues"
-	"gitea.dev/modules/indexer/stats"
-	"gitea.dev/modules/lfs"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/validation"
-	"gitea.dev/modules/web"
-	repo_router "gitea.dev/routers/web/repo"
-	actions_service "gitea.dev/services/actions"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
-	"gitea.dev/services/migrations"
-	mirror_service "gitea.dev/services/mirror"
-	repo_service "gitea.dev/services/repository"
-	wiki_service "gitea.dev/services/wiki"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/organization"
+	repo_model "creepercoding.dev/models/repo"
+	unit_model "creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/indexer/code"
+	issue_indexer "creepercoding.dev/modules/indexer/issues"
+	"creepercoding.dev/modules/indexer/stats"
+	"creepercoding.dev/modules/lfs"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/validation"
+	"creepercoding.dev/modules/web"
+	repo_router "creepercoding.dev/routers/web/repo"
+	actions_service "creepercoding.dev/services/actions"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
+	"creepercoding.dev/services/migrations"
+	mirror_service "creepercoding.dev/services/mirror"
+	repo_service "creepercoding.dev/services/repository"
+	wiki_service "creepercoding.dev/services/wiki"
 
 	"xorm.io/xorm/convert"
 )
@@ -559,6 +559,11 @@ func handleSettingsPostAdvanced(ctx *context.Context) {
 
 	if repo.CloseIssuesViaCommitInAnyBranch != form.EnableCloseIssuesViaCommitInAnyBranch {
 		repo.CloseIssuesViaCommitInAnyBranch = form.EnableCloseIssuesViaCommitInAnyBranch
+		repoChanged = true
+	}
+
+	if repo.CcopilotDisabled != form.DisableCcopilot {
+		repo.CcopilotDisabled = form.DisableCcopilot
 		repoChanged = true
 	}
 

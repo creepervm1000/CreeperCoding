@@ -7,14 +7,14 @@ import (
 	"net/http"
 	"testing"
 
-	auth_model "gitea.dev/models/auth"
-	org_model "gitea.dev/models/organization"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	api "gitea.dev/modules/structs"
-	org_service "gitea.dev/services/org"
-	"gitea.dev/tests"
+	auth_model "creepercoding.dev/models/auth"
+	org_model "creepercoding.dev/models/organization"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	api "creepercoding.dev/modules/structs"
+	org_service "creepercoding.dev/services/org"
+	"creepercoding.dev/tests"
 
 	"github.com/stretchr/testify/assert"
 )

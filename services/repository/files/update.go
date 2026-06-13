@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package files
@@ -12,20 +12,20 @@ import (
 	"strings"
 	"time"
 
-	git_model "gitea.dev/models/git"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/attribute"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/lfs"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/routers/api/v1/utils"
-	asymkey_service "gitea.dev/services/asymkey"
-	pull_service "gitea.dev/services/pull"
+	git_model "creepercoding.dev/models/git"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/attribute"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/lfs"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/routers/api/v1/utils"
+	asymkey_service "creepercoding.dev/services/asymkey"
+	pull_service "creepercoding.dev/services/pull"
 )
 
 // IdentityOptions for a person's identity like an author or committer

@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package convert
@@ -6,9 +6,9 @@ package convert
 import (
 	"testing"
 
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	api "gitea.dev/modules/structs"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	api "creepercoding.dev/modules/structs"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package templates
@@ -11,17 +11,17 @@ import (
 	"strings"
 	"testing"
 
-	"gitea.dev/models/gituser"
-	"gitea.dev/models/issues"
-	"gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/reqctx"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/setting/config"
-	"gitea.dev/modules/test"
-	"gitea.dev/modules/translation"
+	"creepercoding.dev/models/gituser"
+	"creepercoding.dev/models/issues"
+	"creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/reqctx"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/setting/config"
+	"creepercoding.dev/modules/test"
+	"creepercoding.dev/modules/translation"
 
 	"github.com/stretchr/testify/assert"
 )

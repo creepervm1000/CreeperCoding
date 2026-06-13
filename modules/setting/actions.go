@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/log"
 )
 
 const defaultMaxRerunAttempts = 50
@@ -34,7 +34,7 @@ var (
 		Enabled:             true,
 		DefaultActionsURL:   defaultActionsURLGitHub,
 		SkipWorkflowStrings: []string{"[skip ci]", "[ci skip]", "[no ci]", "[skip actions]", "[actions skip]"},
-		WorkflowDirs:        []string{".gitea/workflows", ".github/workflows"},
+		WorkflowDirs:        []string{".creepercoding/workflows", ".github/workflows"},
 		MaxRerunAttempts:    defaultMaxRerunAttempts,
 	}
 )
@@ -57,7 +57,7 @@ const (
 	defaultActionsURLGitHub = "github" // https://github.com
 	defaultActionsURLSelf   = "self"   // the root URL of the self-hosted Gitea instance
 	// DefaultActionsURL only supports GitHub and the self-hosted Gitea.
-	// It's intentionally not supported more, so please be cautious before adding more like "gitea" or "gitlab".
+	// It's intentionally not supported more, so please be cautious before adding more like "creepercoding" or "gitlab".
 	// If you get some trouble with `uses: username/action_name@version` in your workflow,
 	// please consider to use `uses: https://the_url_you_want_to_use/username/action_name@version` instead.
 )

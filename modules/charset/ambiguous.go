@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package charset
@@ -8,7 +8,7 @@ import (
 	"strings"
 	"unicode"
 
-	"gitea.dev/modules/translation"
+	"creepercoding.dev/modules/translation"
 )
 
 // AmbiguousTablesForLocale provides the table of ambiguous characters for this locale.

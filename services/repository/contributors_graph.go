@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repository
@@ -13,16 +13,16 @@ import (
 	"sync"
 	"time"
 
-	"gitea.dev/models/avatars"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/cache"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/log"
-	api "gitea.dev/modules/structs"
+	"creepercoding.dev/models/avatars"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/cache"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/log"
+	api "creepercoding.dev/modules/structs"
 )
 
 const (

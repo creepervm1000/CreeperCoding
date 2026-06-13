@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package issue
@@ -6,8 +6,8 @@ package issue
 import (
 	"context"
 
-	issues_model "gitea.dev/models/issues"
-	user_model "gitea.dev/models/user"
+	issues_model "creepercoding.dev/models/issues"
+	user_model "creepercoding.dev/models/user"
 )
 
 // CreateIssueReaction creates a reaction on an issue.

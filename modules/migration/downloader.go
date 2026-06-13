@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // Copyright 2018 Jonas Franz. All rights reserved.
 // SPDX-License-Identifier: MIT
 
@@ -7,7 +7,7 @@ package migration
 import (
 	"context"
 
-	"gitea.dev/modules/structs"
+	"creepercoding.dev/modules/structs"
 )
 
 // Downloader downloads the site repo information

@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package context
@@ -8,14 +8,14 @@ import (
 	"fmt"
 	"net/http"
 
-	"gitea.dev/models/organization"
-	packages_model "gitea.dev/models/packages"
-	"gitea.dev/models/perm"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/templates"
+	"creepercoding.dev/models/organization"
+	packages_model "creepercoding.dev/models/packages"
+	"creepercoding.dev/models/perm"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/templates"
 )
 
 // Package contains owner, access mode and optional the package descriptor

@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -16,22 +16,22 @@ import (
 	"strings"
 	"time"
 
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/models/db"
-	repo_model "gitea.dev/models/repo"
-	secret_model "gitea.dev/models/secret"
-	"gitea.dev/modules/actions"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/optional"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/api/v1/shared"
-	"gitea.dev/routers/api/v1/utils"
-	actions_service "gitea.dev/services/actions"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	secret_service "gitea.dev/services/secrets"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/models/db"
+	repo_model "creepercoding.dev/models/repo"
+	secret_model "creepercoding.dev/models/secret"
+	"creepercoding.dev/modules/actions"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/optional"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/api/v1/shared"
+	"creepercoding.dev/routers/api/v1/utils"
+	actions_service "creepercoding.dev/services/actions"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	secret_service "creepercoding.dev/services/secrets"
 
 	"gitea.com/gitea/runner/act/model"
 )

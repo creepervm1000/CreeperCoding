@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package git
@@ -9,9 +9,9 @@ import (
 	"strings"
 	"sync"
 
-	"gitea.dev/modules/charset"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/charset"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/util"
 )
 
 // CoAuthoredByTrailer is the canonical token for the `Co-authored-by:` git trailer.

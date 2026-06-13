@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package csv
@@ -11,9 +11,9 @@ import (
 	"regexp"
 	"strings"
 
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/translation"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/translation"
+	"creepercoding.dev/modules/util"
 )
 
 const (

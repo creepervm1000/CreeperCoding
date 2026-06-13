@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -6,12 +6,12 @@ package repo
 import (
 	"net/http"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
-	"gitea.dev/services/context/upload"
-	files_service "gitea.dev/services/repository/files"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/context/upload"
+	files_service "creepercoding.dev/services/repository/files"
 )
 
 // UploadFileToServer upload file to server file dir not git

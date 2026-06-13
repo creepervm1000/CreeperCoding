@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package install
@@ -15,24 +15,24 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/models/db"
-	db_install "gitea.dev/models/db/install"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/auth/password/hash"
-	"gitea.dev/modules/generate"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/web"
-	"gitea.dev/modules/web/middleware"
-	"gitea.dev/routers/common"
-	auth_service "gitea.dev/services/auth"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
-	"gitea.dev/services/versioned_migration"
+	"creepercoding.dev/models/db"
+	db_install "creepercoding.dev/models/db/install"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/auth/password/hash"
+	"creepercoding.dev/modules/generate"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/modules/web/middleware"
+	"creepercoding.dev/routers/common"
+	auth_service "creepercoding.dev/services/auth"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
+	"creepercoding.dev/services/versioned_migration"
 )
 
 const (
@@ -161,7 +161,7 @@ func checkDatabase(ctx *context.Context, form *forms.InstallForm) bool {
 	}
 
 	if hasPostInstallationUser && dbMigrationVersion > 0 {
-		log.Error("The database is likely to have been used by Gitea before, database migration version=%d", dbMigrationVersion)
+		log.Error("The database is likely to have been used by CreeperCoding before, database migration version=%d", dbMigrationVersion)
 		confirmed := form.ReinstallConfirmFirst && form.ReinstallConfirmSecond && form.ReinstallConfirmThird
 		if !confirmed {
 			ctx.Data["Err_DbInstalledBefore"] = true
@@ -169,11 +169,11 @@ func checkDatabase(ctx *context.Context, form *forms.InstallForm) bool {
 			return false
 		}
 
-		log.Info("User confirmed re-installation of Gitea into a pre-existing database")
+		log.Info("User confirmed re-installation of CreeperCoding into a pre-existing database")
 	}
 
 	if hasPostInstallationUser || dbMigrationVersion > 0 {
-		log.Info("Gitea will be installed in a database with: hasPostInstallationUser=%v, dbMigrationVersion=%v", hasPostInstallationUser, dbMigrationVersion)
+		log.Info("CreeperCoding will be installed in a database with: hasPostInstallationUser=%v, dbMigrationVersion=%v", hasPostInstallationUser, dbMigrationVersion)
 	}
 
 	return true
@@ -226,7 +226,7 @@ func SubmitInstall(ctx *context.Context) {
 		return
 	}
 
-	// Prepare AppDataPath, it is very important for Gitea
+	// Prepare AppDataPath, it is very important for CreeperCoding
 	if err = setting.PrepareAppDataPath(); err != nil {
 		ctx.RenderWithErrDeprecated(ctx.Tr("install.invalid_app_data_path", err), tplInstall, &form)
 		return
@@ -523,7 +523,7 @@ func SubmitInstall(ctx *context.Context) {
 
 	go func() {
 		// Sleep for a while to make sure the user's browser has loaded the post-install page and its assets (images, css, js)
-		// What if this duration is not long enough? That's impossible -- if the user can't load the simple page in time, how could they install or use Gitea in the future ....
+		// What if this duration is not long enough? That's impossible -- if the user can't load the simple page in time, how could they install or use CreeperCoding in the future ....
 		time.Sleep(3 * time.Second)
 
 		// Now get the http.Server from this request and shut it down

@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package recaptcha
@@ -11,8 +11,8 @@ import (
 	"net/url"
 	"strings"
 
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/setting"
 )
 
 // Response is the structure of JSON returned from API

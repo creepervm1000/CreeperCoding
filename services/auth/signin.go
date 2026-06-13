@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package auth
@@ -7,18 +7,18 @@ import (
 	"context"
 	"strings"
 
-	"gitea.dev/models/auth"
-	"gitea.dev/models/db"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	"gitea.dev/services/auth/source/oauth2"
-	"gitea.dev/services/auth/source/smtp"
+	"creepercoding.dev/models/auth"
+	"creepercoding.dev/models/db"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/services/auth/source/oauth2"
+	"creepercoding.dev/services/auth/source/smtp"
 
-	_ "gitea.dev/services/auth/source/db"   // register the sources (and below)
-	_ "gitea.dev/services/auth/source/ldap" // register the ldap source
-	_ "gitea.dev/services/auth/source/pam"  // register the pam source
-	_ "gitea.dev/services/auth/source/sspi" // register the sspi source
+	_ "creepercoding.dev/services/auth/source/db"   // register the sources (and below)
+	_ "creepercoding.dev/services/auth/source/ldap" // register the ldap source
+	_ "creepercoding.dev/services/auth/source/pam"  // register the pam source
+	_ "creepercoding.dev/services/auth/source/sspi" // register the sspi source
 )
 
 // UserSignIn validates user name and password.

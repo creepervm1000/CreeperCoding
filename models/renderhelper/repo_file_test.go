@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package renderhelper
@@ -6,11 +6,11 @@ package renderhelper
 import (
 	"testing"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unittest"
-	"gitea.dev/modules/markup/markdown"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unittest"
+	"creepercoding.dev/modules/markup/markdown"
 
-	_ "gitea.dev/modules/markup/orgmode"
+	_ "creepercoding.dev/modules/markup/orgmode"
 
 	"github.com/stretchr/testify/assert"
 )

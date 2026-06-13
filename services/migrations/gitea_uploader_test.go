@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // Copyright 2018 Jonas Franz. All rights reserved.
 // SPDX-License-Identifier: MIT
 
@@ -9,16 +9,16 @@ import (
 	"testing"
 	"time"
 
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/graceful"
-	base "gitea.dev/modules/migration"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/structs"
-	repo_service "gitea.dev/services/repository"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/graceful"
+	base "creepercoding.dev/modules/migration"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/structs"
+	repo_service "creepercoding.dev/services/repository"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_20
@@ -6,9 +6,9 @@ package v1_20
 import (
 	"context"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/migrations/base"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/migrations/base"
+	"creepercoding.dev/modules/setting"
 )
 
 func RenameWebhookOrgToOwner(x db.EngineMigration) error {

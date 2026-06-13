@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package lfs
@@ -18,22 +18,22 @@ import (
 	"strings"
 	"time"
 
-	auth_model "gitea.dev/models/auth"
-	git_model "gitea.dev/models/git"
-	perm_model "gitea.dev/models/perm"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/auth/httpauth"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/json"
-	lfs_module "gitea.dev/modules/lfs"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/storage"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
+	auth_model "creepercoding.dev/models/auth"
+	git_model "creepercoding.dev/models/git"
+	perm_model "creepercoding.dev/models/perm"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/auth/httpauth"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/json"
+	lfs_module "creepercoding.dev/modules/lfs"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/storage"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
 
 	"github.com/golang-jwt/jwt/v5"
 )

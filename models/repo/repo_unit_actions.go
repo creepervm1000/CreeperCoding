@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -6,10 +6,10 @@ package repo
 import (
 	"slices"
 
-	"gitea.dev/models/perm"
-	"gitea.dev/models/unit"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/perm"
+	"creepercoding.dev/models/unit"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/util"
 )
 
 // ActionsTokenPermissionMode defines the default permission mode for Actions tokens

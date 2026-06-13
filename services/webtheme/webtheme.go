@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package webtheme
@@ -14,11 +14,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/public"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/public"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
 )
 
 type themeCollectionStruct struct {
@@ -119,7 +119,7 @@ func parseThemeMetaInfoToMap(cssContent string) map[string]string {
 
 func defaultThemeMetaInfoByFileName(fileName string) *ThemeMetaInfo {
 	internalName := strings.TrimSuffix(strings.TrimPrefix(fileName, fileNamePrefix), fileNameSuffix)
-	// For built-in themes, the manifest knows the unhashed entry name (e.g. "theme-gitea-dark")
+	// For built-in themes, the manifest knows the unhashed entry name (e.g. "theme-creepercoding-dark")
 	// which lets us correctly strip the content hash without guessing.
 	// Custom themes are not in the manifest and never have content hashes.
 	if name := public.AssetNameFromHashedPath("css/" + fileName); name != "" {
@@ -239,7 +239,7 @@ func getAvailableThemes() *themeCollectionStruct {
 
 	if setting.IsProd {
 		if !hasAvailableThemes {
-			setting.LogStartupProblem(1, log.ERROR, "No theme candidate in asset files, but Gitea requires there should be at least one usable theme")
+			setting.LogStartupProblem(1, log.ERROR, "No theme candidate in asset files, but CreeperCoding requires there should be at least one usable theme")
 		}
 		if themeMap[setting.UI.DefaultTheme] == nil {
 			setting.LogStartupProblem(1, log.ERROR, "Default theme %q is not available, please correct the '[ui].DEFAULT_THEME' setting in the config file", setting.UI.DefaultTheme)

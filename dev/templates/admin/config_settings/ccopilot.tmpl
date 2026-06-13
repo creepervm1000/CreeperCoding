@@ -1,0 +1,55 @@
+<h4 class="ui top attached header">{{ctx.Locale.Tr "admin.config.ccopilot"}}</h4>
+<div class="ui attached segment">
+	<form class="ui form ignore-dirty system-config-form" method="post" action="{{AppSubUrl}}/-/admin/config">
+		{{$cfgOpt := $.SystemConfig.Ccopilot.Enabled}}
+		{{$cfgKey := $cfgOpt.DynKey}}
+		{{$enabled := $cfgOpt.Value ctx}}
+		<input type="hidden" data-config-dyn-key="{{$cfgKey}}" data-config-value-json="{{JsonUtils.EncodeToString $enabled}}">
+		<div class="field">
+			<div class="ui checkbox tw-mb-2">
+				<input type="checkbox" name="{{$cfgKey}}" value="true" {{if $enabled}}checked{{end}} data-config-value-type="boolean">
+				<label>{{ctx.Locale.Tr "admin.config.ccopilot.enabled"}}</label>
+			</div>
+		</div>
+
+		{{$cfgOpt = $.SystemConfig.Ccopilot.Endpoint}}
+		{{$cfgKey = $cfgOpt.DynKey}}
+		{{$endpoint := $cfgOpt.Value ctx}}
+		<input type="hidden" data-config-dyn-key="{{$cfgKey}}" data-config-value-json="{{JsonUtils.EncodeToString $endpoint}}">
+		<div class="field">
+			<label>{{ctx.Locale.Tr "admin.config.ccopilot.endpoint"}}</label>
+			<input type="text" name="{{$cfgKey}}" value="{{$endpoint}}" data-config-value-type="string" placeholder="https://api.openai.com/v1">
+		</div>
+
+		{{$cfgOpt = $.SystemConfig.Ccopilot.APIKey}}
+		{{$cfgKey = $cfgOpt.DynKey}}
+		{{$apiKey := $cfgOpt.Value ctx}}
+		<input type="hidden" data-config-dyn-key="{{$cfgKey}}" data-config-value-json="{{JsonUtils.EncodeToString $apiKey}}">
+		<div class="field">
+			<label>{{ctx.Locale.Tr "admin.config.ccopilot.api_key"}}</label>
+			<input type="password" name="{{$cfgKey}}" value="{{$apiKey}}" data-config-value-type="string" placeholder="sk-...">
+		</div>
+
+		{{$cfgOpt = $.SystemConfig.Ccopilot.ModelName}}
+		{{$cfgKey = $cfgOpt.DynKey}}
+		{{$modelName := $cfgOpt.Value ctx}}
+		<input type="hidden" data-config-dyn-key="{{$cfgKey}}" data-config-value-json="{{JsonUtils.EncodeToString $modelName}}">
+		<div class="field">
+			<label>{{ctx.Locale.Tr "admin.config.ccopilot.model_name"}}</label>
+			<input type="text" name="{{$cfgKey}}" value="{{$modelName}}" data-config-value-type="string" placeholder="gpt-4o">
+		</div>
+
+		{{$cfgOpt = $.SystemConfig.Ccopilot.MaxTokens}}
+		{{$cfgKey = $cfgOpt.DynKey}}
+		{{$maxTokens := $cfgOpt.Value ctx}}
+		<input type="hidden" data-config-dyn-key="{{$cfgKey}}" data-config-value-json="{{JsonUtils.EncodeToString $maxTokens}}">
+		<div class="field">
+			<label>{{ctx.Locale.Tr "admin.config.ccopilot.max_tokens"}}</label>
+			<input type="number" name="{{$cfgKey}}" value="{{$maxTokens}}" data-config-value-type="integer" placeholder="4096">
+		</div>
+
+		<div class="field">
+			<button class="ui primary button">{{ctx.Locale.Tr "save"}}</button>
+		</div>
+	</form>
+</div>

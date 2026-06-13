@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package gitcmd
@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"os/exec"
 
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
 )
 
 var GitExecutable = "git" // the command name of git, will be updated to an absolute path during initialization

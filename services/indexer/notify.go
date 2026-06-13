@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package indexer
@@ -6,16 +6,16 @@ package indexer
 import (
 	"context"
 
-	issues_model "gitea.dev/models/issues"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	code_indexer "gitea.dev/modules/indexer/code"
-	issue_indexer "gitea.dev/modules/indexer/issues"
-	stats_indexer "gitea.dev/modules/indexer/stats"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/repository"
-	"gitea.dev/modules/setting"
-	notify_service "gitea.dev/services/notify"
+	issues_model "creepercoding.dev/models/issues"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	code_indexer "creepercoding.dev/modules/indexer/code"
+	issue_indexer "creepercoding.dev/modules/indexer/issues"
+	stats_indexer "creepercoding.dev/modules/indexer/stats"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/setting"
+	notify_service "creepercoding.dev/services/notify"
 )
 
 type indexerNotifier struct {

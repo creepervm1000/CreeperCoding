@@ -1,5 +1,5 @@
 // Copyright 2015 The Gogs Authors. All rights reserved.
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package convert
@@ -14,29 +14,29 @@ import (
 	"time"
 
 	runnerv1 "gitea.dev/actions-proto-go/runner/v1"
-	actions_model "gitea.dev/models/actions"
-	asymkey_model "gitea.dev/models/asymkey"
-	"gitea.dev/models/auth"
-	"gitea.dev/models/db"
-	git_model "gitea.dev/models/git"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/organization"
-	"gitea.dev/models/perm"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/actions"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	webhook_module "gitea.dev/modules/webhook"
-	asymkey_service "gitea.dev/services/asymkey"
-	"gitea.dev/services/gitdiff"
+	actions_model "creepercoding.dev/models/actions"
+	asymkey_model "creepercoding.dev/models/asymkey"
+	"creepercoding.dev/models/auth"
+	"creepercoding.dev/models/db"
+	git_model "creepercoding.dev/models/git"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/organization"
+	"creepercoding.dev/models/perm"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/actions"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	webhook_module "creepercoding.dev/modules/webhook"
+	asymkey_service "creepercoding.dev/services/asymkey"
+	"creepercoding.dev/services/gitdiff"
 
 	"gitea.com/gitea/runner/act/model"
 )
@@ -427,7 +427,7 @@ func ToWorkflowRunAction(status actions_model.Status) (action string) {
 func ToActionsStatus(status actions_model.Status) (action, conclusion string) {
 	switch status {
 	case actions_model.StatusWaiting:
-		action = "queued" // "waiting" is a naming conflict of the webhook between Gitea and GitHub Actions
+		action = "queued" // "waiting" is a naming conflict of the webhook between CreeperCoding and GitHub Actions
 	case actions_model.StatusBlocked:
 		action = "waiting" // naming conflict (as above)
 	case actions_model.StatusRunning:

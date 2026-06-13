@@ -1,11 +1,11 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package auth
 
 import (
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
 )
 
 func UnmarshalGroupTeamMapping(raw string) (map[string]map[string][]string, error) {

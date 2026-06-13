@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors.
+// Copyright 2019 The CreeperCoding Authors.
 // All rights reserved.
 // SPDX-License-Identifier: MIT
 
@@ -16,27 +16,27 @@ import (
 	"strings"
 	"unicode"
 
-	"gitea.dev/models/db"
-	git_model "gitea.dev/models/git"
-	issues_model "gitea.dev/models/issues"
-	access_model "gitea.dev/models/perm/access"
-	pull_model "gitea.dev/models/pull"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/cache"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/globallock"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/references"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/util"
-	issue_service "gitea.dev/services/issue"
-	notify_service "gitea.dev/services/notify"
+	"creepercoding.dev/models/db"
+	git_model "creepercoding.dev/models/git"
+	issues_model "creepercoding.dev/models/issues"
+	access_model "creepercoding.dev/models/perm/access"
+	pull_model "creepercoding.dev/models/pull"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/cache"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/globallock"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/references"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/util"
+	issue_service "creepercoding.dev/services/issue"
+	notify_service "creepercoding.dev/services/notify"
 )
 
 // getMergeMessage composes the message used when merging a pull request.

@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package log
@@ -8,8 +8,8 @@ import (
 	"runtime"
 	"strings"
 
-	"gitea.dev/modules/process"
-	"gitea.dev/modules/util/rotatingfilewriter"
+	"creepercoding.dev/modules/process"
+	"creepercoding.dev/modules/util/rotatingfilewriter"
 )
 
 var projectPackagePrefix string

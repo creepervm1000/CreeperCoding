@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -6,9 +6,9 @@ package setting
 import (
 	"net/http"
 
-	"gitea.dev/modules/git"
-	"gitea.dev/routers/web/repo"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/routers/web/repo"
+	"creepercoding.dev/services/context"
 )
 
 // GitHooks hooks of a repository

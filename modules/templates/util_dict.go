@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package templates
@@ -10,9 +10,9 @@ import (
 	"html/template"
 	"reflect"
 
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/setting"
 )
 
 func dictMerge(base map[string]any, arg any) bool {

@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package gitrepo
@@ -6,7 +6,7 @@ package gitrepo
 import (
 	"context"
 
-	"gitea.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/git/gitcmd"
 )
 
 func UpdateRef(ctx context.Context, repo Repository, refName, newCommitID string) error {

@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -9,11 +9,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/modules/badge"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/modules/badge"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
 )
 
 func GetWorkflowBadge(ctx *context.Context) {

@@ -1,4 +1,5 @@
-// Copyright 2016 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors
+// Copyright 2016 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package code
@@ -11,18 +12,18 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitea.dev/models/db"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/indexer"
-	"gitea.dev/modules/indexer/code/bleve"
-	"gitea.dev/modules/indexer/code/elasticsearch"
-	"gitea.dev/modules/indexer/code/internal"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/process"
-	"gitea.dev/modules/queue"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/db"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/indexer"
+	"creepercoding.dev/modules/indexer/code/bleve"
+	"creepercoding.dev/modules/indexer/code/elasticsearch"
+	"creepercoding.dev/modules/indexer/code/internal"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/process"
+	"creepercoding.dev/modules/queue"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
 )
 
 var (

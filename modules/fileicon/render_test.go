@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package fileicon_test
@@ -6,10 +6,10 @@ package fileicon_test
 import (
 	"testing"
 
-	"gitea.dev/modules/fileicon"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/test"
+	"creepercoding.dev/modules/fileicon"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/test"
 
 	"github.com/stretchr/testify/assert"
 )

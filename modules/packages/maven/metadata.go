@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package maven
@@ -7,8 +7,8 @@ import (
 	"encoding/xml"
 	"io"
 
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/validation"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/validation"
 
 	"golang.org/x/net/html/charset"
 )

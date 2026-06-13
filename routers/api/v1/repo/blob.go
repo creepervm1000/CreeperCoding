@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -6,8 +6,8 @@ package repo
 import (
 	"net/http"
 
-	"gitea.dev/services/context"
-	files_service "gitea.dev/services/repository/files"
+	"creepercoding.dev/services/context"
+	files_service "creepercoding.dev/services/repository/files"
 )
 
 // GetBlob get the blob of a repository file.

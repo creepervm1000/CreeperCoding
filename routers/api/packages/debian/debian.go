@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package debian
@@ -11,16 +11,16 @@ import (
 	"net/http"
 	"strings"
 
-	"gitea.dev/models/db"
-	packages_model "gitea.dev/models/packages"
-	packages_module "gitea.dev/modules/packages"
-	debian_module "gitea.dev/modules/packages/debian"
-	"gitea.dev/modules/util"
-	"gitea.dev/routers/api/packages/helper"
-	"gitea.dev/services/context"
-	notify_service "gitea.dev/services/notify"
-	packages_service "gitea.dev/services/packages"
-	debian_service "gitea.dev/services/packages/debian"
+	"creepercoding.dev/models/db"
+	packages_model "creepercoding.dev/models/packages"
+	packages_module "creepercoding.dev/modules/packages"
+	debian_module "creepercoding.dev/modules/packages/debian"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/routers/api/packages/helper"
+	"creepercoding.dev/services/context"
+	notify_service "creepercoding.dev/services/notify"
+	packages_service "creepercoding.dev/services/packages"
+	debian_service "creepercoding.dev/services/packages/debian"
 )
 
 func apiError(ctx *context.Context, status int, obj any) {

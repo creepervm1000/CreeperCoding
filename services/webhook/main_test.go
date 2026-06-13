@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package webhook
@@ -6,12 +6,12 @@ package webhook
 import (
 	"testing"
 
-	"gitea.dev/models/unittest"
-	"gitea.dev/modules/hostmatcher"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/unittest"
+	"creepercoding.dev/modules/hostmatcher"
+	"creepercoding.dev/modules/setting"
 
-	_ "gitea.dev/models"
-	_ "gitea.dev/models/actions"
+	_ "creepercoding.dev/models"
+	_ "creepercoding.dev/models/actions"
 )
 
 func TestMain(m *testing.M) {

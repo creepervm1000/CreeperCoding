@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package db
@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/log"
 
 	xormlog "xorm.io/xorm/log"
 )

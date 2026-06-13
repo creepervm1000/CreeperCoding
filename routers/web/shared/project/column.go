@@ -1,12 +1,12 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package project
 
 import (
-	project_model "gitea.dev/models/project"
-	"gitea.dev/modules/json"
-	"gitea.dev/services/context"
+	project_model "creepercoding.dev/models/project"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/services/context"
 )
 
 // MoveColumns moves or keeps columns in a project and sorts them inside that project

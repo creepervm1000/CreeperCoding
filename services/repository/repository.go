@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repository
@@ -9,25 +9,25 @@ import (
 	"fmt"
 	"strings"
 
-	activities_model "gitea.dev/models/activities"
-	"gitea.dev/models/db"
-	"gitea.dev/models/git"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/organization"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/graceful"
-	issue_indexer "gitea.dev/modules/indexer/issues"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/queue"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/structs"
-	notify_service "gitea.dev/services/notify"
-	pull_service "gitea.dev/services/pull"
+	activities_model "creepercoding.dev/models/activities"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/git"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/organization"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/graceful"
+	issue_indexer "creepercoding.dev/modules/indexer/issues"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/queue"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/structs"
+	notify_service "creepercoding.dev/services/notify"
+	pull_service "creepercoding.dev/services/pull"
 )
 
 // WebSearchRepository represents a repository returned by web search

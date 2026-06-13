@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package migrations
@@ -6,7 +6,7 @@ package migrations
 import (
 	"context"
 
-	base "gitea.dev/modules/migration"
+	base "creepercoding.dev/modules/migration"
 )
 
 var _ base.Downloader = &PlainGitDownloader{}

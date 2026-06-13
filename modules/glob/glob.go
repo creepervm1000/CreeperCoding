@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package glob
@@ -10,7 +10,7 @@ import (
 	"slices"
 	"strings"
 
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/util"
 )
 
 // Reference: https://github.com/gobwas/glob/blob/master/glob.go

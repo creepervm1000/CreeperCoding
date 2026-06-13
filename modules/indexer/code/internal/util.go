@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package internal
@@ -6,8 +6,8 @@ package internal
 import (
 	"strings"
 
-	"gitea.dev/modules/indexer/internal"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/indexer/internal"
+	"creepercoding.dev/modules/log"
 )
 
 const filenameMatchNumberOfLines = 7 // Copied from GitHub search

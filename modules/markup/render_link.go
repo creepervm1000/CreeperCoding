@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markup
@@ -9,8 +9,8 @@ import (
 	"path"
 	"strings"
 
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/setting"
 )
 
 // resolveLinkRelative tries to resolve the link relative to the "{base}/{cur}", and returns the final link.

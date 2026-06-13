@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package misc
@@ -6,11 +6,11 @@ package misc
 import (
 	"net/http"
 
-	"gitea.dev/modules/options"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/options"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
 )
 
 // Shows a list of all Gitignore templates

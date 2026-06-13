@@ -4,13 +4,13 @@
 package misc
 
 import (
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/markup/markdown"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/common"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/markup/markdown"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/common"
+	"creepercoding.dev/services/context"
 )
 
 // Markup render markup document to HTML

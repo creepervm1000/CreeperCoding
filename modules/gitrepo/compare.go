@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package gitrepo
@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/git/gitcmd"
 )
 
 // DivergeObject represents commit count diverging commits

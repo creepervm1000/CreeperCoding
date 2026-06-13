@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markup
@@ -8,8 +8,8 @@ import (
 	"path"
 	"strings"
 
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/typesniffer"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/typesniffer"
 )
 
 // Renderer defines an interface for rendering markup file to HTML

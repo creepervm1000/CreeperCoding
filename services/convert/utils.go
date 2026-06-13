@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // Copyright 2016 The Gogs Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
@@ -7,8 +7,8 @@ package convert
 import (
 	"strings"
 
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/structs"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/structs"
 )
 
 // ToCorrectPageSize makes sure page size is in allowed range.

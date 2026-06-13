@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2020 The Gitea Authors.
+// Copyright 2020 The CreeperCoding Authors.
 // SPDX-License-Identifier: MIT
 
 package user
@@ -7,12 +7,12 @@ package user
 import (
 	"net/http"
 
-	activities_model "gitea.dev/models/activities"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/routers/api/v1/utils"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	feed_service "gitea.dev/services/feed"
+	activities_model "creepercoding.dev/models/activities"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/routers/api/v1/utils"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	feed_service "creepercoding.dev/services/feed"
 )
 
 // Search search users

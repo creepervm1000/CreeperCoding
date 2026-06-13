@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -8,18 +8,18 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/organization"
-	project_model "gitea.dev/models/project"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/optional"
-	shared_user "gitea.dev/routers/web/shared/user"
-	"gitea.dev/services/context"
-	issue_service "gitea.dev/services/issue"
-	pull_service "gitea.dev/services/pull"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/organization"
+	project_model "creepercoding.dev/models/project"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/optional"
+	shared_user "creepercoding.dev/routers/web/shared/user"
+	"creepercoding.dev/services/context"
+	issue_service "creepercoding.dev/services/issue"
+	pull_service "creepercoding.dev/services/pull"
 )
 
 type issueSidebarMilestoneData struct {

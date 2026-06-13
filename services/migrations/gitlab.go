@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package migrations
@@ -15,12 +15,12 @@ import (
 	"strings"
 	"time"
 
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/user"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/log"
-	base "gitea.dev/modules/migration"
-	"gitea.dev/modules/structs"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/user"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/log"
+	base "creepercoding.dev/modules/migration"
+	"creepercoding.dev/modules/structs"
 
 	gitlab "gitlab.com/gitlab-org/api/client-go/v2"
 )

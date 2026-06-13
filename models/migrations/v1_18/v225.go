@@ -1,11 +1,11 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_18
 
 import (
-	"gitea.dev/models/db"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/setting"
 )
 
 func AlterPublicGPGKeyContentFieldsToMediumText(x db.EngineMigration) error {

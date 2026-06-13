@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package user
@@ -7,12 +7,12 @@ import (
 	"context"
 	"fmt"
 
-	auth_model "gitea.dev/models/auth"
-	user_model "gitea.dev/models/user"
-	password_module "gitea.dev/modules/auth/password"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/structs"
+	auth_model "creepercoding.dev/models/auth"
+	user_model "creepercoding.dev/models/user"
+	password_module "creepercoding.dev/modules/auth/password"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/structs"
 )
 
 type UpdateOptionField[T any] struct {

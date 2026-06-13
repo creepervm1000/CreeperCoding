@@ -1,17 +1,17 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package secrets
 
 import (
-	"gitea.dev/models/db"
-	secret_model "gitea.dev/models/secret"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
-	secret_service "gitea.dev/services/secrets"
+	"creepercoding.dev/models/db"
+	secret_model "creepercoding.dev/models/secret"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
+	secret_service "creepercoding.dev/services/secrets"
 )
 
 func SetSecretsContext(ctx *context.Context, ownerID, repoID int64) {

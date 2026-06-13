@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package org
@@ -7,10 +7,10 @@ import (
 	"encoding/base64"
 	"net/http"
 
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/web"
-	"gitea.dev/services/context"
-	user_service "gitea.dev/services/user"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/context"
+	user_service "creepercoding.dev/services/user"
 )
 
 // UpdateAvatarupdates the Avatar of an Organisation

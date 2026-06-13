@@ -1,5 +1,6 @@
 // Copyright 2015 The Gogs Authors. All rights reserved.
-// Copyright 2016 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors
+// Copyright 2016 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 // Package v1 Gitea API
@@ -68,34 +69,34 @@ import (
 	"net/http"
 	"strings"
 
-	auth_model "gitea.dev/models/auth"
-	"gitea.dev/models/organization"
-	"gitea.dev/models/perm"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/api/v1/activitypub"
-	"gitea.dev/routers/api/v1/admin"
-	"gitea.dev/routers/api/v1/misc"
-	"gitea.dev/routers/api/v1/notify"
-	"gitea.dev/routers/api/v1/org"
-	"gitea.dev/routers/api/v1/packages"
-	"gitea.dev/routers/api/v1/repo"
-	"gitea.dev/routers/api/v1/settings"
-	"gitea.dev/routers/api/v1/user"
-	"gitea.dev/routers/common"
-	"gitea.dev/services/actions"
-	"gitea.dev/services/auth"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
+	auth_model "creepercoding.dev/models/auth"
+	"creepercoding.dev/models/organization"
+	"creepercoding.dev/models/perm"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/api/v1/activitypub"
+	"creepercoding.dev/routers/api/v1/admin"
+	"creepercoding.dev/routers/api/v1/misc"
+	"creepercoding.dev/routers/api/v1/notify"
+	"creepercoding.dev/routers/api/v1/org"
+	"creepercoding.dev/routers/api/v1/packages"
+	"creepercoding.dev/routers/api/v1/repo"
+	"creepercoding.dev/routers/api/v1/settings"
+	"creepercoding.dev/routers/api/v1/user"
+	"creepercoding.dev/routers/common"
+	"creepercoding.dev/services/actions"
+	"creepercoding.dev/services/auth"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
 
-	_ "gitea.dev/routers/api/v1/swagger" // for swagger generation
+	_ "creepercoding.dev/routers/api/v1/swagger" // for swagger generation
 
 	"gitea.com/go-chi/binding"
 	"github.com/go-chi/cors"

@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package install
@@ -8,13 +8,13 @@ import (
 	"html"
 	"net/http"
 
-	"gitea.dev/modules/public"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/common"
-	"gitea.dev/routers/web/healthcheck"
-	"gitea.dev/routers/web/misc"
-	"gitea.dev/services/forms"
+	"creepercoding.dev/modules/public"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/common"
+	"creepercoding.dev/routers/web/healthcheck"
+	"creepercoding.dev/routers/web/misc"
+	"creepercoding.dev/services/forms"
 )
 
 // Routes registers the installation routes
@@ -44,7 +44,7 @@ func Routes() *web.Router {
 func installNotFound(w http.ResponseWriter, req *http.Request) {
 	w.Header().Add("Content-Type", "text/html; charset=utf-8")
 	w.Header().Add("Refresh", "1; url="+setting.AppSubURL+"/")
-	// do not use 30x status, because the "post-install" page needs to use 404/200 to detect if Gitea has been installed.
+	// do not use 30x status, because the "post-install" page needs to use 404/200 to detect if CreeperCoding has been installed.
 	// the fetch API could follow 30x requests to the page with 200 status.
 	w.WriteHeader(http.StatusNotFound)
 	_, _ = fmt.Fprintf(w, `Not Found. <a href="%s">Go to default page</a>.`, html.EscapeString(setting.AppSubURL+"/"))

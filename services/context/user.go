@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package context
@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"strings"
 
-	user_model "gitea.dev/models/user"
+	user_model "creepercoding.dev/models/user"
 )
 
 // UserAssignmentWeb returns a middleware to handle context-user assignment for web routes

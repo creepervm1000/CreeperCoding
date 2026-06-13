@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package pprof
@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"runtime/pprof"
 
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/log"
 )
 
 // DumpMemProfileForUsername dumps a memory profile at pprofDataPath as memprofile_<username>_<temporary id>

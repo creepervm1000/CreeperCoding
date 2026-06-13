@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors.
+// Copyright 2019 The CreeperCoding Authors.
 // All rights reserved.
 // SPDX-License-Identifier: MIT
 
@@ -11,13 +11,13 @@ import (
 	"io"
 	"strconv"
 
-	git_model "gitea.dev/models/git"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/git/pipeline"
-	"gitea.dev/modules/lfs"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/util"
+	git_model "creepercoding.dev/models/git"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/git/pipeline"
+	"creepercoding.dev/modules/lfs"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/util"
 
 	"golang.org/x/sync/errgroup"
 )

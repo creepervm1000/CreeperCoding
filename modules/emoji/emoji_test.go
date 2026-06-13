@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // Copyright 2015 Kenneth Shaw
 // SPDX-License-Identifier: MIT
 
@@ -7,9 +7,9 @@ package emoji
 import (
 	"testing"
 
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/test"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/test"
 
 	"github.com/stretchr/testify/assert"
 )

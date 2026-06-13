@@ -1,5 +1,5 @@
 // Copyright 2015 The Gogs Authors. All rights reserved.
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package git
@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/git/gitcmd"
 )
 
 // CommitTreeOpts represents the possible options to CommitTree

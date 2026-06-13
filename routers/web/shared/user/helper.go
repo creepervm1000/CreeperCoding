@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package user
@@ -8,7 +8,7 @@ import (
 	"slices"
 	"strconv"
 
-	"gitea.dev/models/user"
+	"creepercoding.dev/models/user"
 )
 
 func MakeSelfOnTop(doer *user.User, users []*user.User) []*user.User {

@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package devtest
@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"strings"
 
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
-	"gitea.dev/services/mailer"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/mailer"
 
 	"go.yaml.in/yaml/v4"
 )

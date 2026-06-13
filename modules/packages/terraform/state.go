@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package terraform
@@ -6,8 +6,8 @@ package terraform
 import (
 	"io"
 
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/util"
 )
 
 // Note: this is a subset of the Terraform state file format as the full one has two forms.

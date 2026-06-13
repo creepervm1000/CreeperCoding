@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/log"
 )
 
 // Scheme describes protocol types
@@ -115,7 +115,7 @@ var (
 
 func loadServerFrom(rootCfg ConfigProvider) {
 	sec := rootCfg.Section("server")
-	AppName = rootCfg.Section("").Key("APP_NAME").MustString("Gitea: Git with a cup of tea")
+	AppName = rootCfg.Section("").Key("APP_NAME").MustString("CreeperCoding")
 
 	Domain = sec.Key("DOMAIN").MustString("localhost")
 	HTTPAddr = sec.Key("HTTP_ADDR").MustString("0.0.0.0")

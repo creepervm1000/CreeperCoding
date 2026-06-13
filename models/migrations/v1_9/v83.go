@@ -1,11 +1,11 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_9
 
 import (
-	"gitea.dev/models/db"
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/timeutil"
 )
 
 func AddUploaderIDForAttachment(x db.EngineMigration) error {

@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -7,12 +7,12 @@ import (
 	"errors"
 	"net/http"
 
-	issues_model "gitea.dev/models/issues"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/util"
-	shared_mention "gitea.dev/routers/web/shared/mention"
-	"gitea.dev/services/context"
+	issues_model "creepercoding.dev/models/issues"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/util"
+	shared_mention "creepercoding.dev/routers/web/shared/mention"
+	"creepercoding.dev/services/context"
 )
 
 // GetMentionsInRepo returns JSON data for mention autocomplete (assignees, participants, mentionable teams).

@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package context
@@ -12,14 +12,14 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/reqctx"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/translation"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web/middleware"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/reqctx"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/translation"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web/middleware"
 )
 
 type BaseContextKeyType struct{}

@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -7,15 +7,15 @@ import (
 	"errors"
 	"net/http"
 
-	"gitea.dev/models/actions"
-	repo_model "gitea.dev/models/repo"
-	unit_model "gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	shared_actions "gitea.dev/routers/web/shared/actions"
-	"gitea.dev/services/context"
-	repo_service "gitea.dev/services/repository"
+	"creepercoding.dev/models/actions"
+	repo_model "creepercoding.dev/models/repo"
+	unit_model "creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	shared_actions "creepercoding.dev/routers/web/shared/actions"
+	"creepercoding.dev/services/context"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 const tplRepoActionsGeneralSettings templates.TplName = "repo/settings/actions"

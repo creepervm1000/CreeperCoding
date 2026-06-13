@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -6,12 +6,12 @@ package setting
 import (
 	"net/http"
 
-	git_model "gitea.dev/models/git"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/routers/web/repo"
-	"gitea.dev/services/context"
-	repo_service "gitea.dev/services/repository"
+	git_model "creepercoding.dev/models/git"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/routers/web/repo"
+	"creepercoding.dev/services/context"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 // SetDefaultBranchPost set default branch

@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package org
@@ -6,9 +6,9 @@ package org
 import (
 	"net/http"
 
-	"gitea.dev/modules/templates"
-	shared_user "gitea.dev/routers/web/shared/user"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/templates"
+	shared_user "creepercoding.dev/routers/web/shared/user"
+	"creepercoding.dev/services/context"
 )
 
 const (

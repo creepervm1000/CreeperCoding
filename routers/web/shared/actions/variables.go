@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -7,16 +7,16 @@ import (
 	"errors"
 	"net/http"
 
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/models/db"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/web"
-	shared_user "gitea.dev/routers/web/shared/user"
-	actions_service "gitea.dev/services/actions"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/web"
+	shared_user "creepercoding.dev/routers/web/shared/user"
+	actions_service "creepercoding.dev/services/actions"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
 )
 
 const (

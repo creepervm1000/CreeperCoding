@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markup
@@ -9,13 +9,13 @@ import (
 	"fmt"
 	"html/template"
 
-	"gitea.dev/models/issues"
-	"gitea.dev/models/perm/access"
-	"gitea.dev/models/repo"
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/util"
-	gitea_context "gitea.dev/services/context"
+	"creepercoding.dev/models/issues"
+	"creepercoding.dev/models/perm/access"
+	"creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/util"
+	gitea_context "creepercoding.dev/services/context"
 )
 
 func renderRepoIssueIconTitle(ctx context.Context, opts markup.RenderIssueIconTitleOptions) (_ template.HTML, err error) {

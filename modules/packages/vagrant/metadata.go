@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package vagrant
@@ -9,8 +9,8 @@ import (
 	"io"
 	"strings"
 
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/validation"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/validation"
 )
 
 const (

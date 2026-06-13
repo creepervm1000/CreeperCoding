@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -10,24 +10,25 @@ import (
 	"net/http"
 	"strconv"
 
-	git_model "gitea.dev/models/git"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/renderhelper"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/markup/markdown"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	"gitea.dev/services/forms"
-	issue_service "gitea.dev/services/issue"
-	pull_service "gitea.dev/services/pull"
+	"creepercoding.dev/modules/eventsource"
+	git_model "creepercoding.dev/models/git"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/renderhelper"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/markup/markdown"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	"creepercoding.dev/services/forms"
+	issue_service "creepercoding.dev/services/issue"
+	pull_service "creepercoding.dev/services/pull"
 )
 
 // NewComment create a comment for issue
@@ -70,6 +71,24 @@ func NewComment(ctx *context.Context) {
 				ctx.ServerError("CreateIssueComment", err)
 			}
 			return
+		}
+		// Broadcast SSE event for live comment updates
+		if comment.Poster != nil {
+			posterName := comment.Poster.Name
+			if comment.OriginalAuthor != "" {
+				posterName = comment.OriginalAuthor
+			}
+			avatarLink := comment.Poster.AvatarLink(ctx)
+			homeLink := comment.Poster.HomeLink()
+			rctx := renderhelper.NewRenderContextRepoComment(ctx, ctx.Repo.Repository, renderhelper.RepoCommentOptions{
+				FootnoteContextID: strconv.FormatInt(comment.ID, 10),
+			})
+			rendered, err := markdown.RenderString(rctx, comment.Content)
+			if err != nil {
+				log.Error("broadcastCommentEvent: render comment: %v", err)
+				rendered = template.HTML(comment.Content)
+			}
+			broadcastComment(comment.HashTag(), ctx.Repo.Repository.ID, issue.ID, comment.ID, posterName, avatarLink, homeLink, string(rendered))
 		}
 		// redirect to the comment's hashtag
 		redirect += "#" + comment.HashTag()
@@ -448,4 +467,43 @@ func GetCommentAttachments(ctx *context.Context) {
 		attachments = append(attachments, convert.ToAttachment(ctx.Repo.Repository, comment.Attachments[i]))
 	}
 	ctx.JSON(http.StatusOK, attachments)
+}
+
+func broadcastComment(hashTag string, repoID, issueID, commentID int64, posterName, avatarLink, homeLink, renderedContent string) {
+	escapedPosterName := template.HTMLEscapeString(posterName)
+
+	commentHTML := fmt.Sprintf(`<div class="timeline-item comment" id="%s">
+	<a class="timeline-avatar" href="%s">
+		<img class="ui avatar image" src="%s" title="%s" width="40" height="40">
+	</a>
+	<div class="content comment-container">
+		<div class="comment-header avatar-content-left-arrow" role="heading" aria-level="3">
+			<div class="comment-header-left">
+				<span class="tw-text-text tw-font-semibold tw-mr-1">%s</span>
+				<span class="comment-text-line">commented <a href="#%s" class="time-since">just now</a></span>
+			</div>
+		</div>
+		<div class="comment-content">
+			<div class="render-content markup">%s</div>
+		</div>
+	</div>
+</div>`,
+		hashTag,
+		homeLink,
+		avatarLink,
+		escapedPosterName,
+		escapedPosterName,
+		hashTag,
+		renderedContent,
+	)
+
+	eventsource.GetManager().BroadcastMessage(&eventsource.Event{
+		Name: "issue-comment",
+		Data: map[string]any{
+			"repo_id":    repoID,
+			"issue_id":   issueID,
+			"comment_id": commentID,
+			"html":       commentHTML,
+		},
+	})
 }

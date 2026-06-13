@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package templates
@@ -6,8 +6,8 @@ package templates
 import (
 	"context"
 
-	git_model "gitea.dev/models/git"
-	actions_module "gitea.dev/modules/actions"
+	git_model "creepercoding.dev/models/git"
+	actions_module "creepercoding.dev/modules/actions"
 )
 
 type ActionsUtils struct {

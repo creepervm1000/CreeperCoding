@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package pub
@@ -13,15 +13,15 @@ import (
 	"strings"
 	"time"
 
-	packages_model "gitea.dev/models/packages"
-	"gitea.dev/modules/json"
-	packages_module "gitea.dev/modules/packages"
-	pub_module "gitea.dev/modules/packages/pub"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
-	"gitea.dev/routers/api/packages/helper"
-	"gitea.dev/services/context"
-	packages_service "gitea.dev/services/packages"
+	packages_model "creepercoding.dev/models/packages"
+	"creepercoding.dev/modules/json"
+	packages_module "creepercoding.dev/modules/packages"
+	pub_module "creepercoding.dev/modules/packages/pub"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/routers/api/packages/helper"
+	"creepercoding.dev/services/context"
+	packages_service "creepercoding.dev/services/packages"
 )
 
 func jsonResponse(ctx *context.Context, status int, obj any) {

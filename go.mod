@@ -1,4 +1,4 @@
-module gitea.dev
+module creepercoding.dev
 
 go 1.26.4
 

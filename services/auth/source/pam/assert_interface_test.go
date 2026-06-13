@@ -1,12 +1,12 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package pam_test
 
 import (
-	auth_model "gitea.dev/models/auth"
-	"gitea.dev/services/auth"
-	"gitea.dev/services/auth/source/pam"
+	auth_model "creepercoding.dev/models/auth"
+	"creepercoding.dev/services/auth"
+	"creepercoding.dev/services/auth/source/pam"
 )
 
 // This test file exists to assert that our Source exposes the interfaces that we expect

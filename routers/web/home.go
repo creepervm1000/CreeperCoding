@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package web
@@ -8,19 +8,19 @@ import (
 	"net/http"
 	"strconv"
 
-	"gitea.dev/models/db"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/sitemap"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/web/middleware"
-	"gitea.dev/routers/web/auth"
-	"gitea.dev/routers/web/user"
-	"gitea.dev/services/context"
+	"creepercoding.dev/models/db"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/sitemap"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/web/middleware"
+	"creepercoding.dev/routers/web/auth"
+	"creepercoding.dev/routers/web/user"
+	"creepercoding.dev/services/context"
 )
 
 const (

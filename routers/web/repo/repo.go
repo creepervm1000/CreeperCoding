@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -11,29 +11,29 @@ import (
 	"slices"
 	"strings"
 
-	"gitea.dev/models/db"
-	git_model "gitea.dev/models/git"
-	"gitea.dev/models/organization"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/cache"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	"gitea.dev/services/forms"
-	repo_service "gitea.dev/services/repository"
-	archiver_service "gitea.dev/services/repository/archiver"
-	commitstatus_service "gitea.dev/services/repository/commitstatus"
+	"creepercoding.dev/models/db"
+	git_model "creepercoding.dev/models/git"
+	"creepercoding.dev/models/organization"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/cache"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	"creepercoding.dev/services/forms"
+	repo_service "creepercoding.dev/services/repository"
+	archiver_service "creepercoding.dev/services/repository/archiver"
+	commitstatus_service "creepercoding.dev/services/repository/commitstatus"
 )
 
 const (

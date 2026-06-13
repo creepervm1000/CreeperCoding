@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -9,13 +9,13 @@ import (
 	"path"
 	"strings"
 
-	pull_model "gitea.dev/models/pull"
-	"gitea.dev/modules/base"
-	"gitea.dev/modules/fileicon"
-	"gitea.dev/modules/git"
-	"gitea.dev/services/context"
-	"gitea.dev/services/gitdiff"
-	files_service "gitea.dev/services/repository/files"
+	pull_model "creepercoding.dev/models/pull"
+	"creepercoding.dev/modules/base"
+	"creepercoding.dev/modules/fileicon"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/gitdiff"
+	files_service "creepercoding.dev/services/repository/files"
 
 	"github.com/go-enry/go-enry/v2"
 )

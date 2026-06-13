@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_12
@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
 )
 
 func RefixMergeBase(ctx context.Context, x db.EngineMigration) error {

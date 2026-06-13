@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package console
@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/typesniffer"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/typesniffer"
 
 	"github.com/stretchr/testify/assert"
 )

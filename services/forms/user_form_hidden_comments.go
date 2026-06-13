@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package forms
@@ -6,9 +6,9 @@ package forms
 import (
 	"math/big"
 
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/modules/log"
-	"gitea.dev/services/context"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/services/context"
 )
 
 type hiddenCommentTypeGroupsType map[string][]issues_model.CommentType

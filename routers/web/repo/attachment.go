@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -6,20 +6,20 @@ package repo
 import (
 	"net/http"
 
-	auth_model "gitea.dev/models/auth"
-	issues_model "gitea.dev/models/issues"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	"gitea.dev/modules/httpcache"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/storage"
-	"gitea.dev/services/attachment"
-	"gitea.dev/services/context"
-	"gitea.dev/services/context/upload"
-	repo_service "gitea.dev/services/repository"
+	auth_model "creepercoding.dev/models/auth"
+	issues_model "creepercoding.dev/models/issues"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	"creepercoding.dev/modules/httpcache"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/storage"
+	"creepercoding.dev/services/attachment"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/context/upload"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 func attachmentReadScope(unitType unit.Type) (auth_model.AccessTokenScope, bool) {

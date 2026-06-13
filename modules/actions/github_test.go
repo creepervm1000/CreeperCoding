@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -6,7 +6,7 @@ package actions
 import (
 	"testing"
 
-	webhook_module "gitea.dev/modules/webhook"
+	webhook_module "creepercoding.dev/modules/webhook"
 
 	"github.com/stretchr/testify/assert"
 )

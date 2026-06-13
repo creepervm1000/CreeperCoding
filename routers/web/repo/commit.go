@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -11,31 +11,31 @@ import (
 	"net/http"
 	"strings"
 
-	asymkey_model "gitea.dev/models/asymkey"
-	"gitea.dev/models/db"
-	git_model "gitea.dev/models/git"
-	"gitea.dev/models/gituser"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/renderhelper"
-	repo_model "gitea.dev/models/repo"
-	unit_model "gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/base"
-	"gitea.dev/modules/charset"
-	"gitea.dev/modules/fileicon"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	asymkey_service "gitea.dev/services/asymkey"
-	"gitea.dev/services/context"
-	git_service "gitea.dev/services/git"
-	"gitea.dev/services/gitdiff"
-	repo_service "gitea.dev/services/repository"
-	"gitea.dev/services/repository/gitgraph"
+	asymkey_model "creepercoding.dev/models/asymkey"
+	"creepercoding.dev/models/db"
+	git_model "creepercoding.dev/models/git"
+	"creepercoding.dev/models/gituser"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/renderhelper"
+	repo_model "creepercoding.dev/models/repo"
+	unit_model "creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/base"
+	"creepercoding.dev/modules/charset"
+	"creepercoding.dev/modules/fileicon"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	asymkey_service "creepercoding.dev/services/asymkey"
+	"creepercoding.dev/services/context"
+	git_service "creepercoding.dev/services/git"
+	"creepercoding.dev/services/gitdiff"
+	repo_service "creepercoding.dev/services/repository"
+	"creepercoding.dev/services/repository/gitgraph"
 )
 
 const (

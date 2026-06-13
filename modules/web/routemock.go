@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package web
@@ -6,7 +6,7 @@ package web
 import (
 	"net/http"
 
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/setting"
 )
 
 // MockAfterMiddlewares is a general mock point, it's between middlewares and the handler

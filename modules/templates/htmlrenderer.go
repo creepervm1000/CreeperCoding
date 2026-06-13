@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package templates
@@ -17,11 +17,11 @@ import (
 	"sync/atomic"
 	texttemplate "text/template"
 
-	"gitea.dev/modules/assetfs"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates/scopedtmpl"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/assetfs"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates/scopedtmpl"
+	"creepercoding.dev/modules/util"
 )
 
 type TemplateExecutor scopedtmpl.TemplateExecutor

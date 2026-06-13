@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package notify
@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"strings"
 
-	activities_model "gitea.dev/models/activities"
-	"gitea.dev/models/db"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/routers/api/v1/utils"
-	"gitea.dev/services/context"
+	activities_model "creepercoding.dev/models/activities"
+	"creepercoding.dev/models/db"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/routers/api/v1/utils"
+	"creepercoding.dev/services/context"
 )
 
 // NewAvailable check if unread notifications exist

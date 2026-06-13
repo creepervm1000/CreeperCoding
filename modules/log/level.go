@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package log
@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"strings"
 
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/json"
 )
 
 // Level is the level of the logger

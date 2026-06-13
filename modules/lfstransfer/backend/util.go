@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package backend
@@ -11,10 +11,10 @@ import (
 	"net/url"
 	"strings"
 
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/private"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/private"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
 
 	"github.com/charmbracelet/git-lfs-transfer/transfer"
 )
@@ -23,7 +23,7 @@ import (
 const (
 	headerAccept            = "Accept"
 	headerAuthorization     = "Authorization"
-	headerGiteaInternalAuth = "X-Gitea-Internal-Auth"
+	headerGiteaInternalAuth = "X-CreeperCoding-Internal-Auth"
 	headerContentType       = "Content-Type"
 	headerContentLength     = "Content-Length"
 )

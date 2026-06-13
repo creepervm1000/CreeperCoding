@@ -1,5 +1,6 @@
 // Copyright 2016 The Gogs Authors. All rights reserved.
-// Copyright 2016 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors
+// Copyright 2016 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package generate
@@ -17,8 +18,8 @@ import (
 	"io"
 	"time"
 
-	"gitea.dev/modules/consts"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/consts"
+	"creepercoding.dev/modules/util"
 
 	"github.com/golang-jwt/jwt/v5"
 	"golang.org/x/crypto/ssh"

@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package public
@@ -13,9 +13,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
 )
 
 // https://vite.dev/guide/backend-integration
@@ -175,7 +175,7 @@ func entryStyleURLs(jsEntrySrc, devStylesheetSrc string) []string {
 }
 
 // AssetNameFromHashedPath returns the asset entry name for a given hashed asset path.
-// Example: returns "theme-gitea-dark" for "css/theme-gitea-dark.CyAaQnn5.css".
+// Example: returns "theme-creepercoding-dark" for "css/theme-creepercoding-dark.CyAaQnn5.css".
 // Returns empty string if the path is not found in the manifest.
 func AssetNameFromHashedPath(hashedPath string) string {
 	return getManifestData().names[hashedPath]

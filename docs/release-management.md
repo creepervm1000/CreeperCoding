@@ -18,7 +18,7 @@ We backport PRs given the following circumstances:
 ### How to backport?
 
 In the past, it was necessary to manually backport your PRs. \
-Now, that's not a requirement anymore as our [backport bot](https://github.com/GiteaBot) tries to create backports automatically once the PR is merged when the PR
+Now, that's not a requirement anymore as our [backport bot](https://github.com/CreeperCodingBot) tries to create backports automatically once the PR is merged when the PR
 
 - does not have the label `backport/manual`
 - has the label `backport/<version>`
@@ -86,18 +86,18 @@ Also we always try to support the latest on main branch, so if you are using the
 
 ## Versions
 
-Gitea has the `main` branch as a tip branch and has version branches
+CreeperCoding has the `main` branch as a tip branch and has version branches
 such as `release/v1.19`. `release/v1.19` is a release branch and we will
 tag `v1.19.0` for binary download. If `v1.19.0` has bugs, we will accept
 pull requests on the `release/v1.19` branch and publish a `v1.19.1` tag,
 after bringing the bug fix also to the main branch.
 
-Since the `main` branch is a tip version, if you wish to use Gitea
+Since the `main` branch is a tip version, if you wish to use CreeperCoding
 in production, please download the latest release tag version. All the
 branches will be protected via GitHub, all the PRs to every branch must
 be reviewed by two maintainers and must pass the automatic tests.
 
-## Releasing Gitea
+## Releasing CreeperCoding
 
 - Let MAJOR, MINOR and PATCH be Major, Minor and Patch version numbers, PATCH should be rc1, rc2, 0, 1, ...... MAJOR.MINOR will be kept the same as milestones on github or gitea in future.
 - Before releasing, confirm all the version's milestone issues or PRs has been resolved. Then discuss the release on Discord channel #maintainers and get agreed with almost all the owners and mergers. Or you can declare the version and if nobody is against it in about several hours.

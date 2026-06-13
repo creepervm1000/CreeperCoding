@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cron
@@ -7,17 +7,17 @@ import (
 	"context"
 	"time"
 
-	activities_model "gitea.dev/models/activities"
-	"gitea.dev/models/system"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git/gitcmd"
-	issue_indexer "gitea.dev/modules/indexer/issues"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/updatechecker"
-	asymkey_service "gitea.dev/services/asymkey"
-	repo_service "gitea.dev/services/repository"
-	archiver_service "gitea.dev/services/repository/archiver"
-	user_service "gitea.dev/services/user"
+	activities_model "creepercoding.dev/models/activities"
+	"creepercoding.dev/models/system"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git/gitcmd"
+	issue_indexer "creepercoding.dev/modules/indexer/issues"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/updatechecker"
+	asymkey_service "creepercoding.dev/services/asymkey"
+	repo_service "creepercoding.dev/services/repository"
+	archiver_service "creepercoding.dev/services/repository/archiver"
+	user_service "creepercoding.dev/services/user"
 )
 
 func registerDeleteInactiveUsers() {

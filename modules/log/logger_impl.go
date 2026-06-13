@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package log
@@ -13,8 +13,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/util"
 )
 
 type LoggerImpl struct {

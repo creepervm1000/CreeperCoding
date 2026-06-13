@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package nuget
@@ -13,8 +13,8 @@ import (
 	"regexp"
 	"strings"
 
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/validation"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/validation"
 
 	"github.com/hashicorp/go-version"
 )

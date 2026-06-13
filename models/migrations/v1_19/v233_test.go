@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_19
@@ -6,11 +6,11 @@ package v1_19
 import (
 	"testing"
 
-	"gitea.dev/models/migrations/migrationtest"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/secret"
-	"gitea.dev/modules/setting"
-	webhook_module "gitea.dev/modules/webhook"
+	"creepercoding.dev/models/migrations/migrationtest"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/secret"
+	"creepercoding.dev/modules/setting"
+	webhook_module "creepercoding.dev/modules/webhook"
 
 	"github.com/stretchr/testify/assert"
 )

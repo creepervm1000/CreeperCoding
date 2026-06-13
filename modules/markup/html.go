@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markup
@@ -13,11 +13,11 @@ import (
 	"strings"
 	"sync"
 
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/markup/common"
-	"gitea.dev/modules/translation"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/markup/common"
+	"creepercoding.dev/modules/translation"
+	"creepercoding.dev/modules/util"
 
 	"golang.org/x/net/html"
 	"golang.org/x/net/html/atom"

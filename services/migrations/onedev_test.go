@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package migrations
@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
-	"gitea.dev/models/unittest"
-	base "gitea.dev/modules/migration"
+	"creepercoding.dev/models/unittest"
+	base "creepercoding.dev/modules/migration"
 
 	"github.com/stretchr/testify/assert"
 )

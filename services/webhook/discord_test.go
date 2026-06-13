@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package webhook
@@ -6,11 +6,11 @@ package webhook
 import (
 	"testing"
 
-	webhook_model "gitea.dev/models/webhook"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	webhook_module "gitea.dev/modules/webhook"
+	webhook_model "creepercoding.dev/models/webhook"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	webhook_module "creepercoding.dev/modules/webhook"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

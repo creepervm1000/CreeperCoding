@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package templates
@@ -7,12 +7,12 @@ import (
 	"html/template"
 	"strings"
 
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/svg"
-	"gitea.dev/modules/translation"
-	"gitea.dev/modules/util"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/svg"
+	"creepercoding.dev/modules/translation"
+	"creepercoding.dev/modules/util"
 )
 
 func commentTimelineEventIsWipToggle(c *issues_model.Comment) (isToggle, isWip bool) {

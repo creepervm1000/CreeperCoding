@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package mention
@@ -6,8 +6,8 @@ package mention
 import (
 	"context"
 
-	"gitea.dev/models/organization"
-	user_model "gitea.dev/models/user"
+	"creepercoding.dev/models/organization"
+	user_model "creepercoding.dev/models/user"
 )
 
 // Mention is the JSON structure returned by mention autocomplete endpoints.

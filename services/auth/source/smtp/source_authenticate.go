@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package smtp
@@ -10,10 +10,10 @@ import (
 	"net/textproto"
 	"strings"
 
-	auth_model "gitea.dev/models/auth"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/util"
+	auth_model "creepercoding.dev/models/auth"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/util"
 )
 
 // Authenticate queries if the provided login/password is authenticates against the SMTP server

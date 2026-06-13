@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cache
@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/util"
 )
 
 // EphemeralCache is a cache that can be used to store data in a request level context

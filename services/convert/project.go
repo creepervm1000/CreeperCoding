@@ -1,11 +1,11 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package convert
 
 import (
-	project_model "gitea.dev/models/project"
-	api "gitea.dev/modules/structs"
+	project_model "creepercoding.dev/models/project"
+	api "creepercoding.dev/modules/structs"
 )
 
 // ToAPIProject converts a Project to API format

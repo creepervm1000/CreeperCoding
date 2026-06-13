@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package base
@@ -11,9 +11,9 @@ import (
 	"regexp"
 	"strings"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
 
 	"xorm.io/xorm/schemas"
 )

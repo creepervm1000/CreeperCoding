@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package graceful
@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"gitea.dev/modules/gtprof"
+	"creepercoding.dev/modules/gtprof"
 )
 
 // FIXME: it seems that there is a bug when using systemd Type=notify: the "Install Page" (INSTALL_LOCK=false) doesn't notify properly.

@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -7,13 +7,13 @@ import (
 	"fmt"
 	"net/http"
 
-	"gitea.dev/models/auth"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	shared_user "gitea.dev/routers/web/shared/user"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
+	"creepercoding.dev/models/auth"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	shared_user "creepercoding.dev/routers/web/shared/user"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
 )
 
 type OAuth2CommonHandlers struct {

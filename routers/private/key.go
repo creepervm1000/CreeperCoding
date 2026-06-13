@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package private
@@ -6,10 +6,10 @@ package private
 import (
 	"net/http"
 
-	asymkey_model "gitea.dev/models/asymkey"
-	"gitea.dev/modules/private"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/services/context"
+	asymkey_model "creepercoding.dev/models/asymkey"
+	"creepercoding.dev/modules/private"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/services/context"
 )
 
 // UpdatePublicKeyInRepo update public key and deploy key updates

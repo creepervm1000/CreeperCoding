@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package arch
@@ -12,15 +12,15 @@ import (
 	"net/http"
 	"strings"
 
-	packages_model "gitea.dev/models/packages"
-	"gitea.dev/modules/json"
-	packages_module "gitea.dev/modules/packages"
-	arch_module "gitea.dev/modules/packages/arch"
-	"gitea.dev/modules/util"
-	"gitea.dev/routers/api/packages/helper"
-	"gitea.dev/services/context"
-	packages_service "gitea.dev/services/packages"
-	arch_service "gitea.dev/services/packages/arch"
+	packages_model "creepercoding.dev/models/packages"
+	"creepercoding.dev/modules/json"
+	packages_module "creepercoding.dev/modules/packages"
+	arch_module "creepercoding.dev/modules/packages/arch"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/routers/api/packages/helper"
+	"creepercoding.dev/services/context"
+	packages_service "creepercoding.dev/services/packages"
+	arch_service "creepercoding.dev/services/packages/arch"
 )
 
 func apiError(ctx *context.Context, status int, obj any) {

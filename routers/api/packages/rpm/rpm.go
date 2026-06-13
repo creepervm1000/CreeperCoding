@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package rpm
@@ -13,18 +13,18 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/models/db"
-	packages_model "gitea.dev/models/packages"
-	"gitea.dev/modules/json"
-	packages_module "gitea.dev/modules/packages"
-	rpm_module "gitea.dev/modules/packages/rpm"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
-	"gitea.dev/routers/api/packages/helper"
-	"gitea.dev/services/context"
-	notify_service "gitea.dev/services/notify"
-	packages_service "gitea.dev/services/packages"
-	rpm_service "gitea.dev/services/packages/rpm"
+	"creepercoding.dev/models/db"
+	packages_model "creepercoding.dev/models/packages"
+	"creepercoding.dev/modules/json"
+	packages_module "creepercoding.dev/modules/packages"
+	rpm_module "creepercoding.dev/modules/packages/rpm"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/routers/api/packages/helper"
+	"creepercoding.dev/services/context"
+	notify_service "creepercoding.dev/services/notify"
+	packages_service "creepercoding.dev/services/packages"
+	rpm_service "creepercoding.dev/services/packages/rpm"
 )
 
 func apiError(ctx *context.Context, status int, obj any) {

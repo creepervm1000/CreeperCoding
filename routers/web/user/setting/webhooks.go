@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -6,11 +6,11 @@ package setting
 import (
 	"net/http"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/webhook"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/services/context"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/webhook"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/services/context"
 )
 
 const (

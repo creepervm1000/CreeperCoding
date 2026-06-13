@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package orgmode
@@ -9,11 +9,11 @@ import (
 	"io"
 	"strings"
 
-	"gitea.dev/modules/highlight"
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/highlight"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/setting"
 
 	"github.com/alecthomas/chroma/v2"
 	"github.com/niklasfasching/go-org/org"

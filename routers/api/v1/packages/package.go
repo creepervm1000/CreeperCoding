@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package packages
@@ -7,15 +7,15 @@ import (
 	"errors"
 	"net/http"
 
-	"gitea.dev/models/packages"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/optional"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/routers/api/v1/utils"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	packages_service "gitea.dev/services/packages"
+	"creepercoding.dev/models/packages"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/optional"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/routers/api/v1/utils"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	packages_service "creepercoding.dev/services/packages"
 )
 
 // ListPackages gets all packages of an owner

@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package csv
@@ -11,8 +11,8 @@ import (
 	"strings"
 	"testing"
 
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/translation"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/translation"
 
 	"github.com/stretchr/testify/assert"
 )

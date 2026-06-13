@@ -1,5 +1,5 @@
 // Copyright 2015 The Gogs Authors. All rights reserved.
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 //go:build !gogit
@@ -11,8 +11,8 @@ import (
 	"path/filepath"
 	"sync"
 
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/util"
 )
 
 const isGogit = false

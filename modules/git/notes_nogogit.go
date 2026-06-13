@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 //go:build !gogit
@@ -10,7 +10,7 @@ import (
 	"io"
 	"strings"
 
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/log"
 )
 
 // GetNote retrieves the git-notes data for a given commit.

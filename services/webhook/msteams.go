@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package webhook
@@ -11,11 +11,11 @@ import (
 	"strconv"
 	"strings"
 
-	webhook_model "gitea.dev/models/webhook"
-	"gitea.dev/modules/git"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	webhook_module "gitea.dev/modules/webhook"
+	webhook_model "creepercoding.dev/models/webhook"
+	"creepercoding.dev/modules/git"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	webhook_module "creepercoding.dev/modules/webhook"
 )
 
 type (

@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cmd
@@ -7,9 +7,9 @@ import (
 	"context"
 	"testing"
 
-	"gitea.dev/models/auth"
-	"gitea.dev/modules/test"
-	"gitea.dev/services/auth/source/ldap"
+	"creepercoding.dev/models/auth"
+	"creepercoding.dev/modules/test"
+	"creepercoding.dev/services/auth/source/ldap"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/urfave/cli/v3"

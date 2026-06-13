@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors.
+// Copyright 2021 The CreeperCoding Authors.
 // All rights reserved.
 // SPDX-License-Identifier: MIT
 
@@ -12,8 +12,8 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/log"
 )
 
 // lsFileLine is a Quadruplet struct (+error) representing a partially parsed line from ls-files

@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markdown
@@ -7,8 +7,8 @@ import (
 	"os"
 	"testing"
 
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/setting"
 )
 
 func TestMain(m *testing.M) {

@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -11,16 +11,16 @@ import (
 	"testing"
 	"time"
 
-	auth_model "gitea.dev/models/auth"
-	"gitea.dev/models/packages"
-	conan_model "gitea.dev/models/packages/conan"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	conan_module "gitea.dev/modules/packages/conan"
-	"gitea.dev/modules/setting"
-	conan_router "gitea.dev/routers/api/packages/conan"
-	package_service "gitea.dev/services/packages"
-	"gitea.dev/tests"
+	auth_model "creepercoding.dev/models/auth"
+	"creepercoding.dev/models/packages"
+	conan_model "creepercoding.dev/models/packages/conan"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	conan_module "creepercoding.dev/modules/packages/conan"
+	"creepercoding.dev/modules/setting"
+	conan_router "creepercoding.dev/routers/api/packages/conan"
+	package_service "creepercoding.dev/services/packages"
+	"creepercoding.dev/tests"
 
 	"github.com/stretchr/testify/assert"
 )

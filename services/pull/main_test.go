@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors.
+// Copyright 2019 The CreeperCoding Authors.
 // All rights reserved.
 // SPDX-License-Identifier: MIT
 
@@ -7,9 +7,9 @@ package pull
 import (
 	"testing"
 
-	"gitea.dev/models/unittest"
+	"creepercoding.dev/models/unittest"
 
-	_ "gitea.dev/models/actions"
+	_ "creepercoding.dev/models/actions"
 )
 
 func TestMain(m *testing.M) {

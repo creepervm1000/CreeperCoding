@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package terraform
@@ -9,10 +9,10 @@ import (
 	"io"
 	"time"
 
-	"gitea.dev/models/db"
-	packages_model "gitea.dev/models/packages"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/db"
+	packages_model "creepercoding.dev/models/packages"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/util"
 
 	"xorm.io/builder"
 )

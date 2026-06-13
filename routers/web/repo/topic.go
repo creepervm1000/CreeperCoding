@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"strings"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/log"
-	"gitea.dev/services/context"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/services/context"
 )
 
 // TopicsPost response for creating repository

@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 //go:build !gogit
@@ -10,7 +10,7 @@ import (
 	"io"
 	"strings"
 
-	"gitea.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/git/gitcmd"
 )
 
 // GetRefsFiltered returns all references of the repository that matches patterm exactly or starting with.

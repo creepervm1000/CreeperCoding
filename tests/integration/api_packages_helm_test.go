@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -12,12 +12,12 @@ import (
 	"testing"
 	"time"
 
-	"gitea.dev/models/packages"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	helm_module "gitea.dev/modules/packages/helm"
-	"gitea.dev/modules/setting"
-	"gitea.dev/tests"
+	"creepercoding.dev/models/packages"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	helm_module "creepercoding.dev/modules/packages/helm"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/tests"
 
 	"github.com/stretchr/testify/assert"
 	"go.yaml.in/yaml/v4"

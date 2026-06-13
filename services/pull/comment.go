@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package pull
@@ -7,14 +7,14 @@ import (
 	"context"
 	"slices"
 
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
 )
 
 const maxPushCommitsInCommentCount = 1000

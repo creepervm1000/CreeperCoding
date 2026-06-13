@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -11,23 +11,23 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/models/db"
-	git_model "gitea.dev/models/git"
-	repo_model "gitea.dev/models/repo"
-	unit_model "gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/log"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/svg"
-	"gitea.dev/modules/util"
-	"gitea.dev/routers/web/feed"
-	"gitea.dev/services/context"
-	repo_service "gitea.dev/services/repository"
+	"creepercoding.dev/models/db"
+	git_model "creepercoding.dev/models/git"
+	repo_model "creepercoding.dev/models/repo"
+	unit_model "creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/log"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/svg"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/routers/web/feed"
+	"creepercoding.dev/services/context"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 func checkOutdatedBranch(ctx *context.Context) {

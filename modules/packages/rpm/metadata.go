@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package rpm
@@ -8,8 +8,8 @@ import (
 	"io"
 	"strings"
 
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/validation"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/validation"
 
 	"github.com/sassoftware/go-rpmutils"
 )

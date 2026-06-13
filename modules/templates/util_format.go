@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package templates
@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/util"
 )
 
 func timeEstimateString(timeSec any) string {

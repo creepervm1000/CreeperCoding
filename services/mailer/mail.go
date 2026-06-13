@@ -1,5 +1,5 @@
 // Copyright 2016 The Gogs Authors. All rights reserved.
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package mailer
@@ -16,15 +16,15 @@ import (
 	"regexp"
 	"strings"
 
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/storage"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/typesniffer"
-	sender_service "gitea.dev/services/mailer/sender"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/storage"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/typesniffer"
+	sender_service "creepercoding.dev/services/mailer/sender"
 
 	"golang.org/x/net/html"
 )
@@ -43,7 +43,7 @@ func SendTestMail(email string) error {
 		// No mail service configured
 		return nil
 	}
-	return sender_service.Send(sender, sender_service.NewMessage(email, "Gitea Test Email!", "Gitea Test Email!"))
+	return sender_service.Send(sender, sender_service.NewMessage(email, "CreeperCoding Test Email!", "CreeperCoding Test Email!"))
 }
 
 func sanitizeSubject(subject string) string {
@@ -185,11 +185,11 @@ func generateMetadataHeaders(repo *repo_model.Repository) map[string]string {
 		// https://datatracker.ietf.org/doc/html/rfc2369
 		"List-Archive": fmt.Sprintf("<%s>", repo.HTMLURL()),
 
-		"X-Mailer": "Gitea",
+		"X-Mailer": "CreeperCoding",
 
-		"X-Gitea-Repository":      repo.Name,
-		"X-Gitea-Repository-Path": repo.FullName(),
-		"X-Gitea-Repository-Link": repo.HTMLURL(),
+		"X-CreeperCoding-Repository":      repo.Name,
+		"X-CreeperCoding-Repository-Path": repo.FullName(),
+		"X-CreeperCoding-Repository-Link": repo.HTMLURL(),
 
 		"X-GitLab-Project":      repo.Name,
 		"X-GitLab-Project-Path": repo.FullName(),
@@ -198,18 +198,18 @@ func generateMetadataHeaders(repo *repo_model.Repository) map[string]string {
 
 func generateSenderRecipientHeaders(doer, recipient *user_model.User) map[string]string {
 	return map[string]string{
-		"X-Gitea-Sender":             doer.Name,
-		"X-Gitea-Recipient":          recipient.Name,
-		"X-Gitea-Recipient-Address":  recipient.Email,
-		"X-GitHub-Sender":            doer.Name,
-		"X-GitHub-Recipient":         recipient.Name,
-		"X-GitHub-Recipient-Address": recipient.Email,
+		"X-CreeperCoding-Sender":            doer.Name,
+		"X-CreeperCoding-Recipient":         recipient.Name,
+		"X-CreeperCoding-Recipient-Address": recipient.Email,
+		"X-GitHub-Sender":                   doer.Name,
+		"X-GitHub-Recipient":                recipient.Name,
+		"X-GitHub-Recipient-Address":        recipient.Email,
 	}
 }
 
 func generateReasonHeaders(reason string) map[string]string {
 	return map[string]string{
-		"X-Gitea-Reason":              reason,
+		"X-CreeperCoding-Reason":      reason,
 		"X-GitHub-Reason":             reason,
 		"X-GitLab-NotificationReason": reason,
 	}

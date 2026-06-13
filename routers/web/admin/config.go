@@ -1,31 +1,35 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package admin
 
 import (
 	"errors"
+	"fmt"
 	"net/http"
+	"os"
 
-	system_model "gitea.dev/models/system"
-	"gitea.dev/modules/cache"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/setting/config"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
-	"gitea.dev/services/mailer"
+	system_model "creepercoding.dev/models/system"
+	"creepercoding.dev/modules/cache"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/setting/config"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/mailer"
 
 	"gitea.com/go-chi/session"
+	ini "gopkg.in/ini.v1"
 )
 
 const (
 	tplConfig         templates.TplName = "admin/config"
 	tplConfigSettings templates.TplName = "admin/config_settings/config_settings"
+	tplConfigEditor   templates.TplName = "admin/config_editor"
 )
 
 // SendTestMail send test mail to confirm mail service is OK
@@ -144,6 +148,62 @@ func validateConfigKeyValue(dynKey, input string) error {
 		return util.NewInvalidArgumentErrorf("invalid json value for key: %s", dynKey)
 	}
 	return nil
+}
+
+func ConfigEditor(ctx *context.Context) {
+	ctx.Data["Title"] = ctx.Tr("admin.config_editor")
+	ctx.Data["PageIsAdminConfig"] = true
+	ctx.Data["PageIsAdminConfigEditor"] = true
+
+	content, err := os.ReadFile(setting.CustomConf)
+	if err != nil {
+		ctx.Data["ConfigContent"] = fmt.Sprintf("Error reading config file: %v", err)
+	} else {
+		ctx.Data["ConfigContent"] = string(content)
+	}
+	ctx.Data["CustomConf"] = setting.CustomConf
+
+	ctx.HTML(http.StatusOK, tplConfigEditor)
+}
+
+func ConfigEditorPost(ctx *context.Context) {
+	content := ctx.FormString("config_content")
+	if content == "" {
+		ctx.Flash.Error(ctx.Tr("admin.config_editor.empty"))
+		ctx.Redirect(setting.AppSubURL + "/-/admin/config/editor")
+		return
+	}
+
+	// Validate INI syntax
+	if _, err := ini.Load([]byte(content)); err != nil {
+		ctx.Flash.Error(ctx.Tr("admin.config_editor.invalid_ini", err.Error()))
+		ctx.Redirect(setting.AppSubURL + "/-/admin/config/editor")
+		return
+	}
+
+	// Create backup
+	backupPath := setting.CustomConf + ".bak"
+	if err := os.WriteFile(backupPath, []byte(content), 0o644); err != nil {
+		// Non-fatal: just warn if backup fails
+		log.Warn("Failed to create config backup at %s: %v", backupPath, err)
+	}
+
+	// Write config file
+	if err := os.WriteFile(setting.CustomConf, []byte(content), 0o644); err != nil {
+		ctx.Flash.Error(ctx.Tr("admin.config_editor.write_error", err.Error()))
+		ctx.Redirect(setting.AppSubURL + "/-/admin/config/editor")
+		return
+	}
+
+	ctx.Flash.Info(ctx.Tr("admin.config_editor.saved", setting.CustomConf))
+	ctx.Data["ConfigContent"] = content
+
+	ctx.Redirect(setting.AppSubURL + "/-/admin/config/editor")
+}
+
+func ConfigRestart(ctx *context.Context) {
+	ctx.Flash.Warning(ctx.Tr("admin.config_editor.restart_manual"))
+	ctx.Redirect(setting.AppSubURL + "/-/admin/config/editor")
 }
 
 func ChangeConfig(ctx *context.Context) {

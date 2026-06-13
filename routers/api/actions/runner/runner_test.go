@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package runner
@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	runnerv1 "gitea.dev/actions-proto-go/runner/v1"
-	actions_model "gitea.dev/models/actions"
+	actions_model "creepercoding.dev/models/actions"
 
 	"github.com/stretchr/testify/assert"
 )

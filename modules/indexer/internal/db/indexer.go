@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package db
@@ -6,7 +6,7 @@ package db
 import (
 	"context"
 
-	"gitea.dev/modules/indexer/internal"
+	"creepercoding.dev/modules/indexer/internal"
 )
 
 var _ internal.Indexer = &Indexer{}

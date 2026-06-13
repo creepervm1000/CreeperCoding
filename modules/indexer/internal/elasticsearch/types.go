@@ -1,9 +1,9 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package elasticsearch
 
-import "gitea.dev/modules/json"
+import "creepercoding.dev/modules/json"
 
 const (
 	bulkActionIndex  = "index"

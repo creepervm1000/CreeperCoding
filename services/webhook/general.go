@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package webhook
@@ -9,13 +9,13 @@ import (
 	"net/url"
 	"strings"
 
-	user_model "gitea.dev/models/user"
-	webhook_model "gitea.dev/models/webhook"
-	"gitea.dev/modules/base"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	webhook_module "gitea.dev/modules/webhook"
+	user_model "creepercoding.dev/models/user"
+	webhook_model "creepercoding.dev/models/webhook"
+	"creepercoding.dev/modules/base"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	webhook_module "creepercoding.dev/modules/webhook"
 )
 
 type linkFormatter = func(string, string) string

@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package regexplru
@@ -6,7 +6,7 @@ package regexplru
 import (
 	"regexp"
 
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/log"
 
 	lru "github.com/hashicorp/golang-lru/v2"
 )

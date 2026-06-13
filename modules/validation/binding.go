@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package validation
@@ -9,10 +9,10 @@ import (
 	"regexp"
 	"strings"
 
-	"gitea.dev/modules/auth"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/glob"
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/auth"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/glob"
+	"creepercoding.dev/modules/json"
 
 	"gitea.com/go-chi/binding"
 )

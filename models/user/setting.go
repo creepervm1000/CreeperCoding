@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package user
@@ -9,11 +9,11 @@ import (
 	"fmt"
 	"strings"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/cache"
-	"gitea.dev/modules/json"
-	setting_module "gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/cache"
+	"creepercoding.dev/modules/json"
+	setting_module "creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
 
 	"xorm.io/builder"
 	"xorm.io/xorm/convert"

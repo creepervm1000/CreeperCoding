@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package util
@@ -12,7 +12,7 @@ import (
 
 func TestCallerFuncName(t *testing.T) {
 	s := CallerFuncName()
-	assert.Equal(t, "gitea.dev/modules/util.TestCallerFuncName", s)
+	assert.Equal(t, "creepercoding.dev/modules/util.TestCallerFuncName", s)
 }
 
 func BenchmarkCallerFuncName(b *testing.B) {

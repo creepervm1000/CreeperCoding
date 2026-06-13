@@ -1,5 +1,5 @@
 // Copyright 2019 Yusuke Inuzuka
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 // Most of what follows is a subtly changed version of github.com/yuin/goldmark/extension/footnote.go

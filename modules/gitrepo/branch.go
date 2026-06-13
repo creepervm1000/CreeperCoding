@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package gitrepo
@@ -8,8 +8,8 @@ import (
 	"errors"
 	"strings"
 
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
 )
 
 // GetBranchesByPath returns a branch by its path

@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package languagestats
@@ -6,7 +6,7 @@ package languagestats
 import (
 	"testing"
 
-	"gitea.dev/modules/git"
+	"creepercoding.dev/modules/git"
 )
 
 func TestMain(m *testing.M) {

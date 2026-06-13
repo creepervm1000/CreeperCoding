@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package container
@@ -8,19 +8,19 @@ import (
 	"fmt"
 	"time"
 
-	"gitea.dev/models/db"
-	packages_model "gitea.dev/models/packages"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	packages_module "gitea.dev/modules/packages"
-	packages_service "gitea.dev/services/packages"
-	alpine_service "gitea.dev/services/packages/alpine"
-	arch_service "gitea.dev/services/packages/arch"
-	cargo_service "gitea.dev/services/packages/cargo"
-	container_service "gitea.dev/services/packages/container"
-	debian_service "gitea.dev/services/packages/debian"
-	rpm_service "gitea.dev/services/packages/rpm"
+	"creepercoding.dev/models/db"
+	packages_model "creepercoding.dev/models/packages"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	packages_module "creepercoding.dev/modules/packages"
+	packages_service "creepercoding.dev/services/packages"
+	alpine_service "creepercoding.dev/services/packages/alpine"
+	arch_service "creepercoding.dev/services/packages/arch"
+	cargo_service "creepercoding.dev/services/packages/cargo"
+	container_service "creepercoding.dev/services/packages/container"
+	debian_service "creepercoding.dev/services/packages/debian"
+	rpm_service "creepercoding.dev/services/packages/rpm"
 )
 
 // CleanupTask executes cleanup rules and cleanup expired package data

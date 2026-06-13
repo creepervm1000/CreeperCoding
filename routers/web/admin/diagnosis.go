@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors.
+// Copyright 2023 The CreeperCoding Authors.
 // SPDX-License-Identifier: MIT
 
 package admin
@@ -9,10 +9,10 @@ import (
 	"runtime/pprof"
 	"time"
 
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/tailmsg"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/tailmsg"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
 )
 
 func MonitorDiagnosis(ctx *context.Context) {

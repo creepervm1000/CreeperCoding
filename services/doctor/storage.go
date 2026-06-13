@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package doctor
@@ -9,16 +9,16 @@ import (
 	"io/fs"
 	"strings"
 
-	"gitea.dev/models/git"
-	"gitea.dev/models/packages"
-	"gitea.dev/models/repo"
-	"gitea.dev/models/user"
-	"gitea.dev/modules/base"
-	"gitea.dev/modules/log"
-	packages_module "gitea.dev/modules/packages"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/storage"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/git"
+	"creepercoding.dev/models/packages"
+	"creepercoding.dev/models/repo"
+	"creepercoding.dev/models/user"
+	"creepercoding.dev/modules/base"
+	"creepercoding.dev/modules/log"
+	packages_module "creepercoding.dev/modules/packages"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/storage"
+	"creepercoding.dev/modules/util"
 )
 
 type commonStorageCheckOptions struct {

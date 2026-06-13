@@ -1,5 +1,6 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2016 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors
+// Copyright 2016 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package main
@@ -10,15 +11,15 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/cmd"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/cmd"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
 
 	// register supported doc types
-	_ "gitea.dev/modules/markup/console"
-	_ "gitea.dev/modules/markup/csv"
-	_ "gitea.dev/modules/markup/markdown"
-	_ "gitea.dev/modules/markup/orgmode"
+	_ "creepercoding.dev/modules/markup/console"
+	_ "creepercoding.dev/modules/markup/csv"
+	_ "creepercoding.dev/modules/markup/markdown"
+	_ "creepercoding.dev/modules/markup/orgmode"
 
 	"github.com/urfave/cli/v3"
 )

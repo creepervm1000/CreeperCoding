@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package private
@@ -7,10 +7,10 @@ import (
 	"io"
 	"net/http"
 
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/private"
-	myCtx "gitea.dev/services/context"
-	"gitea.dev/services/migrations"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/private"
+	myCtx "creepercoding.dev/services/context"
+	"creepercoding.dev/services/migrations"
 )
 
 // RestoreRepo restore a repository from data

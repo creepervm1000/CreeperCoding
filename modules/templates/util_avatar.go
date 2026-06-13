@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package templates
@@ -9,14 +9,14 @@ import (
 	"html/template"
 	"strconv"
 
-	activities_model "gitea.dev/models/activities"
-	"gitea.dev/models/avatars"
-	"gitea.dev/models/organization"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	gitea_html "gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
+	activities_model "creepercoding.dev/models/activities"
+	"creepercoding.dev/models/avatars"
+	"creepercoding.dev/models/organization"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	gitea_html "creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
 )
 
 type AvatarUtils struct {

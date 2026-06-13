@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 // Package private contains all internal routes. The package name "internal" isn't usable because Golang reserves it for disabling cross-package usage.
@@ -10,13 +10,13 @@ import (
 	"net/http"
 	"strings"
 
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/private"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/common"
-	"gitea.dev/routers/web/misc"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/private"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/common"
+	"creepercoding.dev/routers/web/misc"
+	"creepercoding.dev/services/context"
 
 	"gitea.com/go-chi/binding"
 )
@@ -29,7 +29,7 @@ func authInternal(next http.Handler) http.Handler {
 			return
 		}
 
-		tokens := req.Header.Get("X-Gitea-Internal-Auth") // TODO: use something like JWT or HMAC to avoid passing the token in the clear
+		tokens := req.Header.Get("X-CreeperCoding-Internal-Auth") // TODO: use something like JWT or HMAC to avoid passing the token in the clear
 		after, found := strings.CutPrefix(tokens, "Bearer ")
 		authSucceeded := found && subtle.ConstantTimeCompare([]byte(after), []byte(setting.InternalToken)) == 1
 		if !authSucceeded {

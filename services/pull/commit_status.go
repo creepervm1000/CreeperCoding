@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors.
+// Copyright 2019 The CreeperCoding Authors.
 // All rights reserved.
 // SPDX-License-Identifier: MIT
 
@@ -9,13 +9,13 @@ import (
 	"errors"
 	"fmt"
 
-	"gitea.dev/models/db"
-	git_model "gitea.dev/models/git"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/modules/commitstatus"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/glob"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/models/db"
+	git_model "creepercoding.dev/models/git"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/modules/commitstatus"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/glob"
+	"creepercoding.dev/modules/log"
 )
 
 // MergeRequiredContextsCommitStatus returns a commit status state for given required contexts

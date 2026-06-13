@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package user
@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"net/url"
 
-	activities_model "gitea.dev/models/activities"
-	"gitea.dev/modules/setting"
-	"gitea.dev/services/context"
+	activities_model "creepercoding.dev/models/activities"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/services/context"
 )
 
 func prepareHeatmapURL(ctx *context.Context) {

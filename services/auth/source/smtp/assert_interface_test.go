@@ -1,12 +1,12 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package smtp_test
 
 import (
-	auth_model "gitea.dev/models/auth"
-	"gitea.dev/services/auth"
-	"gitea.dev/services/auth/source/smtp"
+	auth_model "creepercoding.dev/models/auth"
+	"creepercoding.dev/services/auth"
+	"creepercoding.dev/services/auth/source/smtp"
 )
 
 // This test file exists to assert that our Source exposes the interfaces that we expect

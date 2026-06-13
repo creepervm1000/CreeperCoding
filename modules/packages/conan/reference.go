@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package conan
@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"strings"
 
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/util"
 )
 
 const (

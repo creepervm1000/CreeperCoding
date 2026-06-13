@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package composer
@@ -8,11 +8,11 @@ import (
 	"net/url"
 	"time"
 
-	packages_model "gitea.dev/models/packages"
-	access_model "gitea.dev/models/perm/access"
-	"gitea.dev/modules/log"
-	composer_module "gitea.dev/modules/packages/composer"
-	"gitea.dev/services/context"
+	packages_model "creepercoding.dev/models/packages"
+	access_model "creepercoding.dev/models/perm/access"
+	"creepercoding.dev/modules/log"
+	composer_module "creepercoding.dev/modules/packages/composer"
+	"creepercoding.dev/services/context"
 )
 
 // ServiceIndexResponse contains registry endpoints

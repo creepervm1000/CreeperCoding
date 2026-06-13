@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package metrics
@@ -6,9 +6,9 @@ package metrics
 import (
 	"runtime"
 
-	activities_model "gitea.dev/models/activities"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/setting"
+	activities_model "creepercoding.dev/models/activities"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/setting"
 
 	"github.com/prometheus/client_golang/prometheus"
 )

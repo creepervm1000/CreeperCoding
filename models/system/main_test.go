@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package system_test
@@ -6,12 +6,12 @@ package system_test
 import (
 	"testing"
 
-	"gitea.dev/models/unittest"
+	"creepercoding.dev/models/unittest"
 
-	_ "gitea.dev/models" // register models
-	_ "gitea.dev/models/actions"
-	_ "gitea.dev/models/activities"
-	_ "gitea.dev/models/system" // register models of system
+	_ "creepercoding.dev/models" // register models
+	_ "creepercoding.dev/models/actions"
+	_ "creepercoding.dev/models/activities"
+	_ "creepercoding.dev/models/system" // register models of system
 )
 
 func TestMain(m *testing.M) {

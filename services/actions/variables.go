@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -6,9 +6,9 @@ package actions
 import (
 	"context"
 
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/modules/util"
-	secret_service "gitea.dev/services/secrets"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/modules/util"
+	secret_service "creepercoding.dev/services/secrets"
 )
 
 func CreateVariable(ctx context.Context, ownerID, repoID int64, name, data, description string) (*actions_model.ActionVariable, error) {

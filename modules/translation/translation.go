@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package translation
@@ -10,11 +10,11 @@ import (
 	"strings"
 	"sync"
 
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/options"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/translation/i18n"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/options"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/translation/i18n"
+	"creepercoding.dev/modules/util"
 
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
@@ -71,7 +71,6 @@ func InitLocales(ctx context.Context) {
 		if err != nil {
 			log.Fatal("Failed to list locale files: %v", err)
 		}
-
 		localeData := make(map[string][]byte, len(localeNames))
 		for _, name := range localeNames {
 			if !strings.HasPrefix(name, "locale_") || !strings.HasSuffix(name, ".json") {

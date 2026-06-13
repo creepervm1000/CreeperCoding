@@ -1,14 +1,14 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
 
 import (
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/setting"
-	"gitea.dev/services/context"
-	repo_service "gitea.dev/services/repository"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/services/context"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 // AdoptOrDeleteRepository adopts or deletes a repository

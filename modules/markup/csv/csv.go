@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markup
@@ -9,11 +9,11 @@ import (
 	"io"
 	"strconv"
 
-	"gitea.dev/modules/csv"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/translation"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/csv"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/translation"
+	"creepercoding.dev/modules/util"
 )
 
 func init() {

@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package system
@@ -9,10 +9,10 @@ import (
 	"sync"
 	"time"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting/config"
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting/config"
+	"creepercoding.dev/modules/timeutil"
 
 	"xorm.io/builder"
 )

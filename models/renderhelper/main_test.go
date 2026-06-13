@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package renderhelper
@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"gitea.dev/models/unittest"
-	"gitea.dev/modules/markup"
+	"creepercoding.dev/models/unittest"
+	"creepercoding.dev/modules/markup"
 )
 
 func testRenderString(ctx *markup.RenderContext, content string) (string, error) {

@@ -1,7 +1,7 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
-package structs // import "gitea.dev/modules/structs"
+package structs // import "creepercoding.dev/modules/structs"
 
 import (
 	"time"

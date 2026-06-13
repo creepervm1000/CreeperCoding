@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -12,18 +12,18 @@ import (
 	"path"
 	"strconv"
 
-	"gitea.dev/models/gituser"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/charset"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/languagestats"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/highlight"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
+	"creepercoding.dev/models/gituser"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/charset"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/languagestats"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/highlight"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
 )
 
 type blameRow struct {

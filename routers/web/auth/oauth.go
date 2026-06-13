@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package auth
@@ -15,20 +15,20 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/models/auth"
-	user_model "gitea.dev/models/user"
-	auth_module "gitea.dev/modules/auth"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/session"
-	"gitea.dev/modules/setting"
-	source_service "gitea.dev/services/auth/source"
-	"gitea.dev/services/auth/source/oauth2"
-	"gitea.dev/services/context"
-	"gitea.dev/services/externalaccount"
-	user_service "gitea.dev/services/user"
+	"creepercoding.dev/models/auth"
+	user_model "creepercoding.dev/models/user"
+	auth_module "creepercoding.dev/modules/auth"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/session"
+	"creepercoding.dev/modules/setting"
+	source_service "creepercoding.dev/services/auth/source"
+	"creepercoding.dev/services/auth/source/oauth2"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/externalaccount"
+	user_service "creepercoding.dev/services/user"
 
 	"github.com/markbates/goth"
 	"github.com/markbates/goth/gothic"

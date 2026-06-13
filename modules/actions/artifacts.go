@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -9,7 +9,7 @@ import (
 	"encoding/binary"
 	"io"
 
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/setting"
 )
 
 type tagType string

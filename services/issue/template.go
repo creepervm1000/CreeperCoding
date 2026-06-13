@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package issue
@@ -9,12 +9,12 @@ import (
 	"path"
 	"strings"
 
-	"gitea.dev/models/repo"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/issue/template"
-	"gitea.dev/modules/log"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/issue/template"
+	"creepercoding.dev/modules/log"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
 
 	"go.yaml.in/yaml/v4"
 )

@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package common
@@ -8,13 +8,13 @@ import (
 	"errors"
 	"time"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/migrations"
-	system_model "gitea.dev/models/system"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/setting/config"
-	"gitea.dev/services/versioned_migration"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/migrations"
+	system_model "creepercoding.dev/models/system"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/setting/config"
+	"creepercoding.dev/services/versioned_migration"
 )
 
 // InitDBEngine In case of problems connecting to DB, retry connection. Eg, PGSQL in Docker Container on Synology

@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markup
@@ -8,10 +8,10 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"gitea.dev/models/unittest"
-	"gitea.dev/models/user"
-	gitea_context "gitea.dev/services/context"
-	"gitea.dev/services/contexttest"
+	"creepercoding.dev/models/unittest"
+	"creepercoding.dev/models/user"
+	gitea_context "creepercoding.dev/services/context"
+	"creepercoding.dev/services/contexttest"
 
 	"github.com/stretchr/testify/assert"
 )

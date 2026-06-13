@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package lfs
@@ -9,8 +9,8 @@ import (
 	"io"
 	"net/http"
 
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
 )
 
 // TransferAdapter represents an adapter for downloading/uploading LFS objects.

@@ -8,14 +8,14 @@ import (
 	"net/url"
 	"time"
 
-	"gitea.dev/models/db"
-	packages_model "gitea.dev/models/packages"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/services/context"
-	packages_service "gitea.dev/services/packages"
-	packages_cleanup_service "gitea.dev/services/packages/cleanup"
+	"creepercoding.dev/models/db"
+	packages_model "creepercoding.dev/models/packages"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/services/context"
+	packages_service "creepercoding.dev/services/packages"
+	packages_cleanup_service "creepercoding.dev/services/packages/cleanup"
 )
 
 const (

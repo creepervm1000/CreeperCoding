@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/models/db"
-	unittest "gitea.dev/models/unittest"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/models/db"
+	unittest "creepercoding.dev/models/unittest"
 
 	act_model "gitea.com/gitea/runner/act/model"
 	"github.com/stretchr/testify/assert"

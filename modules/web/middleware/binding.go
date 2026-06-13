@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package middleware
@@ -8,9 +8,9 @@ import (
 	"reflect"
 	"strings"
 
-	"gitea.dev/modules/translation"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/validation"
+	"creepercoding.dev/modules/translation"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/validation"
 
 	"gitea.com/go-chi/binding"
 )

@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package common
@@ -10,15 +10,15 @@ import (
 	"net/http"
 	"strings"
 
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/httpcache"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/reqctx"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/web/middleware"
-	"gitea.dev/modules/web/routing"
-	"gitea.dev/services/context"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/httpcache"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/reqctx"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/web/middleware"
+	"creepercoding.dev/modules/web/routing"
+	"creepercoding.dev/services/context"
 )
 
 const tplStatus500 templates.TplName = "status/500"

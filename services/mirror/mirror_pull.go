@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package mirror
@@ -9,25 +9,25 @@ import (
 	"strings"
 	"time"
 
-	repo_model "gitea.dev/models/repo"
-	system_model "gitea.dev/models/system"
-	"gitea.dev/modules/cache"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
-	giturl "gitea.dev/modules/git/url"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/globallock"
-	"gitea.dev/modules/lfs"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/process"
-	"gitea.dev/modules/proxy"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/migrations"
-	notify_service "gitea.dev/services/notify"
-	repo_service "gitea.dev/services/repository"
+	repo_model "creepercoding.dev/models/repo"
+	system_model "creepercoding.dev/models/system"
+	"creepercoding.dev/modules/cache"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
+	giturl "creepercoding.dev/modules/git/url"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/globallock"
+	"creepercoding.dev/modules/lfs"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/process"
+	"creepercoding.dev/modules/proxy"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/migrations"
+	notify_service "creepercoding.dev/services/notify"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 // UpdateAddress writes new address to Git repository and database

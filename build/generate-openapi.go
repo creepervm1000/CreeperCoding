@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 // generate-openapi converts Gitea's Swagger 2.0 spec into an OpenAPI 3.0 spec.
@@ -25,7 +25,7 @@ import (
 	"sort"
 	"strings"
 
-	"gitea.dev/build/openapi3gen"
+	"creepercoding.dev/build/openapi3gen"
 
 	"github.com/getkin/kin-openapi/openapi3"
 )

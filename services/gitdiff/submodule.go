@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package gitdiff
@@ -7,10 +7,10 @@ import (
 	"context"
 	"html/template"
 
-	"gitea.dev/modules/base"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/base"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/log"
 )
 
 type SubmoduleDiffInfo struct {

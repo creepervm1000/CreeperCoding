@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package swift
@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"gitea.dev/modules/test"
+	"creepercoding.dev/modules/test"
 
 	"github.com/hashicorp/go-version"
 	"github.com/stretchr/testify/assert"

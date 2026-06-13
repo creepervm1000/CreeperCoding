@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package structs
@@ -7,7 +7,7 @@ package structs
 import (
 	"time"
 
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/json"
 )
 
 // User represents a user

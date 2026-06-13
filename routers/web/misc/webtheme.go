@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package misc
@@ -6,13 +6,13 @@ package misc
 import (
 	"net/http"
 
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web/middleware"
-	"gitea.dev/services/context"
-	user_service "gitea.dev/services/user"
-	"gitea.dev/services/webtheme"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web/middleware"
+	"creepercoding.dev/services/context"
+	user_service "creepercoding.dev/services/user"
+	"creepercoding.dev/services/webtheme"
 )
 
 func WebThemeList(ctx *context.Context) {

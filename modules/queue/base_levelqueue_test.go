@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package queue
@@ -6,8 +6,8 @@ package queue
 import (
 	"testing"
 
-	"gitea.dev/modules/queue/lqinternal"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/queue/lqinternal"
+	"creepercoding.dev/modules/setting"
 
 	"gitea.com/lunny/levelqueue"
 	"github.com/stretchr/testify/assert"

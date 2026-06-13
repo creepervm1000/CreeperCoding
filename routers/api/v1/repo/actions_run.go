@@ -1,12 +1,12 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
 
 import (
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/routers/common"
-	"gitea.dev/services/context"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/routers/common"
+	"creepercoding.dev/services/context"
 )
 
 func DownloadActionsRunJobLogs(ctx *context.APIContext) {

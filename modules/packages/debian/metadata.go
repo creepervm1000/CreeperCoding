@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package debian
@@ -12,9 +12,9 @@ import (
 	"regexp"
 	"strings"
 
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/validation"
-	"gitea.dev/modules/zstd"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/validation"
+	"creepercoding.dev/modules/zstd"
 
 	"github.com/blakesmith/ar"
 	"github.com/ulikunitz/xz"

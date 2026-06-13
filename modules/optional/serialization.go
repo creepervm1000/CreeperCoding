@@ -1,10 +1,10 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package optional
 
 import (
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/json"
 
 	"go.yaml.in/yaml/v4"
 )

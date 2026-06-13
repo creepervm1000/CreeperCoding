@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package db
@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/setting"
 )
 
 // CountBadSequences looks for broken sequences from recreate-table mistakes

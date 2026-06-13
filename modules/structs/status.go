@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package structs
@@ -6,7 +6,7 @@ package structs
 import (
 	"time"
 
-	"gitea.dev/modules/commitstatus"
+	"creepercoding.dev/modules/commitstatus"
 )
 
 // CommitStatus holds a single status of a single Commit

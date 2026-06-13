@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -7,12 +7,12 @@ import (
 	"fmt"
 	"net/http"
 
-	issues_model "gitea.dev/models/issues"
-	user_model "gitea.dev/models/user"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/routers/api/v1/utils"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
+	issues_model "creepercoding.dev/models/issues"
+	user_model "creepercoding.dev/models/user"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/routers/api/v1/utils"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
 )
 
 // AddIssueSubscription Subscribe user to issue

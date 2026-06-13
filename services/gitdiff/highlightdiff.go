@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package gitdiff
@@ -10,7 +10,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/util"
 
 	"github.com/sergi/go-diff/diffmatchpatch"
 )

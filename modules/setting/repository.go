@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/log"
 )
 
 // enumerates all the policy repository creating

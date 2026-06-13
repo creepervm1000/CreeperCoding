@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -8,9 +8,9 @@ import (
 	"os"
 	"strings"
 
-	"gitea.dev/modules/auth/password/hash"
-	"gitea.dev/modules/generate"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/auth/password/hash"
+	"creepercoding.dev/modules/generate"
+	"creepercoding.dev/modules/log"
 )
 
 // Security settings

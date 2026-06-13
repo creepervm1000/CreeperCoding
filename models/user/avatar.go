@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package user
@@ -9,13 +9,13 @@ import (
 	"image/png"
 	"io"
 
-	"gitea.dev/models/avatars"
-	"gitea.dev/models/db"
-	"gitea.dev/modules/avatar"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/storage"
+	"creepercoding.dev/models/avatars"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/avatar"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/storage"
 )
 
 // CustomAvatarRelativePath returns user custom avatar relative path.
@@ -56,7 +56,7 @@ func GenerateRandomAvatar(ctx context.Context, u *User) error {
 func (u *User) AvatarLinkWithSize(ctx context.Context, size int) string {
 	// ghost user was deleted, Gitea actions is a bot user, 0 means the user should be a virtual user
 	// which comes from git configure information
-	if u.IsGhost() || u.IsGiteaActions() || u.ID <= 0 {
+	if u.IsGhost() || u.IsGiteaActions() || (u.ID <= 0 && !u.IsTypeBot()) {
 		return avatars.DefaultAvatarLink()
 	}
 

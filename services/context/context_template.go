@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package context
@@ -12,12 +12,12 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/public"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web/middleware"
-	"gitea.dev/services/webtheme"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/public"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web/middleware"
+	"creepercoding.dev/services/webtheme"
 )
 
 type TemplateContext map[string]any

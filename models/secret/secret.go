@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package secret
@@ -8,16 +8,16 @@ import (
 	"fmt"
 	"strings"
 
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/models/db"
-	actions_module "gitea.dev/modules/actions"
-	"gitea.dev/modules/actions/jobparser"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	secret_module "gitea.dev/modules/secret"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/util"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/models/db"
+	actions_module "creepercoding.dev/modules/actions"
+	"creepercoding.dev/modules/actions/jobparser"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	secret_module "creepercoding.dev/modules/secret"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/util"
 
 	"xorm.io/builder"
 )

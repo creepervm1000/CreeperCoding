@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package convert
@@ -7,10 +7,10 @@ import (
 	"context"
 	"net/url"
 
-	activities_model "gitea.dev/models/activities"
-	access_model "gitea.dev/models/perm/access"
-	"gitea.dev/modules/log"
-	api "gitea.dev/modules/structs"
+	activities_model "creepercoding.dev/models/activities"
+	access_model "creepercoding.dev/models/perm/access"
+	"creepercoding.dev/modules/log"
+	api "creepercoding.dev/modules/structs"
 )
 
 // ToNotificationThread convert a Notification to api.NotificationThread

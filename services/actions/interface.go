@@ -1,9 +1,9 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
 
-import "gitea.dev/services/context"
+import "creepercoding.dev/services/context"
 
 // API for actions of a repository or organization
 type API interface {

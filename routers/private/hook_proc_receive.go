@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package private
@@ -7,14 +7,14 @@ import (
 	"errors"
 	"net/http"
 
-	issues_model "gitea.dev/models/issues"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/private"
-	"gitea.dev/modules/web"
-	"gitea.dev/services/agit"
-	gitea_context "gitea.dev/services/context"
+	issues_model "creepercoding.dev/models/issues"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/private"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/agit"
+	gitea_context "creepercoding.dev/services/context"
 )
 
 // HookProcReceive proc-receive hook - only handles agit Proc-Receive requests at present

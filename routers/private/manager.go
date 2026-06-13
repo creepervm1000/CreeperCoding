@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package private
@@ -7,16 +7,16 @@ import (
 	"fmt"
 	"net/http"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/graceful/releasereopen"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/private"
-	"gitea.dev/modules/queue"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/web"
-	"gitea.dev/services/context"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/graceful/releasereopen"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/private"
+	"creepercoding.dev/modules/queue"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/context"
 )
 
 // ReloadTemplates reloads all the templates

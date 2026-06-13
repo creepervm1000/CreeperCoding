@@ -1,11 +1,11 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 //go:build !gogit
 
 package git
 
-import "gitea.dev/modules/log"
+import "creepercoding.dev/modules/log"
 
 // Size returns the size of the entry
 func (te *TreeEntry) Size() int64 {

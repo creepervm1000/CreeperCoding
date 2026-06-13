@@ -1,11 +1,11 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
 
 import (
-	"gitea.dev/services/context"
-	repo_service "gitea.dev/services/repository"
+	"creepercoding.dev/services/context"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 func acceptTransfer(ctx *context.Context) {

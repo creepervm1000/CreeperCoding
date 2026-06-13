@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/modules/glob"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/structs"
+	"creepercoding.dev/modules/glob"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/structs"
 )
 
 // enumerates all the types of captchas

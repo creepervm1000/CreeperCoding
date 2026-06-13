@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -14,25 +14,25 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gitea.dev/models/avatars"
-	"gitea.dev/models/db"
-	"gitea.dev/models/organization"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/translation"
-	"gitea.dev/modules/typesniffer"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/modules/web/middleware"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
-	user_service "gitea.dev/services/user"
-	"gitea.dev/services/webtheme"
+	"creepercoding.dev/models/avatars"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/organization"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/translation"
+	"creepercoding.dev/modules/typesniffer"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/modules/web/middleware"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
+	user_service "creepercoding.dev/services/user"
+	"creepercoding.dev/services/webtheme"
 )
 
 const (

@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package context
@@ -8,7 +8,7 @@ import (
 	"net"
 	"net/http"
 
-	web_types "gitea.dev/modules/web/types"
+	web_types "creepercoding.dev/modules/web/types"
 )
 
 // ResponseWriter represents a response writer for HTTP

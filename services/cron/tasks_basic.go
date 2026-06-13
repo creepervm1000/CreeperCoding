@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cron
@@ -7,18 +7,18 @@ import (
 	"context"
 	"time"
 
-	"gitea.dev/models"
-	git_model "gitea.dev/models/git"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/models/webhook"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/setting"
-	"gitea.dev/services/auth"
-	"gitea.dev/services/migrations"
-	mirror_service "gitea.dev/services/mirror"
-	packages_cleanup_service "gitea.dev/services/packages/cleanup"
-	repo_service "gitea.dev/services/repository"
-	archiver_service "gitea.dev/services/repository/archiver"
+	"creepercoding.dev/models"
+	git_model "creepercoding.dev/models/git"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/models/webhook"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/services/auth"
+	"creepercoding.dev/services/migrations"
+	mirror_service "creepercoding.dev/services/mirror"
+	packages_cleanup_service "creepercoding.dev/services/packages/cleanup"
+	repo_service "creepercoding.dev/services/repository"
+	archiver_service "creepercoding.dev/services/repository/archiver"
 )
 
 func registerUpdateMirrorTask() {

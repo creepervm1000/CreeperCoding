@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package elasticsearch
@@ -10,21 +10,21 @@ import (
 	"strconv"
 	"strings"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/analyze"
-	"gitea.dev/modules/charset"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/indexer"
-	"gitea.dev/modules/indexer/code/internal"
-	es "gitea.dev/modules/indexer/internal/elasticsearch"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/typesniffer"
-	"gitea.dev/modules/util"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/analyze"
+	"creepercoding.dev/modules/charset"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/indexer"
+	"creepercoding.dev/modules/indexer/code/internal"
+	es "creepercoding.dev/modules/indexer/internal/elasticsearch"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/typesniffer"
+	"creepercoding.dev/modules/util"
 
 	"github.com/go-enry/go-enry/v2"
 )

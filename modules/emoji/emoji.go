@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // Copyright 2015 Kenneth Shaw
 // SPDX-License-Identifier: MIT
 
@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/setting"
 )
 
 // Gemoji is a set of emoji data.

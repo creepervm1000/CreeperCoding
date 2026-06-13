@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_26
@@ -6,14 +6,14 @@ package v1_26
 import (
 	"testing"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/migrations/migrationtest"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/test"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/migrations/migrationtest"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/test"
 
-	_ "gitea.dev/models/actions"
-	_ "gitea.dev/models/git"
-	_ "gitea.dev/models/repo"
+	_ "creepercoding.dev/models/actions"
+	_ "creepercoding.dev/models/git"
+	_ "creepercoding.dev/models/repo"
 
 	"github.com/stretchr/testify/require"
 )

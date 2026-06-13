@@ -36,9 +36,9 @@ linters:
         main:
           deny:
             - pkg: encoding/json
-              desc: use gitea's modules/json instead of encoding/json
+              desc: use CreeperCoding's modules/json instead of encoding/json
             - pkg: github.com/unknwon/com
-              desc: use gitea's util and replacements
+              desc: use CreeperCoding's util and replacements
             - pkg: io/ioutil
               desc: use os or io instead
             - pkg: golang.org/x/exp
@@ -46,9 +46,9 @@ linters:
             - pkg: gitea.dev/modules/git/internal
               desc: do not use the internal package, use AddXxx function instead
             - pkg: gopkg.in/ini.v1
-              desc: do not use the ini package, use gitea's config system instead
+              desc: do not use the ini package, use CreeperCoding's config system instead
             - pkg: gitea.com/go-chi/cache
-              desc: do not use the go-chi cache package, use gitea's cache system
+              desc: do not use the go-chi cache package, use CreeperCoding's cache system
             - pkg: github.com/pkg/errors
               desc: use builtin errors package instead
         migrations:
@@ -173,7 +173,7 @@ formatters:
       custom-order: true
       sections:
         - standard
-        - prefix(gitea.dev)
+        - prefix(creepercoding.dev)
         - blank
         - default
     gofumpt:

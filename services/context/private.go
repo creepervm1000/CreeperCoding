@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package context
@@ -8,10 +8,10 @@ import (
 	"net/http"
 	"time"
 
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/process"
-	"gitea.dev/modules/web"
-	web_types "gitea.dev/modules/web/types"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/process"
+	"creepercoding.dev/modules/web"
+	web_types "creepercoding.dev/modules/web/types"
 )
 
 // PrivateContext represents a context for private routes

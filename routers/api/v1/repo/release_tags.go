@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -6,11 +6,11 @@ package repo
 import (
 	"net/http"
 
-	repo_model "gitea.dev/models/repo"
-	unit_model "gitea.dev/models/unit"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	release_service "gitea.dev/services/release"
+	repo_model "creepercoding.dev/models/repo"
+	unit_model "creepercoding.dev/models/unit"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	release_service "creepercoding.dev/services/release"
 )
 
 // GetReleaseByTag get a single release of a repository by tag name

@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package private
@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"net/url"
 
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/repository"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/setting"
 )
 
 // Git environment variables

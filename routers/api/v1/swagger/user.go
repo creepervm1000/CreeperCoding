@@ -1,11 +1,11 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package swagger
 
 import (
-	activities_model "gitea.dev/models/activities"
-	api "gitea.dev/modules/structs"
+	activities_model "creepercoding.dev/models/activities"
+	api "creepercoding.dev/modules/structs"
 )
 
 // User

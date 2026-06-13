@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package conan
@@ -12,21 +12,21 @@ import (
 	"strings"
 	"time"
 
-	auth_model "gitea.dev/models/auth"
-	"gitea.dev/models/db"
-	packages_model "gitea.dev/models/packages"
-	conan_model "gitea.dev/models/packages/conan"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	packages_module "gitea.dev/modules/packages"
-	conan_module "gitea.dev/modules/packages/conan"
-	"gitea.dev/modules/setting"
-	"gitea.dev/routers/api/packages/helper"
-	auth_service "gitea.dev/services/auth"
-	"gitea.dev/services/context"
-	notify_service "gitea.dev/services/notify"
-	packages_service "gitea.dev/services/packages"
+	auth_model "creepercoding.dev/models/auth"
+	"creepercoding.dev/models/db"
+	packages_model "creepercoding.dev/models/packages"
+	conan_model "creepercoding.dev/models/packages/conan"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	packages_module "creepercoding.dev/modules/packages"
+	conan_module "creepercoding.dev/modules/packages/conan"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/routers/api/packages/helper"
+	auth_service "creepercoding.dev/services/auth"
+	"creepercoding.dev/services/context"
+	notify_service "creepercoding.dev/services/notify"
+	packages_service "creepercoding.dev/services/packages"
 )
 
 const (

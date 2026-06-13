@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package log
@@ -164,7 +164,7 @@ func EventFormatTextMessage(mode *WriterMode, event *Event, msgFormat string, ms
 		funcName := event.Caller
 		shortFuncName := funcName
 		if flags&Lshortfuncname != 0 {
-			// funcName = "gitea.dev/modules/foo/bar.MyFunc.func1.2()"
+			// funcName = "creepercoding.dev/modules/foo/bar.MyFunc.func1.2()"
 			slashPos := strings.LastIndexByte(funcName, '/')
 			dotPos := strings.IndexByte(funcName[slashPos+1:], '.')
 			if dotPos > 0 {

@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package misc
@@ -6,7 +6,7 @@ package misc
 import (
 	"net/http"
 
-	"gitea.dev/services/context"
+	"creepercoding.dev/services/context"
 )
 
 func Swagger(ctx *context.Context) {

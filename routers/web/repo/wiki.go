@@ -1,5 +1,5 @@
 // Copyright 2015 The Gogs Authors. All rights reserved.
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -13,28 +13,28 @@ import (
 	"path"
 	"strings"
 
-	"gitea.dev/models/renderhelper"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	"gitea.dev/modules/base"
-	"gitea.dev/modules/charset"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/markup/markdown"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/common"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
-	git_service "gitea.dev/services/git"
-	notify_service "gitea.dev/services/notify"
-	repo_service "gitea.dev/services/repository"
-	wiki_service "gitea.dev/services/wiki"
+	"creepercoding.dev/models/renderhelper"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	"creepercoding.dev/modules/base"
+	"creepercoding.dev/modules/charset"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/markup/markdown"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/common"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
+	git_service "creepercoding.dev/services/git"
+	notify_service "creepercoding.dev/services/notify"
+	repo_service "creepercoding.dev/services/repository"
+	wiki_service "creepercoding.dev/services/wiki"
 )
 
 const (

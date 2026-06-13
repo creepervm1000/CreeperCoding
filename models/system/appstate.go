@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package system
@@ -6,7 +6,7 @@ package system
 import (
 	"context"
 
-	"gitea.dev/models/db"
+	"creepercoding.dev/models/db"
 )
 
 // AppState represents a state record in database

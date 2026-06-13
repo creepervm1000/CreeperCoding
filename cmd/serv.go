@@ -1,5 +1,6 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2016 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors
+// Copyright 2016 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cmd
@@ -15,21 +16,21 @@ import (
 	"strings"
 	"unicode"
 
-	asymkey_model "gitea.dev/models/asymkey"
-	git_model "gitea.dev/models/git"
-	"gitea.dev/models/perm"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/lfstransfer"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/pprof"
-	"gitea.dev/modules/private"
-	"gitea.dev/modules/process"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/setting"
-	"gitea.dev/services/lfs"
+	asymkey_model "creepercoding.dev/models/asymkey"
+	git_model "creepercoding.dev/models/git"
+	"creepercoding.dev/models/perm"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/lfstransfer"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/pprof"
+	"creepercoding.dev/modules/private"
+	"creepercoding.dev/modules/process"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/services/lfs"
 
 	"github.com/kballard/go-shellquote"
 	"github.com/urfave/cli/v3"

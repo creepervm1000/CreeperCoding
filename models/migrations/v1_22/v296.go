@@ -1,9 +1,9 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_22
 
-import "gitea.dev/models/db"
+import "creepercoding.dev/models/db"
 
 func AddCommitStatusSummary2(x db.EngineMigration) error {
 	type CommitStatusSummary struct {

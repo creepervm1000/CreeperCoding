@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package vagrant
@@ -10,7 +10,7 @@ import (
 	"io"
 	"testing"
 
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/json"
 
 	"github.com/stretchr/testify/assert"
 )

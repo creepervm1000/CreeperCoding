@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package files
@@ -12,14 +12,14 @@ import (
 	"sort"
 	"strings"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/base"
-	"gitea.dev/modules/fileicon"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/base"
+	"creepercoding.dev/modules/fileicon"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
 )
 
 // ErrSHANotFound represents a "SHADoesNotMatch" kind of error.

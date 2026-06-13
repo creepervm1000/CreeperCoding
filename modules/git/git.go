@@ -1,5 +1,5 @@
 // Copyright 2015 The Gogs Authors. All rights reserved.
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package git
@@ -13,11 +13,11 @@ import (
 	"runtime"
 	"strings"
 
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/tempdir"
-	"gitea.dev/modules/testlogger"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/tempdir"
+	"creepercoding.dev/modules/testlogger"
 
 	"github.com/hashicorp/go-version"
 )

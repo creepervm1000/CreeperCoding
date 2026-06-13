@@ -1,11 +1,11 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package options
 
 import (
-	"gitea.dev/modules/assetfs"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/assetfs"
+	"creepercoding.dev/modules/setting"
 )
 
 func CustomAssets() *assetfs.Layer {

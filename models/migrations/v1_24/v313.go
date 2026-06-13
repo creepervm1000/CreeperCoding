@@ -1,11 +1,11 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_24
 
 import (
-	"gitea.dev/models/db"
-	"gitea.dev/models/migrations/base"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/migrations/base"
 )
 
 func MovePinOrderToTableIssuePin(x db.EngineMigration) error {

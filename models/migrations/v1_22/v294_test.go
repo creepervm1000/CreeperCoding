@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_22
@@ -6,7 +6,7 @@ package v1_22
 import (
 	"testing"
 
-	"gitea.dev/models/migrations/migrationtest"
+	"creepercoding.dev/models/migrations/migrationtest"
 
 	"github.com/stretchr/testify/assert"
 	"xorm.io/xorm/schemas"

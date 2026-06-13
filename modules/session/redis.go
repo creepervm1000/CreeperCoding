@@ -1,6 +1,6 @@
 // Copyright 2013 Beego Authors
 // Copyright 2014 The Macaron Authors
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: Apache-2.0
 
 package session
@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/nosql"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/nosql"
 
 	"gitea.com/go-chi/session"
 	"github.com/redis/go-redis/v9"

@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markup
@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/log"
 
 	"golang.org/x/net/html"
 )

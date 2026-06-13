@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package secrets
@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/util"
 )
 
 // https://docs.github.com/en/actions/learn-github-actions/variables#naming-conventions-for-configuration-variables

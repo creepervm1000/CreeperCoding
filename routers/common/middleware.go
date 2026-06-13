@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package common
@@ -8,15 +8,15 @@ import (
 	"net/http"
 	"strings"
 
-	"gitea.dev/modules/cache"
-	"gitea.dev/modules/gtprof"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/public"
-	"gitea.dev/modules/reqctx"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/web/routing"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/cache"
+	"creepercoding.dev/modules/gtprof"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/public"
+	"creepercoding.dev/modules/reqctx"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/web/routing"
+	"creepercoding.dev/services/context"
 
 	"gitea.com/go-chi/session"
 	"github.com/chi-middleware/proxy"

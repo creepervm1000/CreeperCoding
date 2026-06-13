@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_14
@@ -7,7 +7,7 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 
-	"gitea.dev/models/db"
+	"creepercoding.dev/models/db"
 
 	"golang.org/x/crypto/argon2"
 	"golang.org/x/crypto/bcrypt"

@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package devtest
@@ -13,17 +13,17 @@ import (
 	"time"
 	"unicode"
 
-	"gitea.dev/models/asymkey"
-	"gitea.dev/models/db"
-	"gitea.dev/models/gituser"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/badge"
-	"gitea.dev/modules/charset"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/indexer/code"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
+	"creepercoding.dev/models/asymkey"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/gituser"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/badge"
+	"creepercoding.dev/modules/charset"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/indexer/code"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
 )
 
 // List all devtest templates, they will be used for e2e tests for the UI components

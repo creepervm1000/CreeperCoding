@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package org
@@ -6,9 +6,9 @@ package org
 import (
 	"context"
 
-	org_model "gitea.dev/models/organization"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/services/mailer"
+	org_model "creepercoding.dev/models/organization"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/services/mailer"
 )
 
 // CreateTeamInvite make a persistent invite in db and mail it

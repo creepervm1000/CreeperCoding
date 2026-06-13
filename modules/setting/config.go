@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -7,8 +7,8 @@ import (
 	"strings"
 	"sync"
 
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting/config"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting/config"
 )
 
 type PictureStruct struct {
@@ -60,6 +60,7 @@ type ConfigStruct struct {
 	Picture    *PictureStruct
 	Repository *RepositoryStruct
 	Instance   *InstanceStruct
+	Ccopilot   *CcopilotStruct
 }
 
 var (
@@ -81,6 +82,13 @@ func initDefaultConfig() {
 		Instance: &InstanceStruct{
 			WebBanner:       config.NewOption[WebBannerType]("instance.web_banner"),
 			MaintenanceMode: config.NewOption[MaintenanceModeType]("instance.maintenance_mode"),
+		},
+		Ccopilot: &CcopilotStruct{
+			Enabled:   config.NewOption[bool]("ccopilot.enabled").WithDefaultSimple(false),
+			APIKey:    config.NewOption[string]("ccopilot.api_key").WithEmptyAsDefault().WithDefaultSimple(""),
+			Endpoint:  config.NewOption[string]("ccopilot.endpoint").WithEmptyAsDefault().WithDefaultSimple("https://api.openai.com/v1"),
+			ModelName: config.NewOption[string]("ccopilot.model_name").WithEmptyAsDefault().WithDefaultSimple("gpt-4o"),
+			MaxTokens: config.NewOption[int64]("ccopilot.max_tokens").WithDefaultSimple(4096),
 		},
 	}
 }

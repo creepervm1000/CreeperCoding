@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"time"
 
-	activities_model "gitea.dev/models/activities"
-	git_model "gitea.dev/models/git"
-	"gitea.dev/models/unit"
-	"gitea.dev/modules/templates"
-	"gitea.dev/services/context"
+	activities_model "creepercoding.dev/models/activities"
+	git_model "creepercoding.dev/models/git"
+	"creepercoding.dev/models/unit"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/services/context"
 )
 
 const (

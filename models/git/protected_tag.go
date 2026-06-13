@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package git
@@ -9,10 +9,10 @@ import (
 	"slices"
 	"strings"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/organization"
-	"gitea.dev/modules/glob"
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/organization"
+	"creepercoding.dev/modules/glob"
+	"creepercoding.dev/modules/timeutil"
 )
 
 // ProtectedTag struct

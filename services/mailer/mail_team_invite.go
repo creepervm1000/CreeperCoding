@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package mailer
@@ -10,13 +10,13 @@ import (
 	"fmt"
 	"net/url"
 
-	org_model "gitea.dev/models/organization"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/translation"
-	sender_service "gitea.dev/services/mailer/sender"
+	org_model "creepercoding.dev/models/organization"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/translation"
+	sender_service "creepercoding.dev/services/mailer/sender"
 )
 
 const tplTeamInviteMail templates.TplName = "org/team_invite"

@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package test
@@ -16,8 +16,8 @@ import (
 	"strings"
 	"sync"
 
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/util"
 )
 
 // RedirectURL returns the redirect URL of a http response.

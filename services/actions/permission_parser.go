@@ -1,14 +1,14 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
 
 import (
-	"gitea.dev/models/perm"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	"gitea.dev/modules/actions/jobparser"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/perm"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	"creepercoding.dev/modules/actions/jobparser"
+	"creepercoding.dev/modules/setting"
 
 	"go.yaml.in/yaml/v4"
 )

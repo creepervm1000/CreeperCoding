@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package auth
@@ -12,28 +12,28 @@ import (
 	"net/url"
 	"strings"
 
-	"gitea.dev/models/auth"
-	"gitea.dev/models/db"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/auth/password"
-	"gitea.dev/modules/eventsource"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/session"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/modules/web/middleware"
-	auth_service "gitea.dev/services/auth"
-	"gitea.dev/services/auth/source/oauth2"
-	"gitea.dev/services/context"
-	"gitea.dev/services/externalaccount"
-	"gitea.dev/services/forms"
-	"gitea.dev/services/mailer"
-	user_service "gitea.dev/services/user"
+	"creepercoding.dev/models/auth"
+	"creepercoding.dev/models/db"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/auth/password"
+	"creepercoding.dev/modules/eventsource"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/session"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/modules/web/middleware"
+	auth_service "creepercoding.dev/services/auth"
+	"creepercoding.dev/services/auth/source/oauth2"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/externalaccount"
+	"creepercoding.dev/services/forms"
+	"creepercoding.dev/services/mailer"
+	user_service "creepercoding.dev/services/user"
 
 	"github.com/markbates/goth"
 )

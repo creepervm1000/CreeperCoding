@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -7,16 +7,16 @@ package repo
 import (
 	"time"
 
-	auth_model "gitea.dev/models/auth"
-	git_model "gitea.dev/models/git"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/httpcache"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/lfs"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/storage"
-	"gitea.dev/routers/common"
-	"gitea.dev/services/context"
+	auth_model "creepercoding.dev/models/auth"
+	git_model "creepercoding.dev/models/git"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/httpcache"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/lfs"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/storage"
+	"creepercoding.dev/routers/common"
+	"creepercoding.dev/services/context"
 )
 
 func checkDownloadTokenScope(ctx *context.Context) bool {

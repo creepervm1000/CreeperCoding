@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package admin
@@ -6,8 +6,8 @@ package admin
 import (
 	"net/http"
 
-	"gitea.dev/modules/tailmsg"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/tailmsg"
+	"creepercoding.dev/services/context"
 )
 
 func PerfTrace(ctx *context.Context) {

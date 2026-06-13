@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package ldap
@@ -7,15 +7,15 @@ import (
 	"context"
 	"strings"
 
-	asymkey_model "gitea.dev/models/asymkey"
-	"gitea.dev/models/auth"
-	user_model "gitea.dev/models/user"
-	auth_module "gitea.dev/modules/auth"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	asymkey_service "gitea.dev/services/asymkey"
-	source_service "gitea.dev/services/auth/source"
-	user_service "gitea.dev/services/user"
+	asymkey_model "creepercoding.dev/models/asymkey"
+	"creepercoding.dev/models/auth"
+	user_model "creepercoding.dev/models/user"
+	auth_module "creepercoding.dev/modules/auth"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	asymkey_service "creepercoding.dev/services/asymkey"
+	source_service "creepercoding.dev/services/auth/source"
+	user_service "creepercoding.dev/services/user"
 )
 
 // Authenticate queries if login/password is valid against the LDAP directory pool,

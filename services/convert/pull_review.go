@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package convert
@@ -7,9 +7,9 @@ import (
 	"context"
 	"strings"
 
-	issues_model "gitea.dev/models/issues"
-	user_model "gitea.dev/models/user"
-	api "gitea.dev/modules/structs"
+	issues_model "creepercoding.dev/models/issues"
+	user_model "creepercoding.dev/models/user"
+	api "creepercoding.dev/modules/structs"
 )
 
 // ToPullReview convert a review to api format

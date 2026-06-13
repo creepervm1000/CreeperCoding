@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package context
@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"strings"
 
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/web/middleware"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/web/middleware"
 )
 
 const CookieNameFlash = "gitea_flash"

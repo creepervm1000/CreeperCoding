@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package routing
@@ -7,10 +7,10 @@ import (
 	"context"
 	"net/http"
 
-	"gitea.dev/modules/gtprof"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/reqctx"
-	"gitea.dev/modules/web/types"
+	"creepercoding.dev/modules/gtprof"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/reqctx"
+	"creepercoding.dev/modules/web/types"
 )
 
 type contextKeyType struct{}

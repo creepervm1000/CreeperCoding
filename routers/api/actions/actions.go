@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -6,9 +6,9 @@ package actions
 import (
 	"net/http"
 
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/api/actions/ping"
-	"gitea.dev/routers/api/actions/runner"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/api/actions/ping"
+	"creepercoding.dev/routers/api/actions/runner"
 )
 
 func Routes(prefix string) *web.Router {

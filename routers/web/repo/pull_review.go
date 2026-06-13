@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -8,21 +8,21 @@ import (
 	"fmt"
 	"net/http"
 
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/organization"
-	pull_model "gitea.dev/models/pull"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/web"
-	"gitea.dev/services/context"
-	"gitea.dev/services/context/upload"
-	"gitea.dev/services/forms"
-	issue_service "gitea.dev/services/issue"
-	pull_service "gitea.dev/services/pull"
-	user_service "gitea.dev/services/user"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/organization"
+	pull_model "creepercoding.dev/models/pull"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/context/upload"
+	"creepercoding.dev/services/forms"
+	issue_service "creepercoding.dev/services/issue"
+	pull_service "creepercoding.dev/services/pull"
+	user_service "creepercoding.dev/services/user"
 )
 
 const (

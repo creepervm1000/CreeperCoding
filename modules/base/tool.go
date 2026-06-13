@@ -14,8 +14,8 @@ import (
 	"strconv"
 	"time"
 
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
 
 	"github.com/dustin/go-humanize"
 )

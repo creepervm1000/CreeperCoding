@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cache
@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"time"
 
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/setting"
 
 	_ "gitea.com/go-chi/cache/memcache" //nolint:depguard // memcache plugin for cache, it is required for config "ADAPTER=memcache"
 )

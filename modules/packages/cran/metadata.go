@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cran
@@ -13,7 +13,7 @@ import (
 	"regexp"
 	"strings"
 
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/util"
 )
 
 const (

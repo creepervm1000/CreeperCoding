@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -6,10 +6,10 @@ package repo
 import (
 	"net/http"
 
-	"gitea.dev/models/unit"
-	"gitea.dev/modules/optional"
-	"gitea.dev/services/context"
-	issue_service "gitea.dev/services/issue"
+	"creepercoding.dev/models/unit"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/services/context"
+	issue_service "creepercoding.dev/services/issue"
 )
 
 // IssueSuggestions returns a list of issue suggestions

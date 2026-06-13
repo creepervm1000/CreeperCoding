@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package middleware
@@ -6,8 +6,8 @@ package middleware
 import (
 	"net/http"
 
-	"gitea.dev/modules/translation"
-	"gitea.dev/modules/translation/i18n"
+	"creepercoding.dev/modules/translation"
+	"creepercoding.dev/modules/translation/i18n"
 
 	"golang.org/x/text/language"
 )

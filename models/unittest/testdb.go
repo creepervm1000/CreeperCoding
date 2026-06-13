@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package unittest
@@ -13,16 +13,16 @@ import (
 	"strings"
 	"testing"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/system"
-	"gitea.dev/modules/cache"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/setting/config"
-	"gitea.dev/modules/storage"
-	"gitea.dev/modules/tempdir"
-	"gitea.dev/modules/testlogger"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/system"
+	"creepercoding.dev/modules/cache"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/setting/config"
+	"creepercoding.dev/modules/storage"
+	"creepercoding.dev/modules/tempdir"
+	"creepercoding.dev/modules/testlogger"
+	"creepercoding.dev/modules/util"
 
 	"github.com/stretchr/testify/assert"
 	"xorm.io/xorm"

@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package user
@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/modules/structs"
+	"creepercoding.dev/modules/structs"
 )
 
 const (
@@ -79,12 +79,38 @@ func (u *User) IsGiteaActions() bool {
 	return u != nil && u.ID == ActionsUserID
 }
 
+const (
+	CcopilotUserID    int64 = -3
+	CcopilotUserName        = "ccopilot"
+	CcopilotUserEmail       = "ccopilot@creepercoding.dev"
+)
+
+func NewCcopilotUser() *User {
+	return &User{
+		ID:               CcopilotUserID,
+		Name:             CcopilotUserName,
+		LowerName:        CcopilotUserName,
+		IsActive:         true,
+		IsAdmin:          false,
+		ProhibitLogin:    true,
+		FullName:         "CreeperCoding Copilot",
+		Email:            CcopilotUserEmail,
+		KeepEmailPrivate: true,
+		LoginName:        CcopilotUserName,
+		Type:             UserTypeBot,
+		Visibility:       structs.VisibleTypePublic,
+	}
+}
+
 func GetSystemUserByName(name string) *User {
 	if strings.EqualFold(name, GhostUserName) {
 		return NewGhostUser()
 	}
 	if strings.EqualFold(name, ActionsUserName) {
 		return NewActionsUser()
+	}
+	if strings.EqualFold(name, CcopilotUserName) {
+		return NewCcopilotUser()
 	}
 	return nil
 }

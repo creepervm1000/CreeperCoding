@@ -1,9 +1,9 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
 
-import "gitea.dev/modules/log"
+import "creepercoding.dev/modules/log"
 
 type OtherConfig struct {
 	ShowFooterVersion          bool

@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package unittest
@@ -14,7 +14,7 @@ import (
 	"strings"
 	"sync"
 
-	"gitea.dev/models/db"
+	"creepercoding.dev/models/db"
 
 	"go.yaml.in/yaml/v4"
 	"xorm.io/xorm"

@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package i18n
@@ -10,8 +10,8 @@ import (
 	"html/template"
 	"slices"
 
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
 )
 
 // This file implements the static LocaleStore that will not watch for changes

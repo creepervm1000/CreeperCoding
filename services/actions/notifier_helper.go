@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -10,23 +10,23 @@ import (
 	"slices"
 	"strings"
 
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	packages_model "gitea.dev/models/packages"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	unit_model "gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	actions_module "gitea.dev/modules/actions"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	webhook_module "gitea.dev/modules/webhook"
-	"gitea.dev/services/convert"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	packages_model "creepercoding.dev/models/packages"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	unit_model "creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	actions_module "creepercoding.dev/modules/actions"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	webhook_module "creepercoding.dev/modules/webhook"
+	"creepercoding.dev/services/convert"
 
 	"gitea.com/gitea/runner/act/model"
 )

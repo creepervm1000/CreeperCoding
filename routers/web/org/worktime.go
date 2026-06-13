@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package org
@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"time"
 
-	"gitea.dev/models/organization"
-	"gitea.dev/modules/templates"
-	shared_user "gitea.dev/routers/web/shared/user"
-	"gitea.dev/services/context"
+	"creepercoding.dev/models/organization"
+	"creepercoding.dev/modules/templates"
+	shared_user "creepercoding.dev/routers/web/shared/user"
+	"creepercoding.dev/services/context"
 )
 
 const tplByRepos templates.TplName = "org/worktime"

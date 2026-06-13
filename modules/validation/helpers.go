@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package validation
@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
-	"gitea.dev/modules/glob"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/glob"
+	"creepercoding.dev/modules/setting"
 )
 
 type globalVarsStruct struct {

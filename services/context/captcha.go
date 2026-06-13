@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package context
@@ -8,14 +8,14 @@ import (
 	"image/color"
 	"sync"
 
-	"gitea.dev/modules/cache"
-	"gitea.dev/modules/hcaptcha"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/mcaptcha"
-	"gitea.dev/modules/recaptcha"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/turnstile"
+	"creepercoding.dev/modules/cache"
+	"creepercoding.dev/modules/hcaptcha"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/mcaptcha"
+	"creepercoding.dev/modules/recaptcha"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/turnstile"
 
 	"gitea.com/go-chi/captcha"
 )

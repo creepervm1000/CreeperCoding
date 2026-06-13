@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package internal
@@ -6,10 +6,10 @@ package internal
 import (
 	"strconv"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/indexer"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/indexer"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/timeutil"
 )
 
 // IndexerData data stored in the issue indexer

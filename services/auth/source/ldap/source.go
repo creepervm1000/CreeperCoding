@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package ldap
@@ -6,11 +6,11 @@ package ldap
 import (
 	"strings"
 
-	"gitea.dev/models/auth"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/secret"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/auth"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/secret"
+	"creepercoding.dev/modules/setting"
 )
 
 // .____     ________      _____ __________

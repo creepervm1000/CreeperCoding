@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package base
@@ -6,8 +6,8 @@ package base
 import (
 	"testing"
 
-	"gitea.dev/models/migrations/migrationtest"
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/models/migrations/migrationtest"
+	"creepercoding.dev/modules/timeutil"
 
 	"xorm.io/xorm/names"
 )

@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"gitea.dev/models/organization"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	repo_service "gitea.dev/services/repository"
+	"creepercoding.dev/models/organization"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 // ListTeams list a repository's teams

@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 //go:build gogit
@@ -11,7 +11,7 @@ import (
 	"io"
 	"strings"
 
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/log"
 
 	"github.com/go-git/go-git/v5/plumbing"
 	"github.com/go-git/go-git/v5/plumbing/object"

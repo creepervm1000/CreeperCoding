@@ -1,5 +1,5 @@
 // Copyright 2015 The Gogs Authors. All rights reserved.
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package git
@@ -11,8 +11,8 @@ import (
 	"os/exec"
 	"strings"
 
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/util"
 )
 
 // Commit represents a git commit.

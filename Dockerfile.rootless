@@ -11,7 +11,7 @@ RUN make frontend
 # Build backend for each target platform
 FROM docker.io/library/golang:1.26-alpine3.23 AS build-env
 
-ARG GITEA_VERSION
+ARG CREEPERCODING_VERSION
 ARG TAGS=""
 ENV TAGS="bindata timetzdata $TAGS"
 ARG CGO_EXTRA_CFLAGS
@@ -21,14 +21,14 @@ RUN apk --no-cache add \
     build-base \
     git
 
-WORKDIR ${GOPATH}/src/gitea.dev
+WORKDIR ${GOPATH}/src/creepercoding.dev
 COPY go.mod go.sum ./
 RUN go mod download
 # See the comments in Dockerfile
 COPY --exclude=.git/ . .
 COPY --from=frontend-build /src/public/assets public/assets
 
-# Build gitea, .git mount is required for version data
+# Build creepercoding, .git mount is required for version data
 RUN --mount=type=cache,target="/root/.cache/go-build" \
     --mount=type=bind,source=".git/",target=".git/" \
     make backend
@@ -37,9 +37,9 @@ COPY docker/rootless /tmp/local
 
 # Set permissions for builds that made under windows which strips the executable bit from file
 RUN chmod 755 /tmp/local/usr/local/bin/* \
-              /go/src/gitea.dev/gitea
+              /go/src/creepercoding.dev/creepercoding
 
-FROM docker.io/library/alpine:3.23 AS gitea-rootless
+FROM docker.io/library/alpine:3.23 AS creepercoding-rootless
 
 EXPOSE 2222 3000
 
@@ -58,30 +58,30 @@ RUN addgroup \
     git && \
   adduser \
     -S -H -D \
-    -h /var/lib/gitea/git \
+    -h /var/lib/creepercoding/git \
     -s /bin/bash \
     -u 1000 \
     -G git \
     git
 
-RUN mkdir -p /var/lib/gitea /etc/gitea
-RUN chown git:git /var/lib/gitea /etc/gitea
+RUN mkdir -p /var/lib/creepercoding /etc/creepercoding
+RUN chown git:git /var/lib/creepercoding /etc/creepercoding
 
 COPY --from=build-env /tmp/local /
-COPY --from=build-env --chown=root:root /go/src/gitea.dev/gitea /app/gitea/gitea
+COPY --from=build-env --chown=root:root /go/src/creepercoding.dev/creepercoding /app/creepercoding/creepercoding
 
 # git:git
 USER 1000:1000
-ENV GITEA_WORK_DIR=/var/lib/gitea
-ENV GITEA_CUSTOM=/var/lib/gitea/custom
-ENV GITEA_TEMP=/tmp/gitea
-ENV TMPDIR=/tmp/gitea
+ENV GITEA_WORK_DIR=/var/lib/creepercoding
+ENV GITEA_CUSTOM=/var/lib/creepercoding/custom
+ENV GITEA_TEMP=/tmp/creepercoding
+ENV TMPDIR=/tmp/creepercoding
 
 # TODO add to docs the ability to define the ini to load (useful to test and revert a config)
-ENV GITEA_APP_INI=/etc/gitea/app.ini
-ENV HOME="/var/lib/gitea/git"
-VOLUME ["/var/lib/gitea", "/etc/gitea"]
-WORKDIR /var/lib/gitea
+ENV GITEA_APP_INI=/etc/creepercoding/app.ini
+ENV HOME="/var/lib/creepercoding/git"
+VOLUME ["/var/lib/creepercoding", "/etc/creepercoding"]
+WORKDIR /var/lib/creepercoding
 
 # HINT: HEALTH-CHECK-ENDPOINT: don't use HEALTHCHECK, search this hint keyword for more information
 ENTRYPOINT ["/usr/bin/dumb-init", "--", "/usr/local/bin/docker-entrypoint.sh"]

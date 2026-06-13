@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package httplib
@@ -15,12 +15,12 @@ import (
 	"strings"
 	"time"
 
-	charsetModule "gitea.dev/modules/charset"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/httpcache"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/typesniffer"
-	"gitea.dev/modules/util"
+	charsetModule "creepercoding.dev/modules/charset"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/httpcache"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/typesniffer"
+	"creepercoding.dev/modules/util"
 
 	"github.com/klauspost/compress/gzhttp"
 )
@@ -38,7 +38,7 @@ type ServeHeaderOptions struct {
 }
 
 const (
-	// Disable JS execution on the same origin, since we serve the file from the same origin as Gitea server.
+	// Disable JS execution on the same origin, since we serve the file from the same origin as CreeperCoding server.
 	// This rule can be relaxed in the future as long as it is properly sandboxed.
 	// "style-src" is for SVG inline styles (from Display SVG files as images instead of text #14101)
 	serveHeaderCspDefault = "default-src 'none'; style-src 'unsafe-inline'; sandbox"
@@ -49,7 +49,7 @@ const (
 	// HINT: PDF-RENDER-SANDBOX: PDF won't render in sandboxed context
 	serveHeaderCspPdf = "default-src 'none'; style-src 'unsafe-inline'"
 
-	// For audios and videos, actually it doesn't really need CSP (just like Gitea <= 1.25)
+	// For audios and videos, actually it doesn't really need CSP (just like CreeperCoding <= 1.25)
 	serveHeaderCspAudioVideo = ""
 )
 

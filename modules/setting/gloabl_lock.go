@@ -1,11 +1,11 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
 
 import (
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/nosql"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/nosql"
 )
 
 // GlobalLock represents configuration of global lock

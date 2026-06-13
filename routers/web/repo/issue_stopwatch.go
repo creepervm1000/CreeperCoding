@@ -1,13 +1,13 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
 
 import (
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/modules/eventsource"
-	"gitea.dev/services/context"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/modules/eventsource"
+	"creepercoding.dev/services/context"
 )
 
 // IssueStartStopwatch creates a stopwatch for the given issue.

@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package context
@@ -12,8 +12,8 @@ import (
 	"slices"
 	"strings"
 
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/paginator"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/paginator"
 )
 
 // Pagination provides a pagination via paginator.Paginator and additional configurations for the link params used in rendering

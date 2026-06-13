@@ -1,5 +1,5 @@
 // Copyright 2015 The Gogs Authors. All rights reserved.
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package wiki
@@ -8,21 +8,21 @@ import (
 	"context"
 	"fmt"
 
-	"gitea.dev/models/db"
-	repo_model "gitea.dev/models/repo"
-	system_model "gitea.dev/models/system"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/globallock"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/log"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/util"
-	asymkey_service "gitea.dev/services/asymkey"
-	repo_service "gitea.dev/services/repository"
+	"creepercoding.dev/models/db"
+	repo_model "creepercoding.dev/models/repo"
+	system_model "creepercoding.dev/models/system"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/globallock"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/log"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/util"
+	asymkey_service "creepercoding.dev/services/asymkey"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 func getWikiWorkingLockKey(repoID int64) string {

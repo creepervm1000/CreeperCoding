@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repository
@@ -10,11 +10,11 @@ import (
 	"sort"
 	"strings"
 
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/modules/label"
-	"gitea.dev/modules/options"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/modules/label"
+	"creepercoding.dev/modules/options"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
 )
 
 type OptionFile struct {

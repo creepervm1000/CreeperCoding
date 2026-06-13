@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"time"
 
-	"gitea.dev/modules/generate"
+	"creepercoding.dev/modules/generate"
 )
 
 // LFS represents the server-side configuration for Git LFS.

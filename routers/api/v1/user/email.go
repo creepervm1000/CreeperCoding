@@ -7,12 +7,12 @@ import (
 	"fmt"
 	"net/http"
 
-	user_model "gitea.dev/models/user"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/web"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	user_service "gitea.dev/services/user"
+	user_model "creepercoding.dev/models/user"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	user_service "creepercoding.dev/services/user"
 )
 
 // ListEmails list all of the authenticated user's email addresses

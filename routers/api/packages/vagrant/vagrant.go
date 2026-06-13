@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package vagrant
@@ -12,13 +12,13 @@ import (
 	"sort"
 	"strings"
 
-	packages_model "gitea.dev/models/packages"
-	packages_module "gitea.dev/modules/packages"
-	vagrant_module "gitea.dev/modules/packages/vagrant"
-	"gitea.dev/modules/setting"
-	"gitea.dev/routers/api/packages/helper"
-	"gitea.dev/services/context"
-	packages_service "gitea.dev/services/packages"
+	packages_model "creepercoding.dev/models/packages"
+	packages_module "creepercoding.dev/modules/packages"
+	vagrant_module "creepercoding.dev/modules/packages/vagrant"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/routers/api/packages/helper"
+	"creepercoding.dev/services/context"
+	packages_service "creepercoding.dev/services/packages"
 
 	"github.com/hashicorp/go-version"
 )

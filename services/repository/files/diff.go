@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package files
@@ -7,8 +7,8 @@ import (
 	"context"
 	"strings"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/services/gitdiff"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/services/gitdiff"
 )
 
 // GetDiffPreview produces and returns diff result of a file which is not yet committed.

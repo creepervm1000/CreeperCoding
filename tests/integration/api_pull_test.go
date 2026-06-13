@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -13,24 +13,24 @@ import (
 	"testing"
 	"time"
 
-	auth_model "gitea.dev/models/auth"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/perm"
-	repo_model "gitea.dev/models/repo"
-	unit_model "gitea.dev/models/unit"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/convert"
-	"gitea.dev/services/forms"
-	"gitea.dev/services/gitdiff"
-	issue_service "gitea.dev/services/issue"
-	pull_service "gitea.dev/services/pull"
-	repo_service "gitea.dev/services/repository"
-	files_service "gitea.dev/services/repository/files"
-	"gitea.dev/tests"
+	auth_model "creepercoding.dev/models/auth"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/perm"
+	repo_model "creepercoding.dev/models/repo"
+	unit_model "creepercoding.dev/models/unit"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/convert"
+	"creepercoding.dev/services/forms"
+	"creepercoding.dev/services/gitdiff"
+	issue_service "creepercoding.dev/services/issue"
+	pull_service "creepercoding.dev/services/pull"
+	repo_service "creepercoding.dev/services/repository"
+	files_service "creepercoding.dev/services/repository/files"
+	"creepercoding.dev/tests"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

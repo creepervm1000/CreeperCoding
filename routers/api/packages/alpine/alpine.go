@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package alpine
@@ -13,15 +13,15 @@ import (
 	"net/http"
 	"strings"
 
-	packages_model "gitea.dev/models/packages"
-	"gitea.dev/modules/json"
-	packages_module "gitea.dev/modules/packages"
-	alpine_module "gitea.dev/modules/packages/alpine"
-	"gitea.dev/modules/util"
-	"gitea.dev/routers/api/packages/helper"
-	"gitea.dev/services/context"
-	packages_service "gitea.dev/services/packages"
-	alpine_service "gitea.dev/services/packages/alpine"
+	packages_model "creepercoding.dev/models/packages"
+	"creepercoding.dev/modules/json"
+	packages_module "creepercoding.dev/modules/packages"
+	alpine_module "creepercoding.dev/modules/packages/alpine"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/routers/api/packages/helper"
+	"creepercoding.dev/services/context"
+	packages_service "creepercoding.dev/services/packages"
+	alpine_service "creepercoding.dev/services/packages/alpine"
 )
 
 func apiError(ctx *context.Context, status int, obj any) {

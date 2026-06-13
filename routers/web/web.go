@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package web
@@ -7,46 +7,46 @@ import (
 	"net/http"
 	"strings"
 
-	auth_model "gitea.dev/models/auth"
-	"gitea.dev/models/perm"
-	"gitea.dev/models/unit"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/metrics"
-	"gitea.dev/modules/public"
-	"gitea.dev/modules/reqctx"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/storage"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/validation"
-	"gitea.dev/modules/web"
-	"gitea.dev/modules/web/middleware"
-	"gitea.dev/modules/web/routing"
-	"gitea.dev/modules/web/types"
-	"gitea.dev/routers/common"
-	"gitea.dev/routers/web/admin"
-	"gitea.dev/routers/web/auth"
-	"gitea.dev/routers/web/devtest"
-	"gitea.dev/routers/web/events"
-	"gitea.dev/routers/web/explore"
-	"gitea.dev/routers/web/feed"
-	"gitea.dev/routers/web/healthcheck"
-	"gitea.dev/routers/web/misc"
-	"gitea.dev/routers/web/org"
-	"gitea.dev/routers/web/repo"
-	"gitea.dev/routers/web/repo/actions"
-	repo_setting "gitea.dev/routers/web/repo/setting"
-	shared_actions "gitea.dev/routers/web/shared/actions"
-	"gitea.dev/routers/web/shared/project"
-	"gitea.dev/routers/web/user"
-	user_setting "gitea.dev/routers/web/user/setting"
-	"gitea.dev/routers/web/user/setting/security"
-	auth_service "gitea.dev/services/auth"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
+	auth_model "creepercoding.dev/models/auth"
+	"creepercoding.dev/models/perm"
+	"creepercoding.dev/models/unit"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/metrics"
+	"creepercoding.dev/modules/public"
+	"creepercoding.dev/modules/reqctx"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/storage"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/validation"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/modules/web/middleware"
+	"creepercoding.dev/modules/web/routing"
+	"creepercoding.dev/modules/web/types"
+	"creepercoding.dev/routers/common"
+	"creepercoding.dev/routers/web/admin"
+	"creepercoding.dev/routers/web/auth"
+	"creepercoding.dev/routers/web/devtest"
+	"creepercoding.dev/routers/web/events"
+	"creepercoding.dev/routers/web/explore"
+	"creepercoding.dev/routers/web/feed"
+	"creepercoding.dev/routers/web/healthcheck"
+	"creepercoding.dev/routers/web/misc"
+	"creepercoding.dev/routers/web/org"
+	"creepercoding.dev/routers/web/repo"
+	"creepercoding.dev/routers/web/repo/actions"
+	repo_setting "creepercoding.dev/routers/web/repo/setting"
+	shared_actions "creepercoding.dev/routers/web/shared/actions"
+	"creepercoding.dev/routers/web/shared/project"
+	"creepercoding.dev/routers/web/user"
+	user_setting "creepercoding.dev/routers/web/user/setting"
+	"creepercoding.dev/routers/web/user/setting/security"
+	auth_service "creepercoding.dev/services/auth"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
 
-	_ "gitea.dev/modules/session" // to register all internal adapters
+	_ "creepercoding.dev/modules/session" // to register all internal adapters
 
 	"gitea.com/go-chi/captcha"
 	chi_middleware "github.com/go-chi/chi/v5/middleware"
@@ -292,6 +292,7 @@ func Routes() *web.Router {
 	}
 
 	routes.Methods("GET,HEAD", "/robots.txt", append(mid, misc.RobotsTxt)...)
+	routes.Methods("GET,HEAD", "/SKILL.md", append(mid, misc.SkillMD)...)
 	routes.Get("/ssh_info", misc.SSHInfo)
 	routes.Get("/api/healthz", healthcheck.Check)
 
@@ -763,6 +764,9 @@ func registerWebRoutes(m *web.Router, webAuth *AuthMiddleware) {
 			m.Post("/test_mail", admin.SendTestMail)
 			m.Post("/test_cache", admin.TestCache)
 			m.Get("/settings", admin.ConfigSettings)
+			m.Get("/editor", admin.ConfigEditor)
+			m.Post("/editor", admin.ConfigEditorPost)
+			m.Post("/restart", admin.ConfigRestart)
 		})
 
 		m.Group("/monitor", func() {
@@ -1586,6 +1590,15 @@ func registerWebRoutes(m *web.Router, webAuth *AuthMiddleware) {
 	})
 	// end "/{username}/{reponame}/wiki"
 
+	m.Group("/{username}/{reponame}/agent", func() {
+		m.Get("", repo.Agent)
+		m.Post("/chat", context.RepoMustNotBeArchived(), reqSignIn, repo.AgentChat)
+		m.Post("/commit-message", context.RepoMustNotBeArchived(), reqSignIn, repo.AgentCommitMessage)
+	}, optSignIn, context.RepoAssignment, func(ctx *context.Context) {
+		ctx.Data["PageIsAgent"] = true
+	})
+	// end "/{username}/{reponame}/agent"
+
 	m.Group("/{username}/{reponame}/activity", func() {
 		// activity has its own permission checks
 		m.Get("", repo.Activity)
@@ -1736,7 +1749,7 @@ func registerWebRoutes(m *web.Router, webAuth *AuthMiddleware) {
 	// pattern: "/{username}/{reponame}/{lfs-paths}": git-lfs support, see also addOwnerRepoGitHTTPRouters
 	common.AddOwnerRepoGitLFSRoutes(m, lfsServerEnabled, webAuth.AllowBasic, repo.CorsHandler(), optSignInFromAnyOrigin)
 
-	// Some users want to use "web-based git client" to access Gitea's repositories,
+	// Some users want to use "web-based git client" to access CreeperCoding's repositories,
 	// so the CORS handler and OPTIONS method are used.
 	// pattern: "/{username}/{reponame}/{git-paths}": git http support
 	addOwnerRepoGitHTTPRouters(m, repo.HTTPGitEnabledHandler, webAuth.AllowBasic, webAuth.AllowOAuth2, repo.CorsHandler(), optSignInFromAnyOrigin, context.UserAssignmentWeb())

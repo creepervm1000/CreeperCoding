@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package pull
@@ -6,8 +6,8 @@ package pull
 import (
 	"context"
 
-	git_model "gitea.dev/models/git"
-	repo_model "gitea.dev/models/repo"
+	git_model "creepercoding.dev/models/git"
+	repo_model "creepercoding.dev/models/repo"
 )
 
 func CreateOrUpdateProtectedBranch(ctx context.Context, repo *repo_model.Repository,

@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package doctor
@@ -6,16 +6,16 @@ package doctor
 import (
 	"context"
 
-	actions_model "gitea.dev/models/actions"
-	activities_model "gitea.dev/models/activities"
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/migrations"
-	repo_model "gitea.dev/models/repo"
-	secret_model "gitea.dev/models/secret"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	issue_service "gitea.dev/services/issue"
+	actions_model "creepercoding.dev/models/actions"
+	activities_model "creepercoding.dev/models/activities"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/migrations"
+	repo_model "creepercoding.dev/models/repo"
+	secret_model "creepercoding.dev/models/secret"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	issue_service "creepercoding.dev/services/issue"
 )
 
 type consistencyCheck struct {

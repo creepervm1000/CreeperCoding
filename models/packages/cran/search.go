@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cran
@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/packages"
-	cran_module "gitea.dev/modules/packages/cran"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/packages"
+	cran_module "creepercoding.dev/modules/packages/cran"
 
 	"xorm.io/builder"
 )

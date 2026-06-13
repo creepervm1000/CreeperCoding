@@ -62,4 +62,8 @@ export class UserEventsSharedWorker {
   startPort() {
     this.sharedWorker.port.start();
   }
+
+  listen(eventType: string) {
+    this.sharedWorker.port.postMessage({type: 'listen', eventType});
+  }
 }

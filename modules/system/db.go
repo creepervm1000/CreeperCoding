@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package system
@@ -6,9 +6,9 @@ package system
 import (
 	"context"
 
-	"gitea.dev/models/system"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/system"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/util"
 )
 
 // DBStore can be used to store app state items in local filesystem

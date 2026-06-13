@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package dbfs
@@ -9,7 +9,7 @@ import (
 	"os"
 	"testing"
 
-	"gitea.dev/modules/test"
+	"creepercoding.dev/modules/test"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

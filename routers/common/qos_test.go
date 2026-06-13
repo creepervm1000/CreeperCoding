@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package common
@@ -6,9 +6,9 @@ package common
 import (
 	"testing"
 
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/web/middleware"
-	"gitea.dev/services/contexttest"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/web/middleware"
+	"creepercoding.dev/services/contexttest"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/stretchr/testify/assert"

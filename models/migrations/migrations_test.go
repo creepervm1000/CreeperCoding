@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package migrations
@@ -6,7 +6,7 @@ package migrations
 import (
 	"testing"
 
-	"gitea.dev/modules/test"
+	"creepercoding.dev/modules/test"
 
 	"github.com/stretchr/testify/assert"
 )

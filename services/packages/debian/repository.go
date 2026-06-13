@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package debian
@@ -15,14 +15,14 @@ import (
 	"strings"
 	"time"
 
-	packages_model "gitea.dev/models/packages"
-	debian_model "gitea.dev/models/packages/debian"
-	user_model "gitea.dev/models/user"
-	packages_module "gitea.dev/modules/packages"
-	debian_module "gitea.dev/modules/packages/debian"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
-	packages_service "gitea.dev/services/packages"
+	packages_model "creepercoding.dev/models/packages"
+	debian_model "creepercoding.dev/models/packages/debian"
+	user_model "creepercoding.dev/models/user"
+	packages_module "creepercoding.dev/modules/packages"
+	debian_module "creepercoding.dev/modules/packages/debian"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
+	packages_service "creepercoding.dev/services/packages"
 
 	"github.com/ProtonMail/go-crypto/openpgp"
 	"github.com/ProtonMail/go-crypto/openpgp/armor"

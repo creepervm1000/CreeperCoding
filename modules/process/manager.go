@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package process
@@ -12,8 +12,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitea.dev/modules/gtprof"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/gtprof"
+	"creepercoding.dev/modules/util"
 )
 
 // TODO: This packages still uses a singleton for the Manager.

@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package notify
@@ -6,14 +6,14 @@ package notify
 import (
 	"context"
 
-	actions_model "gitea.dev/models/actions"
-	git_model "gitea.dev/models/git"
-	issues_model "gitea.dev/models/issues"
-	packages_model "gitea.dev/models/packages"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/repository"
+	actions_model "creepercoding.dev/models/actions"
+	git_model "creepercoding.dev/models/git"
+	issues_model "creepercoding.dev/models/issues"
+	packages_model "creepercoding.dev/models/packages"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/repository"
 )
 
 // Notifier defines an interface to notify receiver

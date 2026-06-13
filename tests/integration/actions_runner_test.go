@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -14,8 +14,8 @@ import (
 	"gitea.dev/actions-proto-go/ping/v1/pingv1connect"
 	runnerv1 "gitea.dev/actions-proto-go/runner/v1"
 	"gitea.dev/actions-proto-go/runner/v1/runnerv1connect"
-	auth_model "gitea.dev/models/auth"
-	"gitea.dev/modules/setting"
+	auth_model "creepercoding.dev/models/auth"
+	"creepercoding.dev/modules/setting"
 
 	"connectrpc.com/connect"
 	"github.com/stretchr/testify/assert"

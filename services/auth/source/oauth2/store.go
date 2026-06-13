@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package oauth2
@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"gitea.dev/modules/log"
-	session_module "gitea.dev/modules/session"
+	"creepercoding.dev/modules/log"
+	session_module "creepercoding.dev/modules/session"
 
 	"github.com/gorilla/sessions"
 )

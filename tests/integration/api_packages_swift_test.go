@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -12,14 +12,14 @@ import (
 	"strings"
 	"testing"
 
-	"gitea.dev/models/packages"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	swift_module "gitea.dev/modules/packages/swift"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/test"
-	swift_router "gitea.dev/routers/api/packages/swift"
-	"gitea.dev/tests"
+	"creepercoding.dev/models/packages"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	swift_module "creepercoding.dev/modules/packages/swift"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/test"
+	swift_router "creepercoding.dev/routers/api/packages/swift"
+	"creepercoding.dev/tests"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

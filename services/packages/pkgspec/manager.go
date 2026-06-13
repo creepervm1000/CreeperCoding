@@ -1,12 +1,12 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package pkgspec
 
 import (
-	packages_model "gitea.dev/models/packages"
-	packages_service "gitea.dev/services/packages"
-	"gitea.dev/services/packages/terraform"
+	packages_model "creepercoding.dev/models/packages"
+	packages_service "creepercoding.dev/services/packages"
+	"creepercoding.dev/services/packages/terraform"
 )
 
 func InitManager() error {

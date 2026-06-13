@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markdown
@@ -11,13 +11,13 @@ import (
 	"io"
 	"strings"
 
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/markup/common"
-	"gitea.dev/modules/markup/markdown/math"
-	"gitea.dev/modules/setting"
-	giteautil "gitea.dev/modules/util"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/markup/common"
+	"creepercoding.dev/modules/markup/markdown/math"
+	"creepercoding.dev/modules/setting"
+	giteautil "creepercoding.dev/modules/util"
 
 	chromahtml "github.com/alecthomas/chroma/v2/formatters/html"
 	"github.com/yuin/goldmark"

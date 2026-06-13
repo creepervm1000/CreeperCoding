@@ -1,10 +1,10 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package feed
 
 import (
-	"gitea.dev/services/context"
+	"creepercoding.dev/services/context"
 )
 
 // RenderBranchFeed render format for branch or file

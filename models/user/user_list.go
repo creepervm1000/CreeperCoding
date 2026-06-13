@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package user
@@ -6,7 +6,7 @@ package user
 import (
 	"context"
 
-	"gitea.dev/models/db"
+	"creepercoding.dev/models/db"
 )
 
 func GetUsersMapByIDs(ctx context.Context, userIDs []int64) (map[int64]*User, error) {
@@ -36,6 +36,8 @@ func GetPossibleUserFromMap(userID int64, usererMaps map[int64]*User) *User {
 		return NewGhostUser()
 	case ActionsUserID:
 		return NewActionsUser()
+	case CcopilotUserID:
+		return NewCcopilotUser()
 	case 0:
 		return nil
 	default:

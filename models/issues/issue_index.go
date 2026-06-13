@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package issues
@@ -6,7 +6,7 @@ package issues
 import (
 	"context"
 
-	"gitea.dev/models/db"
+	"creepercoding.dev/models/db"
 )
 
 // RecalculateIssueIndexForRepo create issue_index for repo if not exist and

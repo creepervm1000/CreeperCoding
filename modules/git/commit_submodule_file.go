@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // Copyright 2015 The Gogs Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
@@ -9,8 +9,8 @@ import (
 	"path"
 	"strings"
 
-	giturl "gitea.dev/modules/git/url"
-	"gitea.dev/modules/util"
+	giturl "creepercoding.dev/modules/git/url"
+	"creepercoding.dev/modules/util"
 )
 
 // CommitSubmoduleFile represents a file with submodule type.

@@ -1,10 +1,10 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
 
 import (
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/log"
 
 	"github.com/42wim/httpsig"
 )

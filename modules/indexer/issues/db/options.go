@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package db
@@ -8,12 +8,12 @@ import (
 	"fmt"
 	"strings"
 
-	"gitea.dev/models/db"
-	issue_model "gitea.dev/models/issues"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/indexer/issues/internal"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/db"
+	issue_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/indexer/issues/internal"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/util"
 )
 
 func ToDBOptions(ctx context.Context, options *internal.SearchOptions) (*issue_model.IssuesOptions, error) {

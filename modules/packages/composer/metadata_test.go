@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package composer
@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/json"
 
 	"github.com/dsnet/compress/bzip2"
 	"github.com/stretchr/testify/assert"

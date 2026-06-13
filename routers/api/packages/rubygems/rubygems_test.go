@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package rubygems
@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	rubygems_module "gitea.dev/modules/packages/rubygems"
+	rubygems_module "creepercoding.dev/modules/packages/rubygems"
 
 	"github.com/stretchr/testify/assert"
 )

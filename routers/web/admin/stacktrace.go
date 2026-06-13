@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package admin
@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"runtime"
 
-	"gitea.dev/modules/process"
-	"gitea.dev/modules/setting"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/process"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/services/context"
 )
 
 func monitorTraceCommon(ctx *context.Context) {

@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package elasticsearch
@@ -16,8 +16,8 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/modules/indexer/internal"
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/indexer/internal"
+	"creepercoding.dev/modules/json"
 )
 
 var _ internal.Indexer = &Indexer{}

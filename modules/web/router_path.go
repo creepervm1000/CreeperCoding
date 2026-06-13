@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package web
@@ -9,8 +9,8 @@ import (
 	"slices"
 	"strings"
 
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/util"
 
 	"github.com/go-chi/chi/v5"
 )

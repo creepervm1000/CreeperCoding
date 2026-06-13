@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -10,14 +10,14 @@ import (
 	"testing"
 
 	runnerv1 "gitea.dev/actions-proto-go/runner/v1"
-	actions_model "gitea.dev/models/actions"
-	auth_model "gitea.dev/models/auth"
-	"gitea.dev/models/dbfs"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	actions_module "gitea.dev/modules/actions"
-	"gitea.dev/modules/storage"
+	actions_model "creepercoding.dev/models/actions"
+	auth_model "creepercoding.dev/models/auth"
+	"creepercoding.dev/models/dbfs"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	actions_module "creepercoding.dev/modules/actions"
+	"creepercoding.dev/modules/storage"
 
 	"connectrpc.com/connect"
 	"github.com/stretchr/testify/assert"

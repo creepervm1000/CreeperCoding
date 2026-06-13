@@ -1,11 +1,11 @@
-// Copyright 2024 The Gitea Authors.
+// Copyright 2024 The CreeperCoding Authors.
 // SPDX-License-Identifier: MIT
 
 package org
 
 import (
-	"gitea.dev/routers/api/v1/shared"
-	"gitea.dev/services/context"
+	"creepercoding.dev/routers/api/v1/shared"
+	"creepercoding.dev/services/context"
 )
 
 func ListBlocks(ctx *context.APIContext) {

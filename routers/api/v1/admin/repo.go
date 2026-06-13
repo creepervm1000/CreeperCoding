@@ -4,10 +4,10 @@
 package admin
 
 import (
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/api/v1/repo"
-	"gitea.dev/services/context"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/api/v1/repo"
+	"creepercoding.dev/services/context"
 )
 
 // CreateRepo api for creating a repository

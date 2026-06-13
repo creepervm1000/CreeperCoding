@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package auth
@@ -8,7 +8,7 @@ import (
 	"slices"
 	"strings"
 
-	"gitea.dev/models/perm"
+	"creepercoding.dev/models/perm"
 )
 
 // AccessTokenScopeCategory represents the scope category for an access token

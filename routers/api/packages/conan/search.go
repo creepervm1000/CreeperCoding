@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package conan
@@ -8,11 +8,11 @@ import (
 	"net/http"
 	"strings"
 
-	conan_model "gitea.dev/models/packages/conan"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/json"
-	conan_module "gitea.dev/modules/packages/conan"
-	"gitea.dev/services/context"
+	conan_model "creepercoding.dev/models/packages/conan"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/json"
+	conan_module "creepercoding.dev/modules/packages/conan"
+	"creepercoding.dev/services/context"
 )
 
 // SearchResult contains the found recipe names

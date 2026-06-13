@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package incoming
@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/util"
 )
 
 const (

@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -14,22 +14,22 @@ import (
 	"strconv"
 	"strings"
 
-	git_model "gitea.dev/models/git"
-	"gitea.dev/modules/charset"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/attribute"
-	"gitea.dev/modules/git/pipeline"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/lfs"
-	"gitea.dev/modules/log"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/storage"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/typesniffer"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
+	git_model "creepercoding.dev/models/git"
+	"creepercoding.dev/modules/charset"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/attribute"
+	"creepercoding.dev/modules/git/pipeline"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/lfs"
+	"creepercoding.dev/modules/log"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/storage"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/typesniffer"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
 )
 
 const (

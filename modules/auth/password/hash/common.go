@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package hash
@@ -6,8 +6,8 @@ package hash
 import (
 	"strconv"
 
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/util"
 )
 
 func parseIntParam(value, param, algorithmName, config string, previousErr error) (int, error) {

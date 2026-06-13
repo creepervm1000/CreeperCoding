@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package rpm
@@ -8,7 +8,7 @@ import (
 	"io"
 	"strings"
 
-	packages_module "gitea.dev/modules/packages"
+	packages_module "creepercoding.dev/modules/packages"
 
 	"github.com/ProtonMail/go-crypto/openpgp"
 	"github.com/sassoftware/go-rpmutils"

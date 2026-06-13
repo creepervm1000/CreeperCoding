@@ -1,9 +1,9 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_17
 
-import "gitea.dev/models/db"
+import "creepercoding.dev/models/db"
 
 func AddAllowMaintainerEdit(x db.EngineMigration) error {
 	// PullRequest represents relation between pull request and repositories.

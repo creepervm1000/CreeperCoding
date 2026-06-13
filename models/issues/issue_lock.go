@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package issues
@@ -6,8 +6,8 @@ package issues
 import (
 	"context"
 
-	"gitea.dev/models/db"
-	user_model "gitea.dev/models/user"
+	"creepercoding.dev/models/db"
+	user_model "creepercoding.dev/models/user"
 )
 
 // IssueLockOptions defines options for locking and/or unlocking an issue/PR

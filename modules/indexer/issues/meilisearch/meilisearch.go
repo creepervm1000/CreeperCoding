@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package meilisearch
@@ -10,11 +10,11 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/modules/indexer"
-	indexer_internal "gitea.dev/modules/indexer/internal"
-	inner_meilisearch "gitea.dev/modules/indexer/internal/meilisearch"
-	"gitea.dev/modules/indexer/issues/internal"
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/indexer"
+	indexer_internal "creepercoding.dev/modules/indexer/internal"
+	inner_meilisearch "creepercoding.dev/modules/indexer/internal/meilisearch"
+	"creepercoding.dev/modules/indexer/issues/internal"
+	"creepercoding.dev/modules/json"
 
 	"github.com/meilisearch/meilisearch-go"
 )

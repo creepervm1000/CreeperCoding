@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -12,17 +12,17 @@ import (
 	neturl "net/url"
 	"testing"
 
-	"gitea.dev/models/packages"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/json"
-	cargo_module "gitea.dev/modules/packages/cargo"
-	"gitea.dev/modules/setting"
-	cargo_router "gitea.dev/routers/api/packages/cargo"
-	cargo_service "gitea.dev/services/packages/cargo"
-	"gitea.dev/tests"
+	"creepercoding.dev/models/packages"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/json"
+	cargo_module "creepercoding.dev/modules/packages/cargo"
+	"creepercoding.dev/modules/setting"
+	cargo_router "creepercoding.dev/routers/api/packages/cargo"
+	cargo_service "creepercoding.dev/services/packages/cargo"
+	"creepercoding.dev/tests"
 
 	"github.com/stretchr/testify/assert"
 )

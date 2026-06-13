@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package org
@@ -6,15 +6,15 @@ package org
 import (
 	"errors"
 
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/modules/label"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	shared_label "gitea.dev/routers/web/shared/label"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/modules/label"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	shared_label "creepercoding.dev/routers/web/shared/label"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
 )
 
 // RetrieveLabels find all the labels of an organization

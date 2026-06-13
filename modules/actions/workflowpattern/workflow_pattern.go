@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package workflowpattern
@@ -6,7 +6,7 @@ package workflowpattern
 import (
 	"strings"
 
-	"gitea.dev/modules/glob"
+	"creepercoding.dev/modules/glob"
 )
 
 type WorkflowPattern struct {

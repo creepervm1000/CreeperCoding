@@ -6,14 +6,14 @@ package repo
 import (
 	"errors"
 
-	git_model "gitea.dev/models/git"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
-	"gitea.dev/routers/utils"
-	context_service "gitea.dev/services/context"
-	files_service "gitea.dev/services/repository/files"
+	git_model "creepercoding.dev/models/git"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/routers/utils"
+	context_service "creepercoding.dev/services/context"
+	files_service "creepercoding.dev/services/repository/files"
 )
 
 func errorAs[T error](v error) (e T, ok bool) {

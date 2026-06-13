@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cron
@@ -11,15 +11,15 @@ import (
 	"sync"
 	"time"
 
-	"gitea.dev/models/db"
-	system_model "gitea.dev/models/system"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/globallock"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/process"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/translation"
+	"creepercoding.dev/models/db"
+	system_model "creepercoding.dev/models/system"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/globallock"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/process"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/translation"
 
 	"github.com/go-co-op/gocron/v2"
 )

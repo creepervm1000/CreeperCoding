@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -8,8 +8,8 @@ import (
 	"slices"
 	"testing"
 
-	unit_model "gitea.dev/models/unit"
-	"gitea.dev/tests"
+	unit_model "creepercoding.dev/models/unit"
+	"creepercoding.dev/tests"
 )
 
 func TestOrgProjectAccess(t *testing.T) {

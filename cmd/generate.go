@@ -1,5 +1,6 @@
 // Copyright 2016 The Gogs Authors. All rights reserved.
-// Copyright 2016 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors
+// Copyright 2016 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cmd
@@ -10,8 +11,8 @@ import (
 	"fmt"
 	"os"
 
-	"gitea.dev/modules/generate"
-	"gitea.dev/modules/ssh"
+	"creepercoding.dev/modules/generate"
+	"creepercoding.dev/modules/ssh"
 
 	"github.com/mattn/go-isatty"
 	"github.com/urfave/cli/v3"

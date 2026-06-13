@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package foreachref_test
@@ -10,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"gitea.dev/modules/git/foreachref"
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/git/foreachref"
+	"creepercoding.dev/modules/json"
 
 	"github.com/stretchr/testify/require"
 )

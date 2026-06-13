@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repository
@@ -7,15 +7,15 @@ import (
 	"errors"
 	"fmt"
 
-	issue_model "gitea.dev/models/issues"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/reqctx"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/pull"
+	issue_model "creepercoding.dev/models/issues"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/reqctx"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/pull"
 )
 
 // MergeUpstream merges the base repository's default branch into the fork repository's current branch.

@@ -19,6 +19,7 @@ import {fomanticQuery} from '../modules/fomantic/base.ts';
 import {showFomanticModal} from '../modules/fomantic/modal.ts';
 import {ignoreAreYouSure} from '../vendor/jquery.are-you-sure.ts';
 import {registerGlobalInitFunc} from '../modules/observer.ts';
+import {UserEventsSharedWorker} from '../modules/worker.ts';
 
 const {appSubUrl} = window.config;
 
@@ -184,6 +185,31 @@ export function initRepoIssueComments() {
       window.history.pushState(null, '', ' ');
     }
   });
+
+  // Live comment updates via SSE
+  if (!window.EventSource || !window.SharedWorker) return;
+
+  const repoId = document.querySelector<HTMLElement>('.repository.view.issue')?.getAttribute('data-repo-id');
+  const issueId = document.querySelector<HTMLElement>('.repository.view.issue')?.getAttribute('data-issue-id');
+  if (!repoId || !issueId) return;
+
+  const worker = new UserEventsSharedWorker('issue-comment-worker');
+  worker.addMessageEventListener((event: MessageEvent) => {
+    if (event.data.type !== 'issue-comment') return;
+    try {
+      const data = JSON.parse(event.data.data);
+      if (String(data.repo_id) !== repoId || String(data.issue_id) !== issueId) return;
+      const timelineEnd = document.querySelector<HTMLElement>('.timeline-item[id="timeline-comments-end"]');
+      if (!timelineEnd || !data.html) return;
+      // Check if the comment already exists
+      if (document.getElementById(`issuecomment-${data.comment_id}`)) return;
+      timelineEnd.insertAdjacentHTML('beforebegin', data.html);
+    } catch (err) {
+      console.error('ccopilot: failed to process live comment event', err);
+    }
+  });
+  worker.listen('issue-comment');
+  worker.startPort();
 }
 
 export async function handleReply(el: HTMLElement) {

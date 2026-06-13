@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package avatars_test
@@ -6,10 +6,10 @@ package avatars_test
 import (
 	"testing"
 
-	avatars_model "gitea.dev/models/avatars"
-	system_model "gitea.dev/models/system"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/setting/config"
+	avatars_model "creepercoding.dev/models/avatars"
+	system_model "creepercoding.dev/models/system"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/setting/config"
 
 	"github.com/stretchr/testify/assert"
 )

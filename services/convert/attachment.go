@@ -1,11 +1,11 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package convert
 
 import (
-	repo_model "gitea.dev/models/repo"
-	api "gitea.dev/modules/structs"
+	repo_model "creepercoding.dev/models/repo"
+	api "creepercoding.dev/modules/structs"
 )
 
 func WebAssetDownloadURL(repo *repo_model.Repository, attach *repo_model.Attachment) string {

@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -9,15 +9,15 @@ import (
 	"net/url"
 	"testing"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unittest"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/web"
-	"gitea.dev/services/contexttest"
-	"gitea.dev/services/forms"
-	repo_service "gitea.dev/services/repository"
-	wiki_service "gitea.dev/services/wiki"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unittest"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/contexttest"
+	"creepercoding.dev/services/forms"
+	repo_service "creepercoding.dev/services/repository"
+	wiki_service "creepercoding.dev/services/wiki"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

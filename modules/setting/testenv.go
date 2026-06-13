@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -11,9 +11,9 @@ import (
 	"runtime"
 	"strings"
 
-	"gitea.dev/modules/auth/password/hash"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/auth/password/hash"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/util"
 
 	"github.com/kballard/go-shellquote"
 )

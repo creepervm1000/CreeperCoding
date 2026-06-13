@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package nosql
@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/log"
 
 	"github.com/redis/go-redis/v9"
 )

@@ -1,4 +1,4 @@
-// Copyright 2018 The Gitea Authors. All rights reserved.
+// Copyright 2018 The CreeperCoding Authors. All rights reserved.
 // Copyright 2014 The Gogs Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
@@ -12,15 +12,15 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/modules/base"
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/public"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/svg"
-	"gitea.dev/modules/templates/eval"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/gitdiff"
+	"creepercoding.dev/modules/base"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/public"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/svg"
+	"creepercoding.dev/modules/templates/eval"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/gitdiff"
 )
 
 func newFuncMapWebPage() template.FuncMap {

@@ -1,5 +1,5 @@
 // Copyright 2019 Yusuke Inuzuka
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 // Most of this file is a subtly changed version of github.com/yuin/goldmark/extension/linkify.go

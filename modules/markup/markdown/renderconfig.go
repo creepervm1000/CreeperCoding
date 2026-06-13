@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package markdown
@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strings"
 
-	"gitea.dev/modules/markup"
+	"creepercoding.dev/modules/markup"
 
 	"github.com/yuin/goldmark/ast"
 	"go.yaml.in/yaml/v4"

@@ -1,10 +1,10 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package swagger
 
 import (
-	api "gitea.dev/modules/structs"
+	api "creepercoding.dev/modules/structs"
 )
 
 // CronList

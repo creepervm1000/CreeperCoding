@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package mirror
@@ -6,10 +6,10 @@ package mirror
 import (
 	"context"
 
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/repository"
-	notify_service "gitea.dev/services/notify"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/repository"
+	notify_service "creepercoding.dev/services/notify"
 )
 
 func init() {

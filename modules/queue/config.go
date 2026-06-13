@@ -1,10 +1,10 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package queue
 
 import (
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/setting"
 )
 
 type BaseConfig struct {

@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package private
@@ -7,10 +7,10 @@ import (
 	"bufio"
 	"io"
 
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/log"
-	asymkey_service "gitea.dev/services/asymkey"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/log"
+	asymkey_service "creepercoding.dev/services/asymkey"
 )
 
 // This file contains commit verification functions for refs passed across in hooks

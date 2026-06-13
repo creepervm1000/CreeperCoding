@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package alpine
@@ -20,15 +20,15 @@ import (
 	"io"
 	"strings"
 
-	packages_model "gitea.dev/models/packages"
-	alpine_model "gitea.dev/models/packages/alpine"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/json"
-	packages_module "gitea.dev/modules/packages"
-	alpine_module "gitea.dev/modules/packages/alpine"
-	"gitea.dev/modules/util"
-	packages_service "gitea.dev/services/packages"
+	packages_model "creepercoding.dev/models/packages"
+	alpine_model "creepercoding.dev/models/packages/alpine"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/json"
+	packages_module "creepercoding.dev/modules/packages"
+	alpine_module "creepercoding.dev/modules/packages/alpine"
+	"creepercoding.dev/modules/util"
+	packages_service "creepercoding.dev/services/packages"
 )
 
 const (

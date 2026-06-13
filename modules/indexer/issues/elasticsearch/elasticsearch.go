@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package elasticsearch
@@ -8,12 +8,12 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/indexer"
-	indexer_internal "gitea.dev/modules/indexer/internal"
-	es "gitea.dev/modules/indexer/internal/elasticsearch"
-	"gitea.dev/modules/indexer/issues/internal"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/indexer"
+	indexer_internal "creepercoding.dev/modules/indexer/internal"
+	es "creepercoding.dev/modules/indexer/internal/elasticsearch"
+	"creepercoding.dev/modules/indexer/issues/internal"
+	"creepercoding.dev/modules/util"
 )
 
 const issueIndexerLatestVersion = 3

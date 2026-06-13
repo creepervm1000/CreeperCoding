@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repository
@@ -6,10 +6,10 @@ package repository
 import (
 	"context"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/cache"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/cache"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
 )
 
 // CacheRef cachhe last commit information of the branch or the tag

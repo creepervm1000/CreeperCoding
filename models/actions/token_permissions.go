@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -6,8 +6,8 @@ package actions
 import (
 	"context"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
 )
 
 // ComputeTaskTokenPermissions computes the effective permissions for a job token against the target repository.

@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cmd
@@ -12,13 +12,13 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/migrations"
-	migrate_base "gitea.dev/models/migrations/base"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/services/doctor"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/migrations"
+	migrate_base "creepercoding.dev/models/migrations/base"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/services/doctor"
 
 	"github.com/urfave/cli/v3"
 )

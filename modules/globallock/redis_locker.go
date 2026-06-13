@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package globallock
@@ -10,7 +10,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitea.dev/modules/nosql"
+	"creepercoding.dev/modules/nosql"
 
 	"github.com/go-redsync/redsync/v4"
 	"github.com/go-redsync/redsync/v4/redis/goredis/v9"

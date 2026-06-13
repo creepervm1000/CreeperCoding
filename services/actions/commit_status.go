@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -10,18 +10,18 @@ import (
 	"path"
 	"strings"
 
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/models/db"
-	git_model "gitea.dev/models/git"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	actions_module "gitea.dev/modules/actions"
-	"gitea.dev/modules/actions/jobparser"
-	"gitea.dev/modules/commitstatus"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/util"
-	webhook_module "gitea.dev/modules/webhook"
-	commitstatus_service "gitea.dev/services/repository/commitstatus"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/models/db"
+	git_model "creepercoding.dev/models/git"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	actions_module "creepercoding.dev/modules/actions"
+	"creepercoding.dev/modules/actions/jobparser"
+	"creepercoding.dev/modules/commitstatus"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/util"
+	webhook_module "creepercoding.dev/modules/webhook"
+	commitstatus_service "creepercoding.dev/services/repository/commitstatus"
 )
 
 // CreateCommitStatusForRunJobs creates a commit status for the given job if it has a supported event and related commit.

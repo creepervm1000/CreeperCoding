@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cache
@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/json"
 
 	mc "gitea.com/go-chi/cache" //nolint:depguard // we wrap this package here
 	lru "github.com/hashicorp/golang-lru/v2"

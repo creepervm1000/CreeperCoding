@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package mailer
@@ -12,19 +12,19 @@ import (
 	"strings"
 	"time"
 
-	activities_model "gitea.dev/models/activities"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/renderhelper"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/emoji"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/markup/markdown"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/translation"
-	"gitea.dev/modules/util"
-	incoming_payload "gitea.dev/services/mailer/incoming/payload"
-	sender_service "gitea.dev/services/mailer/sender"
-	"gitea.dev/services/mailer/token"
+	activities_model "creepercoding.dev/models/activities"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/renderhelper"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/emoji"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/markup/markdown"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/translation"
+	"creepercoding.dev/modules/util"
+	incoming_payload "creepercoding.dev/services/mailer/incoming/payload"
+	sender_service "creepercoding.dev/services/mailer/sender"
+	"creepercoding.dev/services/mailer/token"
 )
 
 // maxEmailBodySize is the approximate maximum size of an email body in bytes

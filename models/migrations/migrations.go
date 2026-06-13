@@ -1,5 +1,5 @@
 // Copyright 2015 The Gogs Authors. All rights reserved.
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package migrations
@@ -9,32 +9,32 @@ import (
 	"errors"
 	"fmt"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/migrations/v1_10"
-	"gitea.dev/models/migrations/v1_11"
-	"gitea.dev/models/migrations/v1_12"
-	"gitea.dev/models/migrations/v1_13"
-	"gitea.dev/models/migrations/v1_14"
-	"gitea.dev/models/migrations/v1_15"
-	"gitea.dev/models/migrations/v1_16"
-	"gitea.dev/models/migrations/v1_17"
-	"gitea.dev/models/migrations/v1_18"
-	"gitea.dev/models/migrations/v1_19"
-	"gitea.dev/models/migrations/v1_20"
-	"gitea.dev/models/migrations/v1_21"
-	"gitea.dev/models/migrations/v1_22"
-	"gitea.dev/models/migrations/v1_23"
-	"gitea.dev/models/migrations/v1_24"
-	"gitea.dev/models/migrations/v1_25"
-	"gitea.dev/models/migrations/v1_26"
-	"gitea.dev/models/migrations/v1_27"
-	"gitea.dev/models/migrations/v1_6"
-	"gitea.dev/models/migrations/v1_7"
-	"gitea.dev/models/migrations/v1_8"
-	"gitea.dev/models/migrations/v1_9"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/migrations/v1_10"
+	"creepercoding.dev/models/migrations/v1_11"
+	"creepercoding.dev/models/migrations/v1_12"
+	"creepercoding.dev/models/migrations/v1_13"
+	"creepercoding.dev/models/migrations/v1_14"
+	"creepercoding.dev/models/migrations/v1_15"
+	"creepercoding.dev/models/migrations/v1_16"
+	"creepercoding.dev/models/migrations/v1_17"
+	"creepercoding.dev/models/migrations/v1_18"
+	"creepercoding.dev/models/migrations/v1_19"
+	"creepercoding.dev/models/migrations/v1_20"
+	"creepercoding.dev/models/migrations/v1_21"
+	"creepercoding.dev/models/migrations/v1_22"
+	"creepercoding.dev/models/migrations/v1_23"
+	"creepercoding.dev/models/migrations/v1_24"
+	"creepercoding.dev/models/migrations/v1_25"
+	"creepercoding.dev/models/migrations/v1_26"
+	"creepercoding.dev/models/migrations/v1_27"
+	"creepercoding.dev/models/migrations/v1_6"
+	"creepercoding.dev/models/migrations/v1_7"
+	"creepercoding.dev/models/migrations/v1_8"
+	"creepercoding.dev/models/migrations/v1_9"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
 
 	"xorm.io/xorm/names"
 )
@@ -414,6 +414,7 @@ func prepareMigrationTasks() []*migration {
 		newMigration(334, "Add cancelling support to action runners", v1_27.AddCancellingSupportToActionRunner),
 		newMigration(335, "Add reusable workflow fields and action_run_attempt_job_id_index table for ActionRunJob", v1_27.AddReusableWorkflowFieldsToActionRunJob),
 		newMigration(336, "Add ActionRunJobSummary table", v1_27.AddActionRunJobSummaryTable),
+		newMigration(337, "Add CcopilotDisabled column to repository", v1_27.AddCcopilotDisabledToRepository),
 	}
 	return preparedMigrations
 }

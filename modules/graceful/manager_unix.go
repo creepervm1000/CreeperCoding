@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 //go:build !windows
@@ -15,10 +15,10 @@ import (
 	"syscall"
 	"time"
 
-	"gitea.dev/modules/graceful/releasereopen"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/process"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/graceful/releasereopen"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/process"
+	"creepercoding.dev/modules/setting"
 )
 
 func pidMsg() systemdNotifyMsg {

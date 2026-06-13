@@ -1,4 +1,5 @@
-// Copyright 2016 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors
+// Copyright 2016 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package utils
@@ -8,17 +9,17 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/models/db"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/models/webhook"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/validation"
-	webhook_module "gitea.dev/modules/webhook"
-	"gitea.dev/services/context"
-	webhook_service "gitea.dev/services/webhook"
+	"creepercoding.dev/models/db"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/models/webhook"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/validation"
+	webhook_module "creepercoding.dev/modules/webhook"
+	"creepercoding.dev/services/context"
+	webhook_service "creepercoding.dev/services/webhook"
 )
 
 // ListOwnerHooks lists the webhooks of the provided owner

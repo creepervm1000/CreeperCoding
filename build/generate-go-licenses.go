@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 //go:build ignore
@@ -30,7 +30,7 @@ var primaryLicenseRe = regexp.MustCompile(`^(?i)(LICEN[SC]E|COPYING)$`)
 // ignoredNames are LicenseEntry.Name values to exclude from the output.
 var ignoredNames = map[string]bool{
 	"gitea.dev":                 true,
-	"gitea.dev/options/license": true,
+	"creepercoding.dev/options/license": true,
 }
 
 var excludedExt = map[string]bool{

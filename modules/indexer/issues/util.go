@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package issues
@@ -8,12 +8,12 @@ import (
 	"errors"
 	"fmt"
 
-	"gitea.dev/models/db"
-	issue_model "gitea.dev/models/issues"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/indexer/issues/internal"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/queue"
+	"creepercoding.dev/models/db"
+	issue_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/indexer/issues/internal"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/queue"
 )
 
 // getIssueIndexerData returns the indexer data of an issue and a bool value indicating whether the issue exists.

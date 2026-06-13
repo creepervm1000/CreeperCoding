@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors.
+// Copyright 2022 The CreeperCoding Authors.
 // All rights reserved.
 // SPDX-License-Identifier: MIT
 
@@ -8,10 +8,10 @@ import (
 	"context"
 	"errors"
 
-	issues_model "gitea.dev/models/issues"
-	access_model "gitea.dev/models/perm/access"
-	unit_model "gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
+	issues_model "creepercoding.dev/models/issues"
+	access_model "creepercoding.dev/models/perm/access"
+	unit_model "creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
 )
 
 var ErrUserHasNoPermissionForAction = errors.New("user not allowed to do this action")

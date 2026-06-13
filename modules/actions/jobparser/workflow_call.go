@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package jobparser
@@ -9,8 +9,8 @@ import (
 	"regexp"
 	"strings"
 
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/util"
 
 	"gitea.com/gitea/runner/act/exprparser"
 	"gitea.com/gitea/runner/act/model"

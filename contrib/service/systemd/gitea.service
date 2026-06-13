@@ -1,5 +1,5 @@
 [Unit]
-Description=Gitea (Git with a cup of tea)
+Description=CreeperCoding (Open Source, where you need it most)
 After=network.target
 ###
 # Don't forget to add the database service dependencies

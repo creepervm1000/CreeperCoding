@@ -1,5 +1,5 @@
 // Copyright 2015 The Gogs Authors. All rights reserved.
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package git
@@ -11,8 +11,8 @@ import (
 	"strings"
 	"sync"
 
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/process"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/process"
 )
 
 // GPGSettings represents the default GPG settings for this repository

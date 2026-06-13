@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package git
@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/modules/optional"
+	"creepercoding.dev/modules/optional"
 )
 
 var sepSpace = []byte{' '}

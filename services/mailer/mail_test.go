@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package mailer
@@ -16,19 +16,19 @@ import (
 	"testing"
 	texttmpl "text/template"
 
-	actions_model "gitea.dev/models/actions"
-	activities_model "gitea.dev/models/activities"
-	issues_model "gitea.dev/models/issues"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/storage"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/test"
-	"gitea.dev/services/attachment"
-	sender_service "gitea.dev/services/mailer/sender"
+	actions_model "creepercoding.dev/models/actions"
+	activities_model "creepercoding.dev/models/activities"
+	issues_model "creepercoding.dev/models/issues"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/storage"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/test"
+	"creepercoding.dev/services/attachment"
+	sender_service "creepercoding.dev/services/mailer/sender"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -20,19 +20,19 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"gitea.dev/models/auth"
-	"gitea.dev/models/unittest"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/testlogger"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/modules/web/middleware"
-	"gitea.dev/routers"
-	gitea_context "gitea.dev/services/context"
-	"gitea.dev/tests"
+	"creepercoding.dev/models/auth"
+	"creepercoding.dev/models/unittest"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/testlogger"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/modules/web/middleware"
+	"creepercoding.dev/routers"
+	gitea_context "creepercoding.dev/services/context"
+	"creepercoding.dev/tests"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/stretchr/testify/assert"

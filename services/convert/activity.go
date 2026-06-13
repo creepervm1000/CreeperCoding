@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package convert
@@ -6,12 +6,12 @@ package convert
 import (
 	"context"
 
-	activities_model "gitea.dev/models/activities"
-	perm_model "gitea.dev/models/perm"
-	access_model "gitea.dev/models/perm/access"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/log"
-	api "gitea.dev/modules/structs"
+	activities_model "creepercoding.dev/models/activities"
+	perm_model "creepercoding.dev/models/perm"
+	access_model "creepercoding.dev/models/perm/access"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/log"
+	api "creepercoding.dev/modules/structs"
 )
 
 func ToActivity(ctx context.Context, ac *activities_model.Action, doer *user_model.User) *api.Activity {

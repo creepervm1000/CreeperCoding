@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -8,15 +8,15 @@ import (
 	"slices"
 	"strings"
 
-	"gitea.dev/modules/actions/jobparser"
-	"gitea.dev/modules/actions/workflowpattern"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/glob"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	webhook_module "gitea.dev/modules/webhook"
+	"creepercoding.dev/modules/actions/jobparser"
+	"creepercoding.dev/modules/actions/workflowpattern"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/glob"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	webhook_module "creepercoding.dev/modules/webhook"
 
 	"gitea.com/gitea/runner/act/model"
 	"go.yaml.in/yaml/v4"

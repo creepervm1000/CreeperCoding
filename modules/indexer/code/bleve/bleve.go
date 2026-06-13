@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package bleve
@@ -11,21 +11,21 @@ import (
 	"strings"
 	"time"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/analyze"
-	"gitea.dev/modules/charset"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/indexer"
-	path_filter "gitea.dev/modules/indexer/code/bleve/token/path"
-	"gitea.dev/modules/indexer/code/internal"
-	indexer_internal "gitea.dev/modules/indexer/internal"
-	inner_bleve "gitea.dev/modules/indexer/internal/bleve"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/typesniffer"
-	"gitea.dev/modules/util"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/analyze"
+	"creepercoding.dev/modules/charset"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/indexer"
+	path_filter "creepercoding.dev/modules/indexer/code/bleve/token/path"
+	"creepercoding.dev/modules/indexer/code/internal"
+	indexer_internal "creepercoding.dev/modules/indexer/internal"
+	inner_bleve "creepercoding.dev/modules/indexer/internal/bleve"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/typesniffer"
+	"creepercoding.dev/modules/util"
 
 	"github.com/blevesearch/bleve/v2"
 	analyzer_custom "github.com/blevesearch/bleve/v2/analysis/analyzer/custom"

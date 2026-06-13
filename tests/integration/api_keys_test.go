@@ -9,14 +9,14 @@ import (
 	"net/url"
 	"testing"
 
-	asymkey_model "gitea.dev/models/asymkey"
-	auth_model "gitea.dev/models/auth"
-	"gitea.dev/models/perm"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/tests"
+	asymkey_model "creepercoding.dev/models/asymkey"
+	auth_model "creepercoding.dev/models/auth"
+	"creepercoding.dev/models/perm"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/tests"
 
 	"github.com/stretchr/testify/assert"
 )

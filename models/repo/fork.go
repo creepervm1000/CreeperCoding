@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -6,8 +6,8 @@ package repo
 import (
 	"context"
 
-	"gitea.dev/models/db"
-	user_model "gitea.dev/models/user"
+	"creepercoding.dev/models/db"
+	user_model "creepercoding.dev/models/user"
 
 	"xorm.io/builder"
 )

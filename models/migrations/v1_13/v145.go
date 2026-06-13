@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_13
@@ -6,8 +6,8 @@ package v1_13
 import (
 	"fmt"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/setting"
 )
 
 func IncreaseLanguageField(x db.EngineMigration) error {

@@ -233,6 +233,52 @@ export function initRepoEditor() {
       }
     });
   })();
+
+  // AI Commit Message button
+  const aiBtn = document.querySelector<HTMLButtonElement>('#ai-commit-message-btn');
+  const treePathInput = document.querySelector<HTMLInputElement>('input#tree_path');
+  const commitSummaryInput = document.querySelector<HTMLInputElement>('#commit-summary-input');
+  const commitMessageTextarea = document.querySelector<HTMLTextAreaElement>('#commit-message-textarea');
+  const repoLink = document.querySelector('.repo-editor-menu')?.getAttribute('data-repo-link') ?? '';
+  const branchName = document.querySelector('.repo-editor-menu')?.getAttribute('data-branch-name') ?? '';
+
+  aiBtn?.addEventListener('click', async () => {
+    if (!treePathInput || !commitSummaryInput || !commitMessageTextarea) return;
+    const path = treePathInput.value;
+    const content = editArea?.value ?? '';
+    if (!path) {
+      showErrorToast('No file path specified.');
+      return;
+    }
+    aiBtn.disabled = true;
+    aiBtn.textContent = 'Generating...';
+    try {
+      const resp = await POST(`${repoLink}/agent/commit-message`, {
+        data: {
+          path,
+          content,
+          branch: branchName,
+          commit_summary: commitSummaryInput.value,
+        },
+      });
+      if (!resp.ok) {
+        const err = await resp.text();
+        showErrorToast(`AI commit message error: ${err}`);
+        return;
+      }
+      const data = await resp.json();
+      if (data.message) {
+        const lines = data.message.split('\n');
+        commitSummaryInput.value = lines[0].substring(0, 100);
+        commitMessageTextarea.value = lines.slice(1).join('\n').trim();
+      }
+    } catch (err) {
+      showErrorToast(`AI commit message error: ${String(err)}`);
+    } finally {
+      aiBtn.disabled = false;
+      aiBtn.innerHTML = 'AI';
+    }
+  });
 }
 
 export function renderPreviewPanelContent(previewPanel: Element, htmlContent: string) {

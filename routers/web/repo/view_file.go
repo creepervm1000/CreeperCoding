@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -11,21 +11,21 @@ import (
 	"path"
 	"strings"
 
-	git_model "gitea.dev/models/git"
-	issue_model "gitea.dev/models/issues"
-	"gitea.dev/models/renderhelper"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/actions"
-	"gitea.dev/modules/charset"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/attribute"
-	"gitea.dev/modules/highlight"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/context"
-	issue_service "gitea.dev/services/issue"
+	git_model "creepercoding.dev/models/git"
+	issue_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/renderhelper"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/actions"
+	"creepercoding.dev/modules/charset"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/attribute"
+	"creepercoding.dev/modules/highlight"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/context"
+	issue_service "creepercoding.dev/services/issue"
 )
 
 func prepareLatestCommitInfo(ctx *context.Context) bool {

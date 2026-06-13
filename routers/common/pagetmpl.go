@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package common
@@ -8,11 +8,11 @@ import (
 	"errors"
 	"sync"
 
-	activities_model "gitea.dev/models/activities"
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/modules/log"
-	"gitea.dev/services/context"
+	activities_model "creepercoding.dev/models/activities"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/services/context"
 )
 
 // StopwatchTmplInfo is a view on a stopwatch specifically for template rendering

@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package maven
@@ -7,7 +7,7 @@ import (
 	"encoding/xml"
 	"strings"
 
-	packages_model "gitea.dev/models/packages"
+	packages_model "creepercoding.dev/models/packages"
 )
 
 // MetadataResponse https://maven.apache.org/ref/3.2.5/maven-repository-metadata/repository-metadata.html

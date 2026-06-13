@@ -1,10 +1,10 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package common
 
 import (
-	"gitea.dev/modules/optional"
+	"creepercoding.dev/modules/optional"
 )
 
 func ParseIssueFilterStateIsClosed(state string) optional.Option[bool] {

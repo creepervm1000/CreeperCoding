@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package convert
@@ -6,8 +6,8 @@ package convert
 import (
 	"context"
 
-	repo_model "gitea.dev/models/repo"
-	api "gitea.dev/modules/structs"
+	repo_model "creepercoding.dev/models/repo"
+	api "creepercoding.dev/modules/structs"
 )
 
 // ToAPIRelease convert a repo_model.Release to api.Release

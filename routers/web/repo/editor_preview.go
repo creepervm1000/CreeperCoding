@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -6,9 +6,9 @@ package repo
 import (
 	"net/http"
 
-	"gitea.dev/modules/setting"
-	"gitea.dev/services/context"
-	files_service "gitea.dev/services/repository/files"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/services/context"
+	files_service "creepercoding.dev/services/repository/files"
 )
 
 func DiffPreviewPost(ctx *context.Context) {

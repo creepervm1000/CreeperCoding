@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package container
@@ -8,12 +8,12 @@ import (
 	"io"
 	"strings"
 
-	packages_model "gitea.dev/models/packages"
-	container_service "gitea.dev/models/packages/container"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/packages"
-	container_module "gitea.dev/modules/packages/container"
+	packages_model "creepercoding.dev/models/packages"
+	container_service "creepercoding.dev/models/packages/container"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/packages"
+	container_module "creepercoding.dev/modules/packages/container"
 
 	v1 "github.com/opencontainers/image-spec/specs-go/v1"
 )

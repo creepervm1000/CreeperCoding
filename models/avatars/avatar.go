@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package avatars
@@ -14,10 +14,10 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/cache"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/cache"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
 
 	"strk.kbt.io/projects/go/libravatar"
 )

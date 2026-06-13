@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package private
@@ -8,8 +8,8 @@ import (
 	"io"
 	"net/http"
 
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/json"
 )
 
 // ResponseText is used to get the response as text, instead of parsing it as JSON.

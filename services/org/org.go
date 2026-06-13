@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package org
@@ -7,20 +7,20 @@ import (
 	"context"
 	"fmt"
 
-	actions_model "gitea.dev/models/actions"
-	activities_model "gitea.dev/models/activities"
-	"gitea.dev/models/db"
-	org_model "gitea.dev/models/organization"
-	packages_model "gitea.dev/models/packages"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	secret_model "gitea.dev/models/secret"
-	user_model "gitea.dev/models/user"
-	issue_indexer "gitea.dev/modules/indexer/issues"
-	"gitea.dev/modules/storage"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	repo_service "gitea.dev/services/repository"
+	actions_model "creepercoding.dev/models/actions"
+	activities_model "creepercoding.dev/models/activities"
+	"creepercoding.dev/models/db"
+	org_model "creepercoding.dev/models/organization"
+	packages_model "creepercoding.dev/models/packages"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	secret_model "creepercoding.dev/models/secret"
+	user_model "creepercoding.dev/models/user"
+	issue_indexer "creepercoding.dev/modules/indexer/issues"
+	"creepercoding.dev/modules/storage"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 // deleteOrganization deletes models associated to an organization.

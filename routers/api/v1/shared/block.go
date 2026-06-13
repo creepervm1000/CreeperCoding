@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors.
+// Copyright 2024 The CreeperCoding Authors.
 // SPDX-License-Identifier: MIT
 
 package shared
@@ -7,13 +7,13 @@ import (
 	"errors"
 	"net/http"
 
-	user_model "gitea.dev/models/user"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/routers/api/v1/utils"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	user_service "gitea.dev/services/user"
+	user_model "creepercoding.dev/models/user"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/routers/api/v1/utils"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	user_service "creepercoding.dev/services/user"
 )
 
 func ListBlocks(ctx *context.APIContext, blocker *user_model.User) {

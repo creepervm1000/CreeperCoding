@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package highlight
@@ -8,8 +8,8 @@ import (
 	"strings"
 	"sync"
 
-	"gitea.dev/modules/analyze"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/analyze"
+	"creepercoding.dev/modules/log"
 
 	"github.com/alecthomas/chroma/v2"
 	"github.com/alecthomas/chroma/v2/lexers"

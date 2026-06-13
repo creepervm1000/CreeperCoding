@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -14,26 +14,26 @@ import (
 	"strconv"
 	"strings"
 
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/organization"
-	project_model "gitea.dev/models/project"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/base"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/git"
-	issue_template "gitea.dev/modules/issue/template"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/utils"
-	"gitea.dev/services/context"
-	"gitea.dev/services/context/upload"
-	"gitea.dev/services/forms"
-	issue_service "gitea.dev/services/issue"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/organization"
+	project_model "creepercoding.dev/models/project"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/base"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/git"
+	issue_template "creepercoding.dev/modules/issue/template"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/utils"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/context/upload"
+	"creepercoding.dev/services/forms"
+	issue_service "creepercoding.dev/services/issue"
 )
 
 // Tries to load and set an issue template. The first return value indicates if a template was loaded.

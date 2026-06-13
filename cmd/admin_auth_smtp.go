@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cmd
@@ -8,9 +8,9 @@ import (
 	"errors"
 	"strings"
 
-	auth_model "gitea.dev/models/auth"
-	"gitea.dev/modules/util"
-	"gitea.dev/services/auth/source/smtp"
+	auth_model "creepercoding.dev/models/auth"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/services/auth/source/smtp"
 
 	"github.com/urfave/cli/v3"
 )

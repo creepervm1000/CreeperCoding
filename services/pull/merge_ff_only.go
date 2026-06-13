@@ -1,12 +1,12 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package pull
 
 import (
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/log"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/log"
 )
 
 // doMergeStyleFastForwardOnly merges the tracking into the current HEAD - which is assumed to be staging branch (equal to the pr.BaseBranch)

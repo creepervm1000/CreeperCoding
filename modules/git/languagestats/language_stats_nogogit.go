@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 //go:build !gogit
@@ -9,11 +9,11 @@ import (
 	"bytes"
 	"io"
 
-	"gitea.dev/modules/analyze"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/git/attribute"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
+	"creepercoding.dev/modules/analyze"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/git/attribute"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
 
 	"github.com/go-enry/go-enry/v2"
 )

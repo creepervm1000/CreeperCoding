@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_11
@@ -6,7 +6,7 @@ package v1_11
 import (
 	"fmt"
 
-	"gitea.dev/models/db"
+	"creepercoding.dev/models/db"
 )
 
 func FeatureChangeTargetBranch(x db.EngineMigration) error {

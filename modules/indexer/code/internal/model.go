@@ -1,9 +1,9 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package internal
 
-import "gitea.dev/modules/timeutil"
+import "creepercoding.dev/modules/timeutil"
 
 type FileUpdate struct {
 	Filename string

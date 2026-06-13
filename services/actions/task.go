@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -9,9 +9,9 @@ import (
 	"fmt"
 
 	runnerv1 "gitea.dev/actions-proto-go/runner/v1"
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/models/db"
-	secret_model "gitea.dev/models/secret"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/models/db"
+	secret_model "creepercoding.dev/models/secret"
 
 	"google.golang.org/protobuf/types/known/structpb"
 )

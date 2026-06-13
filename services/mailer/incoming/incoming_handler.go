@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package incoming
@@ -9,19 +9,19 @@ import (
 	"errors"
 	"fmt"
 
-	issues_model "gitea.dev/models/issues"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
-	attachment_service "gitea.dev/services/attachment"
-	"gitea.dev/services/context/upload"
-	issue_service "gitea.dev/services/issue"
-	incoming_payload "gitea.dev/services/mailer/incoming/payload"
-	"gitea.dev/services/mailer/token"
-	pull_service "gitea.dev/services/pull"
+	issues_model "creepercoding.dev/models/issues"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
+	attachment_service "creepercoding.dev/services/attachment"
+	"creepercoding.dev/services/context/upload"
+	issue_service "creepercoding.dev/services/issue"
+	incoming_payload "creepercoding.dev/services/mailer/incoming/payload"
+	"creepercoding.dev/services/mailer/token"
+	pull_service "creepercoding.dev/services/pull"
 )
 
 type MailHandler interface {

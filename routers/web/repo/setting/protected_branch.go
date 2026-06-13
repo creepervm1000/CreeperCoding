@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -12,22 +12,22 @@ import (
 	"strings"
 	"time"
 
-	git_model "gitea.dev/models/git"
-	"gitea.dev/models/organization"
-	"gitea.dev/models/perm"
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unit"
-	"gitea.dev/modules/base"
-	"gitea.dev/modules/glob"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/web/repo"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
-	pull_service "gitea.dev/services/pull"
-	"gitea.dev/services/repository"
+	git_model "creepercoding.dev/models/git"
+	"creepercoding.dev/models/organization"
+	"creepercoding.dev/models/perm"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unit"
+	"creepercoding.dev/modules/base"
+	"creepercoding.dev/modules/glob"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/web/repo"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
+	pull_service "creepercoding.dev/services/pull"
+	"creepercoding.dev/services/repository"
 )
 
 const (

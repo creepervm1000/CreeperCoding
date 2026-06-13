@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package private
@@ -13,11 +13,11 @@ import (
 	"sync"
 	"time"
 
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/proxyprotocol"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/proxyprotocol"
+	"creepercoding.dev/modules/setting"
 )
 
 // Response is used for internal request response (for user message and error message)
@@ -77,7 +77,7 @@ Ensure you are running in the correct environment or set the correct configurati
 		SetContext(ctx).
 		SetTransport(internalAPITransport()).
 		Header("X-Real-IP", getClientIP()).
-		Header("X-Gitea-Internal-Auth", "Bearer "+setting.InternalToken)
+		Header("X-CreeperCoding-Internal-Auth", "Bearer "+setting.InternalToken)
 }
 
 func newInternalRequestAPI(ctx context.Context, url, method string, body ...any) *httplib.Request {

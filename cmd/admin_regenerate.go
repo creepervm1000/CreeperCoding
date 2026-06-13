@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package cmd
@@ -6,9 +6,9 @@ package cmd
 import (
 	"context"
 
-	"gitea.dev/modules/graceful"
-	asymkey_service "gitea.dev/services/asymkey"
-	repo_service "gitea.dev/services/repository"
+	"creepercoding.dev/modules/graceful"
+	asymkey_service "creepercoding.dev/services/asymkey"
+	repo_service "creepercoding.dev/services/repository"
 
 	"github.com/urfave/cli/v3"
 )

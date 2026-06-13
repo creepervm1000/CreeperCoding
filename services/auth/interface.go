@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package auth
@@ -7,9 +7,9 @@ import (
 	"context"
 	"net/http"
 
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/reqctx"
-	"gitea.dev/modules/session"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/reqctx"
+	"creepercoding.dev/modules/session"
 )
 
 type DataStore = reqctx.ContextDataProvider

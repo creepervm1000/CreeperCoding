@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package arch
@@ -6,8 +6,8 @@ package arch
 import (
 	"context"
 
-	packages_model "gitea.dev/models/packages"
-	arch_module "gitea.dev/modules/packages/arch"
+	packages_model "creepercoding.dev/models/packages"
+	arch_module "creepercoding.dev/modules/packages/arch"
 )
 
 // GetRepositories gets all available repositories

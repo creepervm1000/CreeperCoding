@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package templates
@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/util"
 
 	"github.com/stretchr/testify/assert"
 )

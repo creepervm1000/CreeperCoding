@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package renderhelper
@@ -7,9 +7,9 @@ import (
 	"context"
 	"fmt"
 
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/util"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/util"
 )
 
 type RepoComment struct {

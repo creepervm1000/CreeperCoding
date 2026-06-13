@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 // Package contexttest provides utilities for testing Web/API contexts with models.
@@ -15,19 +15,19 @@ import (
 	"testing"
 	"time"
 
-	access_model "gitea.dev/models/perm/access"
-	repo_model "gitea.dev/models/repo"
-	"gitea.dev/models/unittest"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/cache"
-	git_module "gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/reqctx"
-	"gitea.dev/modules/session"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/translation"
-	"gitea.dev/modules/web/middleware"
-	"gitea.dev/services/context"
+	access_model "creepercoding.dev/models/perm/access"
+	repo_model "creepercoding.dev/models/repo"
+	"creepercoding.dev/models/unittest"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/cache"
+	git_module "creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/reqctx"
+	"creepercoding.dev/modules/session"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/translation"
+	"creepercoding.dev/modules/web/middleware"
+	"creepercoding.dev/services/context"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/stretchr/testify/assert"

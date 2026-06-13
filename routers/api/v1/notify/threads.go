@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package notify
@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"net/http"
 
-	activities_model "gitea.dev/models/activities"
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
+	activities_model "creepercoding.dev/models/activities"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
 )
 
 // GetThread get notification by ID

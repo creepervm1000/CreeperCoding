@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package user
@@ -10,11 +10,11 @@ import (
 	"io"
 	"os"
 
-	"gitea.dev/models/db"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/avatar"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/storage"
+	"creepercoding.dev/models/db"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/avatar"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/storage"
 )
 
 // UploadAvatar saves custom avatar for user.

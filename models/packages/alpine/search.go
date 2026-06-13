@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package alpine
@@ -6,8 +6,8 @@ package alpine
 import (
 	"context"
 
-	packages_model "gitea.dev/models/packages"
-	alpine_module "gitea.dev/modules/packages/alpine"
+	packages_model "creepercoding.dev/models/packages"
+	alpine_module "creepercoding.dev/modules/packages/alpine"
 )
 
 // GetBranches gets all available branches

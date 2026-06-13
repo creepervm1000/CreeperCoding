@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package log
@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/json"
 )
 
 // These flags define which text to prefix to each log entry generated

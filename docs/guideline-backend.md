@@ -22,9 +22,9 @@ The API is documented by [swagger](https://gitea.com/api/swagger) and is based o
 
 ### GitHub API compatibility
 
-Gitea's API should use the same endpoints and fields as the GitHub API as far as possible, unless there are good reasons to deviate. \
-If Gitea provides functionality that GitHub does not, a new endpoint can be created. \
-If information is provided by Gitea that is not provided by the GitHub API, a new field can be used that doesn't collide with any GitHub fields. \
+CreeperCoding's API should use the same endpoints and fields as the GitHub API as far as possible, unless there are good reasons to deviate. \
+If CreeperCoding provides functionality that GitHub does not, a new endpoint can be created. \
+If information is provided by CreeperCoding that is not provided by the GitHub API, a new field can be used that doesn't collide with any GitHub fields. \
 Updating an existing API should not remove existing fields unless there is a really good reason to do so. \
 The same applies to status responses. If you notice a problem, feel free to leave a comment in the code for future refactoring to API v2 (which is currently not planned).
 

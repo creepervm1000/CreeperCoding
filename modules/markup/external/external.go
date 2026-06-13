@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package external
@@ -12,9 +12,9 @@ import (
 	"runtime"
 	"strings"
 
-	"gitea.dev/modules/markup"
-	"gitea.dev/modules/process"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/markup"
+	"creepercoding.dev/modules/process"
+	"creepercoding.dev/modules/setting"
 
 	"github.com/kballard/go-shellquote"
 )

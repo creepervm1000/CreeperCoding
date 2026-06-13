@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package user
@@ -7,8 +7,8 @@ import (
 	"context"
 	"fmt"
 
-	"gitea.dev/models/auth"
-	"gitea.dev/models/db"
+	"creepercoding.dev/models/auth"
+	"creepercoding.dev/models/db"
 )
 
 // UserList is a list of user.

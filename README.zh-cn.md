@@ -1,4 +1,4 @@
-# Gitea
+# CreeperCoding
 
 [![](https://github.com/go-gitea/gitea/actions/workflows/release-nightly.yml/badge.svg?branch=main)](https://github.com/go-gitea/gitea/actions/workflows/release-nightly.yml?query=branch%3Amain "Release Nightly")
 [![](https://img.shields.io/discord/322538954119184384.svg?logo=discord&logoColor=white&label=Discord&color=5865F2)](https://discord.gg/Gitea "Join the Discord chat at https://discord.gg/Gitea")
@@ -16,13 +16,13 @@
 
 这个项目的目标是提供最简单、最快速、最无痛的方式来设置自托管的 Git 服务。
 
-由于 Gitea 是用 Go 语言编写的，它可以在 Go 支持的所有平台和架构上运行，包括 Linux、macOS 和 Windows 的 x86、amd64、ARM 和 PowerPC 架构。这个项目自 2016 年 11 月从 [Gogs](https://gogs.io) [分叉](https://blog.gitea.com/welcome-to-gitea/) 而来，但已经有了很多变化。
+由于 CreeperCoding 是用 Go 语言编写的，它可以在 Go 支持的所有平台和架构上运行，包括 Linux、macOS 和 Windows 的 x86、amd64、ARM 和 PowerPC 架构。这个项目自 2016 年 11 月从 [Gogs](https://gogs.io) [分叉](https://blog.gitea.com/welcome-to-gitea/) 而来，但已经有了很多变化。
 
 在线演示可以访问 [demo.gitea.com](https://demo.gitea.com)。
 
-要访问免费的 Gitea 服务（有一定数量的仓库限制），可以访问 [gitea.com](https://gitea.com/user/login)。
+要访问免费的 CreeperCoding 服务（有一定数量的仓库限制），可以访问 [creepercoding.dev](https://creepercoding.dev/user/login)。
 
-要快速部署您自己的专用 Gitea 实例，可以在 [cloud.gitea.com](https://cloud.gitea.com) 开始免费试用。
+要快速部署您自己的专用 CreeperCoding 实例，可以在 [cloud.gitea.com](https://cloud.gitea.com) 开始免费试用。
 
 ## 文件
 

@@ -7,14 +7,14 @@ import (
 	"fmt"
 	"net/http"
 
-	"gitea.dev/models/db"
-	git_model "gitea.dev/models/git"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/api/v1/utils"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
-	commitstatus_service "gitea.dev/services/repository/commitstatus"
+	"creepercoding.dev/models/db"
+	git_model "creepercoding.dev/models/git"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/api/v1/utils"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
+	commitstatus_service "creepercoding.dev/services/repository/commitstatus"
 )
 
 // NewCommitStatus creates a new CommitStatus

@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package common
@@ -6,8 +6,8 @@ package common
 import (
 	"net/http"
 
-	"gitea.dev/modules/web"
-	"gitea.dev/services/lfs"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/lfs"
 )
 
 const RouterMockPointCommonLFS = "common-lfs"

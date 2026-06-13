@@ -1,6 +1,6 @@
 # Contribution Guidelines
 
-This document explains how to contribute changes to the Gitea project. Topic-specific guides live in separate files so the essentials are easier to find.
+This document explains how to contribute changes to the CreeperCoding project. Topic-specific guides live in separate files so the essentials are easier to find.
 
 | Topic | Document |
 | :---- | :------- |
@@ -19,7 +19,7 @@ This document explains how to contribute changes to the Gitea project. Topic-spe
     - [Types of issues](#types-of-issues)
     - [Discuss your design before the implementation](#discuss-your-design-before-the-implementation)
     - [Issue locking](#issue-locking)
-  - [Building Gitea](#building-gitea)
+  - [Building CreeperCoding](#building-gitea)
   - [Styleguide](#styleguide)
   - [Copyright](#copyright)
   - [Testing](#testing)
@@ -43,7 +43,7 @@ This document explains how to contribute changes to the Gitea project. Topic-spe
 It assumes you have followed the [installation instructions](https://docs.gitea.com/category/installation). \
 Sensitive security-related issues should be reported to [security@gitea.io](mailto:security@gitea.io).
 
-For configuring IDEs for Gitea development, see the [contributed IDE configurations](contrib/ide/).
+For configuring IDEs for CreeperCoding development, see the [contributed IDE configurations](contrib/ide/).
 
 ## AI Contribution Policy
 
@@ -73,7 +73,7 @@ The more detailed and specific you are, the faster we can fix the issue. \
 It is really helpful if you can reproduce your problem on a site running on the latest commits, i.e. <https://demo.gitea.com>, as perhaps your problem has already been fixed on a current version. \
 Please follow the guidelines described in [How to Report Bugs Effectively](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html) for your report.
 
-Please be kind—remember that Gitea comes at no cost to you, and you're getting free help.
+Please be kind—remember that CreeperCoding comes at no cost to you, and you're getting free help.
 
 ### Types of issues
 
@@ -83,7 +83,7 @@ Typically, issues fall in one of the following categories:
 - `security issue`: bug that has serious implications such as leaking another users data. Please do not file such issues on the public tracker and send a mail to security@gitea.io instead
 - `feature`: Completely new functionality. You should describe this feature in enough detail that anyone who reads the issue can understand how it is supposed to be implemented
 - `enhancement`: An existing feature should get an upgrade
-- `refactoring`: Parts of the code base don't conform with other parts and should be changed to improve Gitea's maintainability
+- `refactoring`: Parts of the code base don't conform with other parts and should be changed to improve CreeperCoding's maintainability
 
 ### Discuss your design before the implementation
 
@@ -104,20 +104,20 @@ Such comments will likely be overlooked as some maintainers may not view notific
 As such, commenting on closed/merged issues/PRs may be disabled prior to the scheduled auto-locking if a discussion starts or if unrelated comments are posted.
 If further discussion is needed, we encourage you to open a new issue instead and we recommend linking to the issue/PR in question for context.
 
-## Building Gitea
+## Building CreeperCoding
 
 See the [development setup instructions](https://docs.gitea.com/development/hacking-on-gitea).
 
 ## Styleguide
 
-You should always run `make fmt` before committing to conform to Gitea's styleguide.
+You should always run `make fmt` before committing to conform to CreeperCoding's styleguide.
 
 ## Copyright
 
 New code files that you contribute should use the standard copyright header:
 
 ```
-// Copyright <current year> The Gitea Authors. All rights reserved.
+// Copyright <current year> The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 ```
 
@@ -149,7 +149,7 @@ Here's how to run the test suite:
 
 | Variable                          | Description                                                 |
 | :-------------------------------- | :---------------------------------------------------------- |
-| ``GITEA_TEST_E2E_DEBUG``          | When set, show Gitea server output                          |
+| ``GITEA_TEST_E2E_DEBUG``          | When set, show CreeperCoding server output                          |
 | ``GITEA_TEST_E2E_FLAGS``          | Additional flags passed to Playwright, for example ``--ui`` |
 | ``GITEA_TEST_E2E_TIMEOUT_FACTOR`` | Timeout multiplier (default: 4 on CI, 1 locally)            |
 
@@ -237,7 +237,7 @@ For pull requests that use a valid Conventional Commits title, CI automatically 
 That label is kept in sync with the PR title when the title is edited.\
 Other title prefixes do not get an automatic `type/…` label; the merger still assigns the correct labels (including `type/…` when needed) for changelog and backport decisions.
 
-If your PR closes some issues, you must note that in a way that both GitHub and Gitea understand, i.e. by appending a paragraph like
+If your PR closes some issues, you must note that in a way that both GitHub and CreeperCoding understand, i.e. by appending a paragraph like
 
 ```text
 Fixes/Closes/Resolves #<ISSUE_NR_X>.
@@ -295,7 +295,7 @@ Guidance for reviewers, the merge queue, and the squash commit message format is
 
 ## Documentation
 
-If you add a new feature or change an existing aspect of Gitea, the documentation for that feature must be created or updated in another PR at [https://gitea.com/gitea/docs](https://gitea.com/gitea/docs).
+If you add a new feature or change an existing aspect of CreeperCoding, the documentation for that feature must be created or updated in another PR at [https://gitea.com/gitea/docs](https://gitea.com/gitea/docs).
 **The docs directory on main repository will be removed at some time. We will have a yaml file to store configuration file's meta data. After that completed, configuration documentation should be in the main repository.**
 
 ## Developer Certificate of Origin (DCO)

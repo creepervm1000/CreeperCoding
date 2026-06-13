@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package conda
@@ -7,9 +7,9 @@ import (
 	"context"
 	"strings"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/packages"
-	conda_module "gitea.dev/modules/packages/conda"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/packages"
+	conda_module "creepercoding.dev/modules/packages/conda"
 
 	"xorm.io/builder"
 )

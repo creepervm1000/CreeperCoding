@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package conda
@@ -10,10 +10,10 @@ import (
 	"io"
 	"strings"
 
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/validation"
-	"gitea.dev/modules/zstd"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/validation"
+	"creepercoding.dev/modules/zstd"
 )
 
 var (

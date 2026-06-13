@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package context
@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"testing"
 
-	"gitea.dev/modules/container"
+	"creepercoding.dev/modules/container"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package convert
@@ -8,14 +8,14 @@ import (
 	"net/url"
 	"time"
 
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/gitrepo"
-	"gitea.dev/modules/log"
-	api "gitea.dev/modules/structs"
-	ctx "gitea.dev/services/context"
-	"gitea.dev/services/gitdiff"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/gitrepo"
+	"creepercoding.dev/modules/log"
+	api "creepercoding.dev/modules/structs"
+	ctx "creepercoding.dev/services/context"
+	"creepercoding.dev/services/gitdiff"
 )
 
 // ToCommitUser convert a git.Signature to an api.CommitUser

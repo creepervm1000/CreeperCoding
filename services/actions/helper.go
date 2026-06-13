@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -7,10 +7,10 @@ import (
 	"context"
 	"fmt"
 
-	actions_model "gitea.dev/models/actions"
-	"gitea.dev/modules/actions/jobparser"
-	"gitea.dev/modules/json"
-	api "gitea.dev/modules/structs"
+	actions_model "creepercoding.dev/models/actions"
+	"creepercoding.dev/modules/actions/jobparser"
+	"creepercoding.dev/modules/json"
+	api "creepercoding.dev/modules/structs"
 )
 
 func getWorkflowDispatchInputsFromRun(run *actions_model.ActionRun) (map[string]any, error) {

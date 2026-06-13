@@ -1,11 +1,11 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package web
 
 import (
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/web/repo"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/web/repo"
 )
 
 func addOwnerRepoGitHTTPRouters(m *web.Router, middlewares ...any) {

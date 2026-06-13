@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"sort"
 
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/util"
 )
 
 // Tag represents a Git tag.

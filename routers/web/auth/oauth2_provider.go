@@ -1,4 +1,4 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package auth
@@ -13,18 +13,18 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/models/auth"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/auth/httpauth"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/web"
-	auth_service "gitea.dev/services/auth"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
-	"gitea.dev/services/oauth2_provider"
+	"creepercoding.dev/models/auth"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/auth/httpauth"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/web"
+	auth_service "creepercoding.dev/services/auth"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
+	"creepercoding.dev/services/oauth2_provider"
 
 	"gitea.com/go-chi/binding"
 	jwt "github.com/golang-jwt/jwt/v5"

@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package openapi3gen
@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/json"
 
 	"github.com/getkin/kin-openapi/openapi2"
 	"github.com/getkin/kin-openapi/openapi2conv"

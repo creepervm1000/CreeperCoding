@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package secrets
@@ -6,8 +6,8 @@ package secrets
 import (
 	"context"
 
-	"gitea.dev/models/db"
-	secret_model "gitea.dev/models/secret"
+	"creepercoding.dev/models/db"
+	secret_model "creepercoding.dev/models/secret"
 )
 
 func CreateOrUpdateSecret(ctx context.Context, ownerID, repoID int64, name, data, description string) (*secret_model.Secret, bool, error) {

@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package math
@@ -6,7 +6,7 @@ package math
 import (
 	"bytes"
 
-	giteaUtil "gitea.dev/modules/util"
+	giteaUtil "creepercoding.dev/modules/util"
 
 	"github.com/yuin/goldmark/ast"
 	"github.com/yuin/goldmark/parser"

@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package actions
@@ -69,19 +69,19 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/models/actions"
-	"gitea.dev/models/db"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/storage"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	web_types "gitea.dev/modules/web/types"
-	actions_service "gitea.dev/services/actions"
-	"gitea.dev/services/context"
+	"creepercoding.dev/models/actions"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/storage"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	web_types "creepercoding.dev/modules/web/types"
+	actions_service "creepercoding.dev/services/actions"
+	"creepercoding.dev/services/context"
 )
 
 const artifactRouteBase = "/_apis/pipelines/workflows/{run_id}/artifacts"

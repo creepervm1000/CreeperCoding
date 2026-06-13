@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package user
@@ -21,22 +21,22 @@ import (
 	"time"
 	"unicode"
 
-	"gitea.dev/models/auth"
-	"gitea.dev/models/db"
-	"gitea.dev/modules/auth/openid"
-	"gitea.dev/modules/auth/password/hash"
-	"gitea.dev/modules/base"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/timeutil"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/validation"
+	"creepercoding.dev/models/auth"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/auth/openid"
+	"creepercoding.dev/modules/auth/password/hash"
+	"creepercoding.dev/modules/base"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/timeutil"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/validation"
 
 	_ "image/jpeg" // Needed for jpeg support
 
@@ -570,8 +570,9 @@ var globalVars = sync.OnceValue(func() *globalVarsStruct {
 		emailRegexp: regexp.MustCompile("^[a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]*@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"),
 
 		systemUserNewFuncs: map[int64]func() *User{
-			GhostUserID:   NewGhostUser,
-			ActionsUserID: NewActionsUser,
+			GhostUserID:     NewGhostUser,
+			ActionsUserID:   NewActionsUser,
+			CcopilotUserID:  NewCcopilotUser,
 		},
 	}
 })

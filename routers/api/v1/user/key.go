@@ -1,5 +1,5 @@
 // Copyright 2015 The Gogs Authors. All rights reserved.
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package user
@@ -8,18 +8,18 @@ import (
 	std_ctx "context"
 	"net/http"
 
-	asymkey_model "gitea.dev/models/asymkey"
-	"gitea.dev/models/db"
-	"gitea.dev/models/perm"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/setting"
-	api "gitea.dev/modules/structs"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/api/v1/repo"
-	"gitea.dev/routers/api/v1/utils"
-	asymkey_service "gitea.dev/services/asymkey"
-	"gitea.dev/services/context"
-	"gitea.dev/services/convert"
+	asymkey_model "creepercoding.dev/models/asymkey"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/perm"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/setting"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/api/v1/repo"
+	"creepercoding.dev/routers/api/v1/utils"
+	asymkey_service "creepercoding.dev/services/asymkey"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/convert"
 )
 
 // appendPrivateInformation appends the owner and key type information to api.PublicKey

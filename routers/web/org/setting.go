@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package org
@@ -9,25 +9,25 @@ import (
 	"net/http"
 	"net/url"
 
-	"gitea.dev/models/db"
-	packages_model "gitea.dev/models/packages"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/models/webhook"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	shared_user "gitea.dev/routers/web/shared/user"
-	user_setting "gitea.dev/routers/web/user/setting"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
-	org_service "gitea.dev/services/org"
-	user_service "gitea.dev/services/user"
+	"creepercoding.dev/models/db"
+	packages_model "creepercoding.dev/models/packages"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/models/webhook"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	shared_user "creepercoding.dev/routers/web/shared/user"
+	user_setting "creepercoding.dev/routers/web/user/setting"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
+	org_service "creepercoding.dev/services/org"
+	user_service "creepercoding.dev/services/user"
 )
 
 const (

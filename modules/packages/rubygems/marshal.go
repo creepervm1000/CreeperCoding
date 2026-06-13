@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package rubygems
@@ -9,7 +9,7 @@ import (
 	"io"
 	"reflect"
 
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/util"
 )
 
 const (

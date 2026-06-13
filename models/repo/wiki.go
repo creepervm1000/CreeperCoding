@@ -1,5 +1,5 @@
 // Copyright 2015 The Gogs Authors. All rights reserved.
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"strings"
 
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/util"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/util"
 )
 
 // ErrWikiAlreadyExist represents a "WikiAlreadyExist" kind of error.

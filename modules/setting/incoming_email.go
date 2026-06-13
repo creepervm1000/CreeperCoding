@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -9,7 +9,7 @@ import (
 	"net/mail"
 	"strings"
 
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/log"
 )
 
 const IncomingEmailTokenPlaceholder = "%{token}"

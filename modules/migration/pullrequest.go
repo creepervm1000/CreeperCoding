@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // Copyright 2018 Jonas Franz. All rights reserved.
 // SPDX-License-Identifier: MIT
 
@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"time"
 
-	"gitea.dev/modules/git"
+	"creepercoding.dev/modules/git"
 )
 
 // PullRequest defines a standard pull request information

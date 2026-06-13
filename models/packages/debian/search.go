@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package debian
@@ -7,9 +7,9 @@ import (
 	"context"
 	"strconv"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/packages"
-	debian_module "gitea.dev/modules/packages/debian"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/packages"
+	debian_module "creepercoding.dev/modules/packages/debian"
 
 	"xorm.io/builder"
 )

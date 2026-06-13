@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package auth
@@ -8,18 +8,18 @@ import (
 	"net/http"
 	"strings"
 
-	"gitea.dev/models/auth"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	auth_service "gitea.dev/services/auth"
-	"gitea.dev/services/auth/source/oauth2"
-	"gitea.dev/services/context"
-	"gitea.dev/services/externalaccount"
-	"gitea.dev/services/forms"
+	"creepercoding.dev/models/auth"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	auth_service "creepercoding.dev/services/auth"
+	"creepercoding.dev/services/auth/source/oauth2"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/externalaccount"
+	"creepercoding.dev/services/forms"
 )
 
 var tplLinkAccount templates.TplName = "user/auth/link_account"

@@ -1,4 +1,4 @@
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package db
@@ -8,13 +8,13 @@ import (
 	"strings"
 	"sync"
 
-	"gitea.dev/models/db"
-	issue_model "gitea.dev/models/issues"
-	"gitea.dev/modules/indexer"
-	indexer_internal "gitea.dev/modules/indexer/internal"
-	inner_db "gitea.dev/modules/indexer/internal/db"
-	"gitea.dev/modules/indexer/issues/internal"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/models/db"
+	issue_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/modules/indexer"
+	indexer_internal "creepercoding.dev/modules/indexer/internal"
+	inner_db "creepercoding.dev/modules/indexer/internal/db"
+	"creepercoding.dev/modules/indexer/issues/internal"
+	"creepercoding.dev/modules/util"
 
 	"xorm.io/builder"
 )

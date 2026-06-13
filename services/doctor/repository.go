@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package doctor
@@ -6,10 +6,10 @@ package doctor
 import (
 	"context"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/storage"
-	repo_service "gitea.dev/services/repository"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/storage"
+	repo_service "creepercoding.dev/services/repository"
 
 	"xorm.io/builder"
 )

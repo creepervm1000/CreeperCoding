@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // Copyright 2015 Kenneth Shaw
 // SPDX-License-Identifier: MIT
 
@@ -20,7 +20,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/json"
 )
 
 const (
@@ -207,7 +207,7 @@ func generate() ([]byte, error) {
 }
 
 const hdr = `
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 

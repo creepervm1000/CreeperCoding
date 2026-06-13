@@ -1,4 +1,4 @@
-// Copyright 2026 The Gitea Authors. All rights reserved.
+// Copyright 2026 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package terraform
@@ -6,9 +6,9 @@ package terraform
 import (
 	"context"
 
-	packages_model "gitea.dev/models/packages"
-	"gitea.dev/modules/optional"
-	terraform_module "gitea.dev/modules/packages/terraform"
+	packages_model "creepercoding.dev/models/packages"
+	"creepercoding.dev/modules/optional"
+	terraform_module "creepercoding.dev/modules/packages/terraform"
 )
 
 // IsLocked is a helper function to check if the terraform state is locked

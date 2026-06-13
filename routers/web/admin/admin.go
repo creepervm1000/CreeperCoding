@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package admin
@@ -12,23 +12,23 @@ import (
 	"strings"
 	"time"
 
-	activities_model "gitea.dev/models/activities"
-	"gitea.dev/models/db"
-	"gitea.dev/modules/base"
-	"gitea.dev/modules/cache"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/httplib"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/updatechecker"
-	"gitea.dev/modules/web"
-	"gitea.dev/services/context"
-	"gitea.dev/services/cron"
-	"gitea.dev/services/forms"
-	release_service "gitea.dev/services/release"
-	repo_service "gitea.dev/services/repository"
+	activities_model "creepercoding.dev/models/activities"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/base"
+	"creepercoding.dev/modules/cache"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/httplib"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/updatechecker"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/cron"
+	"creepercoding.dev/services/forms"
+	release_service "creepercoding.dev/services/release"
+	repo_service "creepercoding.dev/services/repository"
 )
 
 const (

@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package web
@@ -9,11 +9,11 @@ import (
 	"reflect"
 	"strings"
 
-	"gitea.dev/modules/htmlutil"
-	"gitea.dev/modules/reqctx"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/web/middleware"
-	"gitea.dev/modules/web/types"
+	"creepercoding.dev/modules/htmlutil"
+	"creepercoding.dev/modules/reqctx"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/web/middleware"
+	"creepercoding.dev/modules/web/types"
 
 	"gitea.com/go-chi/binding"
 	"github.com/go-chi/chi/v5"

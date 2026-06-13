@@ -1,4 +1,4 @@
-// Copyright 2017 The Gitea Authors. All rights reserved.
+// Copyright 2017 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repo
@@ -7,19 +7,19 @@ import (
 	"errors"
 	"net/http"
 
-	"gitea.dev/models/db"
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/models/organization"
-	"gitea.dev/modules/label"
-	"gitea.dev/modules/log"
-	repo_module "gitea.dev/modules/repository"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	"gitea.dev/modules/web"
-	shared_label "gitea.dev/routers/web/shared/label"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
-	issue_service "gitea.dev/services/issue"
+	"creepercoding.dev/models/db"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/models/organization"
+	"creepercoding.dev/modules/label"
+	"creepercoding.dev/modules/log"
+	repo_module "creepercoding.dev/modules/repository"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/modules/web"
+	shared_label "creepercoding.dev/routers/web/shared/label"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
+	issue_service "creepercoding.dev/services/issue"
 )
 
 const (

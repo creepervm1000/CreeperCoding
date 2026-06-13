@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package maven
@@ -19,15 +19,15 @@ import (
 	"strconv"
 	"strings"
 
-	packages_model "gitea.dev/models/packages"
-	"gitea.dev/modules/globallock"
-	"gitea.dev/modules/json"
-	packages_module "gitea.dev/modules/packages"
-	maven_module "gitea.dev/modules/packages/maven"
-	"gitea.dev/modules/util"
-	"gitea.dev/routers/api/packages/helper"
-	"gitea.dev/services/context"
-	packages_service "gitea.dev/services/packages"
+	packages_model "creepercoding.dev/models/packages"
+	"creepercoding.dev/modules/globallock"
+	"creepercoding.dev/modules/json"
+	packages_module "creepercoding.dev/modules/packages"
+	maven_module "creepercoding.dev/modules/packages/maven"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/routers/api/packages/helper"
+	"creepercoding.dev/services/context"
+	packages_service "creepercoding.dev/services/packages"
 )
 
 const (

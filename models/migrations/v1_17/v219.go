@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_17
@@ -6,9 +6,9 @@ package v1_17
 import (
 	"time"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/repo"
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/repo"
+	"creepercoding.dev/modules/timeutil"
 )
 
 func AddSyncOnCommitColForPushMirror(x db.EngineMigration) error {

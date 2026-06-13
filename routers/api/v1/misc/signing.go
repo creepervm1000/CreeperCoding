@@ -1,12 +1,12 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package misc
 
 import (
-	"gitea.dev/modules/git"
-	asymkey_service "gitea.dev/services/asymkey"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/git"
+	asymkey_service "creepercoding.dev/services/asymkey"
+	"creepercoding.dev/services/context"
 )
 
 func getSigningKey(ctx *context.APIContext, expectedFormat string) {

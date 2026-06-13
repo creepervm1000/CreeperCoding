@@ -1,13 +1,13 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package common
 
 import (
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/web/middleware"
-	auth_service "gitea.dev/services/auth"
-	"gitea.dev/services/context"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/web/middleware"
+	auth_service "creepercoding.dev/services/auth"
+	"creepercoding.dev/services/context"
 )
 
 type AuthResult struct {

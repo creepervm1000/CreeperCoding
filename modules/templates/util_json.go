@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package templates
@@ -6,7 +6,7 @@ package templates
 import (
 	"bytes"
 
-	"gitea.dev/modules/json"
+	"creepercoding.dev/modules/json"
 )
 
 type JsonUtils struct{} //nolint:revive // variable naming triggers on Json, wants JSON

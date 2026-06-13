@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package auth
@@ -6,15 +6,15 @@ package auth
 import (
 	"fmt"
 
-	asymkey_model "gitea.dev/models/asymkey"
-	"gitea.dev/models/auth"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/util"
-	asymkey_service "gitea.dev/services/asymkey"
-	"gitea.dev/services/auth/source/oauth2"
-	"gitea.dev/services/context"
-	user_service "gitea.dev/services/user"
+	asymkey_model "creepercoding.dev/models/asymkey"
+	"creepercoding.dev/models/auth"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/util"
+	asymkey_service "creepercoding.dev/services/asymkey"
+	"creepercoding.dev/services/auth/source/oauth2"
+	"creepercoding.dev/services/context"
+	user_service "creepercoding.dev/services/user"
 
 	"github.com/markbates/goth"
 )

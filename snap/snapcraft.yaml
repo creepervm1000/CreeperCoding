@@ -1,15 +1,15 @@
-name: gitea
-summary: Gitea - A painless self-hosted Git service
+name: creepercoding
+summary: CreeperCoding - A painless self-hosted Git service
 description: |
   The goal of this project is to make the easiest, fastest, and most painless
   way of setting up a self-hosted Git service with GitHub-like experiences,
   including issue tracking, code review, project management, wikis, package registry,
-  Gitea Actions and more.
+  CreeperCoding Actions and more.
 
 icon: public/assets/img/logo.png
 confinement: strict
 base: core24
-adopt-info: gitea
+adopt-info: creepercoding
 
 platforms:
   armhf:
@@ -29,23 +29,23 @@ environment:
   GIT_EXEC_PATH: "$SNAP/usr/lib/git-core"
 
 apps:
-  gitea:
-    command: gitea
+  creepercoding:
+    command: creepercoding
     plugs: [network, network-bind, removable-media]
   web:
-    command: gitea web
+    command: creepercoding web
     daemon: simple
     plugs: [network, network-bind, removable-media]
   dump:
-    command: gitea dump
+    command: creepercoding dump
     plugs: [home, removable-media]
   version:
-    command: gitea --version
+    command: creepercoding --version
   sqlite:
     command: usr/bin/sqlite3
 
 parts:
-  gitea:
+  creepercoding:
     plugin: make
     source: .
     stage-packages: [ git, sqlite3, openssh-client ]
@@ -53,8 +53,8 @@ parts:
     build-snaps: [ go/1.26/stable, node/24/stable ]
     build-environment:
       - LDFLAGS: ""
-    override-pull: craftctl default && ./snap/part-gitea-pull.sh
-    override-build: ./snap/part-gitea-build.sh
+    override-pull: craftctl default && ./snap/part-creepercoding-pull.sh
+    override-build: ./snap/part-creepercoding-build.sh
     prime:
       - -etc
       - -usr/lib/systemd

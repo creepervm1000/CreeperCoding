@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package oauth2_provider
@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"time"
 
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/modules/timeutil"
 
 	"github.com/golang-jwt/jwt/v5"
 )

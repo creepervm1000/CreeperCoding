@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package organization
@@ -6,9 +6,9 @@ package organization
 import (
 	"context"
 
-	"gitea.dev/models/db"
-	"gitea.dev/models/perm"
-	"gitea.dev/models/unit"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/models/perm"
+	"creepercoding.dev/models/unit"
 )
 
 // TeamUnit describes all units of a repository

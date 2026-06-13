@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package repository
@@ -7,8 +7,8 @@ import (
 	"context"
 	"fmt"
 
-	"gitea.dev/modules/util"
-	gitea_ctx "gitea.dev/services/context"
+	"creepercoding.dev/modules/util"
+	gitea_ctx "creepercoding.dev/services/context"
 )
 
 type ContainedLinks struct { // TODO: better name?

@@ -5,7 +5,7 @@ import {computed, ref, toRefs} from 'vue';
 import {POST, DELETE} from '../modules/fetch.ts';
 import ActionRunSummaryView from './ActionRunSummaryView.vue';
 import ActionRunJobView from './ActionRunJobView.vue';
-import type {ActionsJob, ActionsRunAttempt} from '../modules/gitea-actions.ts';
+import type {ActionsJob, ActionsRunAttempt} from '../modules/creepercoding-actions.ts';
 import {buildJobsByParentJobID, createActionRunViewStore} from './ActionRunView.ts';
 import {buildArtifactTooltipHtml} from './ActionRunArtifacts.ts';
 

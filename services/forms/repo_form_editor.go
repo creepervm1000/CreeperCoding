@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package forms
@@ -6,9 +6,9 @@ package forms
 import (
 	"net/http"
 
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/web/middleware"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/web/middleware"
+	"creepercoding.dev/services/context"
 
 	"gitea.com/go-chi/binding"
 )

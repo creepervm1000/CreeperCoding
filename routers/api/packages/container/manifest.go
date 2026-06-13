@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package container
@@ -11,19 +11,19 @@ import (
 	"os"
 	"strings"
 
-	"gitea.dev/models/db"
-	packages_model "gitea.dev/models/packages"
-	container_model "gitea.dev/models/packages/container"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/globallock"
-	"gitea.dev/modules/json"
-	"gitea.dev/modules/log"
-	packages_module "gitea.dev/modules/packages"
-	container_module "gitea.dev/modules/packages/container"
-	"gitea.dev/modules/util"
-	notify_service "gitea.dev/services/notify"
-	packages_service "gitea.dev/services/packages"
-	container_service "gitea.dev/services/packages/container"
+	"creepercoding.dev/models/db"
+	packages_model "creepercoding.dev/models/packages"
+	container_model "creepercoding.dev/models/packages/container"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/globallock"
+	"creepercoding.dev/modules/json"
+	"creepercoding.dev/modules/log"
+	packages_module "creepercoding.dev/modules/packages"
+	container_module "creepercoding.dev/modules/packages/container"
+	"creepercoding.dev/modules/util"
+	notify_service "creepercoding.dev/services/notify"
+	packages_service "creepercoding.dev/services/packages"
+	container_service "creepercoding.dev/services/packages/container"
 
 	"github.com/opencontainers/go-digest"
 	oci "github.com/opencontainers/image-spec/specs-go/v1"

@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package nuget
@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	packages_model "gitea.dev/models/packages"
-	nuget_module "gitea.dev/modules/packages/nuget"
+	packages_model "creepercoding.dev/models/packages"
+	nuget_module "creepercoding.dev/modules/packages/nuget"
 )
 
 type AtomTitle struct {

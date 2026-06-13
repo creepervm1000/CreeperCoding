@@ -6,9 +6,9 @@ package git
 import (
 	"context"
 
-	"gitea.dev/models/db"
-	"gitea.dev/modules/commitstatus"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/commitstatus"
+	"creepercoding.dev/modules/setting"
 
 	"xorm.io/builder"
 )

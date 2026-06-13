@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package gitrepo
@@ -6,8 +6,8 @@ package gitrepo
 import (
 	"context"
 
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/globallock"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/globallock"
 )
 
 func getRepoConfigLockKey(repoStoragePath string) string {

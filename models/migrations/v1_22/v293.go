@@ -1,12 +1,12 @@
-// Copyright 2024 The Gitea Authors. All rights reserved.
+// Copyright 2024 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package v1_22
 
 import (
-	"gitea.dev/models/db"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/timeutil"
+	"creepercoding.dev/models/db"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/timeutil"
 )
 
 // CheckProjectColumnsConsistency ensures there is exactly one default board per project present

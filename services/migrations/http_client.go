@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package migrations
@@ -7,9 +7,9 @@ import (
 	"crypto/tls"
 	"net/http"
 
-	"gitea.dev/modules/hostmatcher"
-	"gitea.dev/modules/proxy"
-	"gitea.dev/modules/setting"
+	"creepercoding.dev/modules/hostmatcher"
+	"creepercoding.dev/modules/proxy"
+	"creepercoding.dev/modules/setting"
 )
 
 // NewMigrationHTTPClient returns a HTTP client for migration

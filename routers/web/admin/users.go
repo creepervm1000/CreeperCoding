@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2020 The Gitea Authors.
+// Copyright 2020 The CreeperCoding Authors.
 // SPDX-License-Identifier: MIT
 
 package admin
@@ -11,25 +11,25 @@ import (
 	"strconv"
 	"strings"
 
-	"gitea.dev/models/auth"
-	"gitea.dev/models/db"
-	org_model "gitea.dev/models/organization"
-	packages_model "gitea.dev/models/packages"
-	repo_model "gitea.dev/models/repo"
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/auth/password"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/structs"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/web"
-	"gitea.dev/routers/web/explore"
-	user_setting "gitea.dev/routers/web/user/setting"
-	"gitea.dev/services/context"
-	"gitea.dev/services/forms"
-	"gitea.dev/services/mailer"
-	user_service "gitea.dev/services/user"
+	"creepercoding.dev/models/auth"
+	"creepercoding.dev/models/db"
+	org_model "creepercoding.dev/models/organization"
+	packages_model "creepercoding.dev/models/packages"
+	repo_model "creepercoding.dev/models/repo"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/auth/password"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/structs"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/web"
+	"creepercoding.dev/routers/web/explore"
+	user_setting "creepercoding.dev/routers/web/user/setting"
+	"creepercoding.dev/services/context"
+	"creepercoding.dev/services/forms"
+	"creepercoding.dev/services/mailer"
+	user_service "creepercoding.dev/services/user"
 )
 
 const (

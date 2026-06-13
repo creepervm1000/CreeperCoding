@@ -1,4 +1,4 @@
-// Copyright 2025 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package gitrepo
@@ -8,8 +8,8 @@ import (
 	"context"
 	"io"
 
-	"gitea.dev/modules/git/gitcmd"
-	"gitea.dev/modules/log"
+	"creepercoding.dev/modules/git/gitcmd"
+	"creepercoding.dev/modules/log"
 )
 
 // CommitFileStatus represents status of files in a commit.

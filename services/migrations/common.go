@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package migrations
@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"strings"
 
-	system_model "gitea.dev/models/system"
-	"gitea.dev/modules/git"
-	"gitea.dev/modules/log"
-	base "gitea.dev/modules/migration"
+	system_model "creepercoding.dev/models/system"
+	"creepercoding.dev/modules/git"
+	"creepercoding.dev/modules/log"
+	base "creepercoding.dev/modules/migration"
 )
 
 // WarnAndNotice will log the provided message and send a repository notice

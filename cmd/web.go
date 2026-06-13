@@ -15,30 +15,30 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/graceful"
-	"gitea.dev/modules/gtprof"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/process"
-	"gitea.dev/modules/public"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/templates"
-	"gitea.dev/modules/util"
-	"gitea.dev/routers"
-	"gitea.dev/routers/install"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/graceful"
+	"creepercoding.dev/modules/gtprof"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/process"
+	"creepercoding.dev/modules/public"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/templates"
+	"creepercoding.dev/modules/util"
+	"creepercoding.dev/routers"
+	"creepercoding.dev/routers/install"
 
 	"github.com/felixge/fgprof"
 	"github.com/urfave/cli/v3"
 )
 
 // PIDFile could be set from build tag
-var PIDFile = "/run/gitea.pid"
+var PIDFile = "/run/creepercoding.pid"
 
 func newWebCommand() *cli.Command {
 	return &cli.Command{
 		Name:  "web",
-		Usage: "Start Gitea web server",
-		Description: `Gitea web server is the only thing you need to run,
+		Usage: "Start CreeperCoding web server",
+		Description: `CreeperCoding web server is the only thing you need to run,
 and it takes care of all the other things for you`,
 		Before: PrepareConsoleLoggerLevel(log.INFO),
 		Action: runWeb,

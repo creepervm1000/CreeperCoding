@@ -1,4 +1,4 @@
-// Copyright 2021 The Gitea Authors. All rights reserved.
+// Copyright 2021 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package routing
@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"time"
 
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/web/types"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/web/types"
 )
 
 var (

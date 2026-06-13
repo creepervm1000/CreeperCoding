@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package setting
@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/tempdir"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/tempdir"
 )
 
 var (

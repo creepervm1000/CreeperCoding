@@ -1,4 +1,5 @@
-// Copyright 2016 The Gitea Authors. All rights reserved.
+// Copyright 2025 The CreeperCoding Authors
+// Copyright 2016 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package public
@@ -12,12 +13,12 @@ import (
 	"strings"
 	"time"
 
-	"gitea.dev/modules/assetfs"
-	"gitea.dev/modules/container"
-	"gitea.dev/modules/httpcache"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/setting"
-	"gitea.dev/modules/util"
+	"creepercoding.dev/modules/assetfs"
+	"creepercoding.dev/modules/container"
+	"creepercoding.dev/modules/httpcache"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/modules/util"
 
 	"github.com/go-chi/cors"
 )
@@ -110,7 +111,7 @@ func servePublicAsset(w http.ResponseWriter, req *http.Request, fi os.FileInfo, 
 		// try to provide gzip content directly from bindata
 		if gzipBytes, ok := fiEmbedded.GetGzipContent(); ok {
 			rdGzip := bytes.NewReader(gzipBytes)
-			// all gzipped static files (from bindata) are managed by Gitea, so we can make sure every file has the correct ext name
+			// all gzipped static files (from bindata) are managed by CreeperCoding, so we can make sure every file has the correct ext name
 			// then we can get the correct Content-Type, we do not need to do http.DetectContentType on the decompressed data
 			if w.Header().Get("Content-Type") == "" {
 				w.Header().Set("Content-Type", "application/octet-stream")

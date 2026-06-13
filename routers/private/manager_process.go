@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package private
@@ -11,10 +11,10 @@ import (
 	"runtime"
 	"time"
 
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/private"
-	process_module "gitea.dev/modules/process"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/private"
+	process_module "creepercoding.dev/modules/process"
+	"creepercoding.dev/services/context"
 )
 
 // Processes prints out the processes

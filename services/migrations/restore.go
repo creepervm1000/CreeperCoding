@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package migrations
@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"strconv"
 
-	base "gitea.dev/modules/migration"
+	base "creepercoding.dev/modules/migration"
 
 	"go.yaml.in/yaml/v4"
 )

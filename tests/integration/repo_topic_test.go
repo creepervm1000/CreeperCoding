@@ -1,4 +1,4 @@
-// Copyright 2022 The Gitea Authors. All rights reserved.
+// Copyright 2022 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package integration
@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"testing"
 
-	api "gitea.dev/modules/structs"
-	"gitea.dev/tests"
+	api "creepercoding.dev/modules/structs"
+	"creepercoding.dev/tests"
 
 	"github.com/stretchr/testify/assert"
 )

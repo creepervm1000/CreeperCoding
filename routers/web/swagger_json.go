@@ -1,4 +1,4 @@
-// Copyright 2020 The Gitea Authors. All rights reserved.
+// Copyright 2020 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package web
@@ -6,8 +6,8 @@ package web
 import (
 	"html/template"
 
-	"gitea.dev/modules/setting"
-	"gitea.dev/services/context"
+	"creepercoding.dev/modules/setting"
+	"creepercoding.dev/services/context"
 )
 
 // SwaggerV1Json render swagger v1 json

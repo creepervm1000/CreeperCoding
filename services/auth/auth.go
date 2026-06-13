@@ -1,5 +1,5 @@
 // Copyright 2014 The Gogs Authors. All rights reserved.
-// Copyright 2019 The Gitea Authors. All rights reserved.
+// Copyright 2019 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package auth
@@ -9,13 +9,13 @@ import (
 	"fmt"
 	"net/http"
 
-	user_model "gitea.dev/models/user"
-	"gitea.dev/modules/auth/webauthn"
-	"gitea.dev/modules/log"
-	"gitea.dev/modules/optional"
-	"gitea.dev/modules/session"
-	"gitea.dev/modules/web/middleware"
-	user_service "gitea.dev/services/user"
+	user_model "creepercoding.dev/models/user"
+	"creepercoding.dev/modules/auth/webauthn"
+	"creepercoding.dev/modules/log"
+	"creepercoding.dev/modules/optional"
+	"creepercoding.dev/modules/session"
+	"creepercoding.dev/modules/web/middleware"
+	user_service "creepercoding.dev/services/user"
 )
 
 type ErrUserAuthMessage string

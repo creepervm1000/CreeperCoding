@@ -1,4 +1,4 @@
-// Copyright 2023 The Gitea Authors. All rights reserved.
+// Copyright 2023 The CreeperCoding Authors. All rights reserved.
 // SPDX-License-Identifier: MIT
 
 package payload
@@ -6,8 +6,8 @@ package payload
 import (
 	"context"
 
-	issues_model "gitea.dev/models/issues"
-	"gitea.dev/modules/util"
+	issues_model "creepercoding.dev/models/issues"
+	"creepercoding.dev/modules/util"
 )
 
 const replyPayloadVersion1 byte = 1
