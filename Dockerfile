@@ -29,9 +29,9 @@ RUN go mod download
 COPY --exclude=.git/ . .
 COPY --from=frontend-build /src/public/assets public/assets
 
-# Build creepercoding, .git mount is required for version data
+# Build creepercoding, .git is required for version data
+COPY .git/ .git/
 RUN --mount=type=cache,id=s/2ef5436a-dcd5-4875-bba3-25d0074e58f1-go-build,target="/root/.cache/go-build" \
-    --mount=type=bind,source=".git/",target=".git/" \
     make backend
 
 COPY docker/root /tmp/local
