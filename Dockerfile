@@ -25,12 +25,12 @@ WORKDIR ${GOPATH}/src/creepercoding.dev
 COPY go.mod go.sum ./
 RUN go mod download
 # Use COPY instead of bind mount as read-only one breaks makefile state tracking and read-write one needs binary to be moved as it's discarded.
-# ".git" directory is mounted separately later only for version data extraction.
+# ".git" directory is created below (empty) for version data extraction if not available in build context.
 COPY --exclude=.git/ . .
 COPY --from=frontend-build /src/public/assets public/assets
 
-# Build creepercoding, .git is required for version data
-COPY .git/ .git/
+# Build creepercoding, .git is optional for version data (not available in Railway build context)
+RUN mkdir -p .git
 RUN --mount=type=cache,id=s/2ef5436a-dcd5-4875-bba3-25d0074e58f1-go-build,target="/root/.cache/go-build" \
     make backend
 
