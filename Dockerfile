@@ -4,7 +4,7 @@ FROM --platform=$BUILDPLATFORM docker.io/library/golang:1.26-alpine3.23 AS front
 RUN apk --no-cache add build-base git nodejs pnpm
 WORKDIR /src
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
-RUN --mount=type=cache,target=/root/.local/share/pnpm/store pnpm install --frozen-lockfile
+RUN --mount=type=cache,id=s/2ef5436a-dcd5-4875-bba3-25d0074e58f1-pnpm-store,target=/root/.local/share/pnpm/store pnpm install --frozen-lockfile
 COPY --exclude=.git/ . .
 RUN make frontend
 
@@ -30,7 +30,7 @@ COPY --exclude=.git/ . .
 COPY --from=frontend-build /src/public/assets public/assets
 
 # Build creepercoding, .git mount is required for version data
-RUN --mount=type=cache,target="/root/.cache/go-build" \
+RUN --mount=type=cache,id=s/2ef5436a-dcd5-4875-bba3-25d0074e58f1-go-build,target="/root/.cache/go-build" \
     --mount=type=bind,source=".git/",target=".git/" \
     make backend
 
@@ -78,8 +78,6 @@ COPY --from=build-env /go/src/creepercoding.dev/creepercoding /app/creepercoding
 
 ENV USER=git
 ENV GITEA_CUSTOM=/data/creepercoding
-
-VOLUME ["/data"]
 
 # HINT: HEALTH-CHECK-ENDPOINT: don't use HEALTHCHECK, search this hint keyword for more information
 ENTRYPOINT ["/usr/bin/entrypoint"]
