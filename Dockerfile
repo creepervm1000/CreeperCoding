@@ -54,6 +54,6 @@ ENV PORT=3000
 
 EXPOSE 3000
 
-USER appuser
+RUN apt install sudo su-exec
 
-CMD ["/app/creepercoding"]
+CMD ["su-exec git /app/creepercoding"]
