@@ -10,6 +10,7 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 RUN make frontend
 
+
 FROM golang:1.26-alpine3.23 AS build-env
 
 ARG CREEPERCODING_VERSION
@@ -30,6 +31,7 @@ RUN mkdir -p .git
 
 RUN make backend
 
+
 FROM alpine:3.23
 
 RUN apk add --no-cache \
@@ -37,16 +39,21 @@ RUN apk add --no-cache \
     git \
     sqlite
 
+# create non-root user
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+
 WORKDIR /app
 
 COPY --from=build-env /src/creepercoding /app/creepercoding
 
-RUN mkdir -p /data
+RUN mkdir -p /data && chown -R appuser:appgroup /data /app
 
-ENV USER=git
+ENV USER=appuser
 ENV GITEA_CUSTOM=/data/creepercoding
 ENV PORT=3000
 
 EXPOSE 3000
+
+USER appuser
 
 CMD ["/app/creepercoding"]
