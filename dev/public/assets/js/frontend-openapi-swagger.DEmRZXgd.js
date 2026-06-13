@@ -1,2 +1,0 @@
-import{t as e}from"./preload-helper.CwQZjUKM.js";import{t}from"./swagger.rPccTDQy.js";var n=async n=>{try{return await e(()=>import(`./swagger-render.BBD5SWkz.js`),[],import.meta.url),await t(n.container,{specText:n.contentString()}),!0}catch(e){return console.error(e),!1}};export{n as frontendRender};
-//# sourceMappingURL=frontend-openapi-swagger.DEmRZXgd.js.map

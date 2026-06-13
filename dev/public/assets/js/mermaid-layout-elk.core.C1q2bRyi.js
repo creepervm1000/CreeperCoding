@@ -1,2 +1,0 @@
-import{t as e}from"./preload-helper.CwQZjUKM.js";import{t}from"./chunk-ZW26E7AF.CI1ENdm4.js";var n=t(async()=>await e(()=>import(`./render-TAZW7USW.DT_hFnGd.js`),[],import.meta.url),`loader`),r=[{name:`elk`,loader:n,algorithm:`elk.layered`},...[`elk.stress`,`elk.force`,`elk.mrtree`,`elk.sporeOverlap`].map(e=>({name:e,loader:n,algorithm:e}))];export{r as default};
-//# sourceMappingURL=mermaid-layout-elk.core.C1q2bRyi.js.map
