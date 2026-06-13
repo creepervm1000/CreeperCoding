@@ -54,6 +54,6 @@ ENV PORT=3000
 
 EXPOSE 3000
 
-RUN apt install sudo su-exec
+RUN apk add sudo su-exec
 
 CMD ["su-exec git /app/creepercoding"]
