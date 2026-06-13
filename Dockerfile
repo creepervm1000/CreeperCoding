@@ -1,84 +1,52 @@
 # syntax=docker/dockerfile:1
-# Build frontend on the native platform to avoid QEMU-related issues with nodejs ecosystem
-FROM --platform=$BUILDPLATFORM docker.io/library/golang:1.26-alpine3.23 AS frontend-build
-RUN apk --no-cache add build-base git nodejs pnpm
+
+FROM --platform=$BUILDPLATFORM golang:1.26-alpine3.23 AS frontend-build
+RUN apk add --no-cache build-base git nodejs pnpm
 WORKDIR /src
+
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
-RUN --mount=type=cache,id=s/2ef5436a-dcd5-4875-bba3-25d0074e58f1-pnpm-store,target=/root/.local/share/pnpm/store pnpm install --frozen-lockfile
-COPY --exclude=.git/ . .
+RUN pnpm install --frozen-lockfile
+
+COPY . .
 RUN make frontend
 
-# Build backend for each target platform
-FROM docker.io/library/golang:1.26-alpine3.23 AS build-env
+FROM golang:1.26-alpine3.23 AS build-env
 
 ARG CREEPERCODING_VERSION
 ARG TAGS=""
 ENV TAGS="bindata timetzdata $TAGS"
-ARG CGO_EXTRA_CFLAGS
 
-# Build deps
-RUN apk --no-cache add \
-    build-base \
-    git
+RUN apk add --no-cache build-base git
 
-WORKDIR ${GOPATH}/src/creepercoding.dev
+WORKDIR /src
+
 COPY go.mod go.sum ./
 RUN go mod download
-# Use COPY instead of bind mount as read-only one breaks makefile state tracking and read-write one needs binary to be moved as it's discarded.
-# ".git" directory is created below (empty) for version data extraction if not available in build context.
-COPY --exclude=.git/ . .
+
+COPY . .
 COPY --from=frontend-build /src/public/assets public/assets
 
-# Build creepercoding, .git is optional for version data (not available in Railway build context)
 RUN mkdir -p .git
-RUN --mount=type=cache,id=s/2ef5436a-dcd5-4875-bba3-25d0074e58f1-go-build,target="/root/.cache/go-build" \
-    make backend
 
-COPY docker/root /tmp/local
+RUN make backend
 
-# Set permissions for builds that made under windows which strips the executable bit from file
-RUN chmod 755 /tmp/local/usr/bin/entrypoint \
-              /tmp/local/usr/local/bin/* \
-              /tmp/local/etc/s6/gitea/* \
-              /tmp/local/etc/s6/openssh/* \
-              /tmp/local/etc/s6/.s6-svscan/* \
-	/go/src/creepercoding.dev/creepercoding
+FROM alpine:3.23
 
-FROM docker.io/library/alpine:3.23 AS creepercoding
-
-EXPOSE 22 3000
-
-RUN apk --no-cache add \
-    bash \
+RUN apk add --no-cache \
     ca-certificates \
-    curl \
-    gettext \
     git \
-    linux-pam \
-    openssh \
-    s6 \
-    sqlite \
-    su-exec \
-    gnupg
+    sqlite
 
-RUN addgroup \
-    -S -g 1000 \
-    git && \
-  adduser \
-    -S -H -D \
-    -h /data/git \
-    -s /bin/bash \
-    -u 1000 \
-    -G git \
-    git && \
-  echo "git:*" | chpasswd -e
+WORKDIR /app
 
-COPY --from=build-env /tmp/local /
-COPY --from=build-env /go/src/creepercoding.dev/creepercoding /app/creepercoding/creepercoding
+COPY --from=build-env /src/creepercoding /app/creepercoding
+
+RUN mkdir -p /data
 
 ENV USER=git
 ENV GITEA_CUSTOM=/data/creepercoding
+ENV PORT=3000
 
-# HINT: HEALTH-CHECK-ENDPOINT: don't use HEALTHCHECK, search this hint keyword for more information
-ENTRYPOINT ["/usr/bin/entrypoint"]
-CMD ["/usr/bin/s6-svscan", "/etc/s6"]
+EXPOSE 3000
+
+CMD ["/app/creepercoding"]
