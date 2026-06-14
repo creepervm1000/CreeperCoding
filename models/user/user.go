@@ -845,7 +845,7 @@ func HasUsers(ctx context.Context) (ret struct {
 	HasAnyUser, HasOnlyOneUser bool
 }, err error,
 ) {
-	res, err := db.GetEngine(ctx).Table(&User{}).Cols("id").Limit(2).Query()
+	res, err := db.GetEngine(ctx).Table(&User{}).Cols("id").Where("type = ?", UserTypeIndividual).Limit(2).Query()
 	if err != nil {
 		return ret, fmt.Errorf("error checking user existence: %w", err)
 	}
